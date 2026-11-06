@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-10-19T05:26:56.862681+00:00",
+  "inference_performed": false,
+  "checkpoint_and_snapshot_hashes": "match",
+  "validation_histograms": "exact_match",
+  "test_csv_rows": 5528,
+  "scored_voxels_per_model": 2303341553,
+  "independent_numpy_maximum_metric_delta": {
+    "seed42": 0.0,
+    "seed43": 1.1102230246251565e-16,
+    "seed44": 1.1102230246251565e-16,
+    "ensemble": 0.0
+  },
+  "seed_mean_and_sample_sd": "match",
+  "verifier_sha256": "ccd532ab0b7bd21203c8a747fa75227cede83612e5e7948bde67bd5cded3e5c0"
+}

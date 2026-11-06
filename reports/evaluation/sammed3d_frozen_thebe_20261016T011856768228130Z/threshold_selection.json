@@ -1,0 +1,9 @@
+{
+  "source": "val1.h5 + val2.h5 only",
+  "thresholds": {
+    "no_prompts": 0.01416015625,
+    "one_oracle_click": 0.0986328125
+  },
+  "test_files_opened_at_selection": false,
+  "checkpoint_sha256": "899a46d04d3b70f723282ceb489149373558bf0aaba389a346f5ab57da5cdd3c"
+}

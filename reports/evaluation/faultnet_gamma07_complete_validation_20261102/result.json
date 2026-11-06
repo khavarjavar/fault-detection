@@ -1,0 +1,38 @@
+{
+  "status": "complete_validation",
+  "checkpoint": "external/FaultNet/network/FaultNet_Gamma0.7.pt",
+  "checkpoint_sha256": "c1742973a39bc46a96775f1045062038d8120d42cfb4b197bf2ca8ebd657c6ee",
+  "script_sha256": "51827a32ebed3a562dae8ed5244532257bf6983c9f45ce171eb4ac9f9b03929b",
+  "gamma": "0.7",
+  "input": "raw Thebe amplitude, axis-reversed, padded with 0.5 to 128^3",
+  "preprocessing": "released FaultNet cubing_prediction per-block minmax, computed in float32 before half-precision model input",
+  "threshold_source": "complete validation Dice",
+  "threshold": 0.99951171875,
+  "metrics": {
+    "threshold": 0.99951171875,
+    "dice": 0.1713657473885364,
+    "iou": 0.09371242343503618,
+    "precision": 0.13021792064833654,
+    "recall": 0.2505318038431395,
+    "specificity": 0.9519568773475614,
+    "balanced_accuracy": 0.6012443405953505,
+    "accuracy": 0.9323811857671316,
+    "mcc": 0.1479593942300758,
+    "pr_auc_approx": 0.057326440430554834,
+    "roc_auc_approx": 0.6145395734199904,
+    "tp": 4291233,
+    "fp": 28663010,
+    "fn": 12837263,
+    "tn": 567947044
+  },
+  "coverage": {
+    "patches": 650,
+    "observed_patches": 450,
+    "valid_voxels": 613738550,
+    "positive_voxels": 17128496,
+    "raw_voxels": 975687600,
+    "positive_labels_excluded": 23514
+  },
+  "elapsed_seconds": 153.62542300199857,
+  "test_files_read": false
+}

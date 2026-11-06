@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-10-26T07:20:21.338202+00:00",
+  "status": "passed",
+  "config": "configs/attention3d_two_survey_pretrain.json",
+  "kerry_included": false,
+  "test_or_thebe_data_read": false,
+  "surveys": [
+    {
+      "survey": "opunake",
+      "status": "passed",
+      "shape": [
+        765,
+        2233,
+        1501
+      ],
+      "present_traces": 1662034,
+      "source_trace_equality_checks": 32,
+      "missing_zero_fill_checks": 32,
+      "sampled_cube_count": 16,
+      "sampled_cube_rms_range_raw": [
+        2172.2635352750585,
+        26672.320042442727
+      ],
+      "train_validation_inline_separation_voxels": 32
+    },
+    {
+      "survey": "kahu",
+      "status": "passed",
+      "shape": [
+        599,
+        1697,
+        1500
+      ],
+      "present_traces": 994230,
+      "source_trace_equality_checks": 32,
+      "missing_zero_fill_checks": 32,
+      "sampled_cube_count": 16,
+      "sampled_cube_rms_range_raw": [
+        856.0989070275191,
+        4153.732146304288
+      ],
+      "train_validation_inline_separation_voxels": 32
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "status": "validation_analysis_frozen",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "subsets": [
+    [
+      42
+    ],
+    [
+      43
+    ],
+    [
+      44
+    ],
+    [
+      42,
+      43
+    ],
+    [
+      42,
+      44
+    ],
+    [
+      43,
+      44
+    ],
+    [
+      42,
+      43,
+      44
+    ]
+  ],
+  "cache_manifest_sha256": "9d357b6c3ef8b9dc2bbf8b218e83a2fb85e235abba46af3ae5b08329933df36f",
+  "subset_seed": 1042,
+  "max_subsets_per_size": 32,
+  "threshold_policy": "best Dice on full validation separately for each subset",
+  "test_files_opened": false,
+  "inference_performed": false,
+  "analysis_source_sha256": "ec56c608c42f6083f9dac6167fc2916ed14437ce35a80b6127d7ae7eac044f33"
+}

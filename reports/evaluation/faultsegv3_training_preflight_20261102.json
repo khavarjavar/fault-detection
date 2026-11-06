@@ -1,0 +1,17 @@
+{
+  "status": "single_training_step_pass",
+  "origin": [
+    27,
+    952,
+    1034
+  ],
+  "valid_voxels": 2097152,
+  "positive_voxels": 69213,
+  "loss": 0.8584034442901611,
+  "max_parameter_delta": 0.00010031461715698242,
+  "peak_gpu_allocated_gib": 2.172555923461914,
+  "peak_gpu_reserved_gib": 2.27734375,
+  "precision": "bfloat16_autocast with float32 loss and weights",
+  "purpose": "memory and gradient preflight only; no checkpoint saved",
+  "test_files_read": false
+}

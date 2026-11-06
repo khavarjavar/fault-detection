@@ -1,0 +1,13 @@
+## REPORT
+PASS: reports/experiments/R100_FP16_THREE_SEEDS_20261014.md
+PASS: report contains all results and no-test status
+PASS: managed report block in README.md
+PASS: managed report block in reports/README.md
+
+## FROZEN RUN
+PASS: reports/training/r100_fp16_3seed_queue_20261014_150435.log
+PASS: three seeds complete; test not previously run
+PASS: seed 42 selection and checkpoint exist
+Traceback (most recent call last):
+  File "<stdin>", line 120, in <module>
+KeyError: 'dice'

@@ -1,0 +1,223 @@
+{
+  "status": "complete",
+  "stage": "complete",
+  "test_files_opened": true,
+  "training_performed": false,
+  "weight_updates": 0,
+  "test_labels_used_for_prompts": {
+    "no_prompts": false,
+    "one_oracle_click": true
+  },
+  "validation": {
+    "split": "val",
+    "files": [
+      "data/processed/thebe_h5/val1.h5",
+      "data/processed/thebe_h5/val2.h5"
+    ],
+    "shape": [
+      200,
+      3174,
+      1537
+    ],
+    "coverage": {
+      "patches_planned": 650,
+      "patches_processed": 650,
+      "patches_scored": 450,
+      "no_data_patches": 200,
+      "constant_observed_patches": 0,
+      "raw_voxels": 975687600,
+      "valid_voxels": 613738550,
+      "positive_labels_excluded": 23514,
+      "positive_clicks": 186,
+      "negative_clicks": 264,
+      "excluded_no_data_voxels": 361949050
+    },
+    "seconds": 107.10221497298335,
+    "modes": {
+      "no_prompts": {
+        "threshold": 0.01416015625,
+        "at_0_5": {
+          "threshold": 0.5,
+          "dice": 0.0009312166338988648,
+          "iou": 0.0004658252090410066,
+          "precision": 0.033670580398034805,
+          "recall": 0.00047213719173008534,
+          "specificity": 0.9996109804076483,
+          "balanced_accuracy": 0.5000415587996891,
+          "accuracy": 0.9717265568538916,
+          "mcc": 0.000692185924409281,
+          "pr_auc_approx": 0.028160523640987572,
+          "roc_auc_approx": 0.5024108876942049,
+          "tp": 8087,
+          "fp": 232093,
+          "fn": 17120409,
+          "tn": 596377961
+        },
+        "at_validation_threshold": {
+          "threshold": 0.01416015625,
+          "dice": 0.054317085769879564,
+          "iou": 0.027916720331263266,
+          "precision": 0.02794903942803127,
+          "recall": 0.9602258131712207,
+          "specificity": 0.04120847417029952,
+          "balanced_accuracy": 0.5007171436707601,
+          "accuracy": 0.06685683016000869,
+          "mcc": 0.0011890613667716384,
+          "pr_auc_approx": 0.028160523640987572,
+          "roc_auc_approx": 0.5024108876942049,
+          "tp": 16447224,
+          "fp": 572024664,
+          "fn": 681272,
+          "tn": 24585390
+        }
+      },
+      "one_oracle_click": {
+        "threshold": 0.0986328125,
+        "at_0_5": {
+          "threshold": 0.5,
+          "dice": 0.0009596141502146403,
+          "iou": 0.0004800374004483714,
+          "precision": 0.07136757665933498,
+          "recall": 0.00048305467099971886,
+          "specificity": 0.9998195454480222,
+          "balanced_accuracy": 0.5001513000595109,
+          "accuracy": 0.9719296058557834,
+          "mcc": 0.00362673674072616,
+          "pr_auc_approx": 0.03640322606848115,
+          "roc_auc_approx": 0.5832625473967583,
+          "tp": 8274,
+          "fp": 107661,
+          "fn": 17120222,
+          "tn": 596502393
+        },
+        "at_validation_threshold": {
+          "threshold": 0.0986328125,
+          "dice": 0.06865790537062388,
+          "iou": 0.03554932373790533,
+          "precision": 0.03860779378489478,
+          "recall": 0.3097486200773261,
+          "specificity": 0.7785561337523152,
+          "balanced_accuracy": 0.5441523769148207,
+          "accuracy": 0.7654724393636345,
+          "mcc": 0.03489104314568237,
+          "pr_auc_approx": 0.03640322606848115,
+          "roc_auc_approx": 0.5832625473967583,
+          "tp": 5305528,
+          "fp": 132115637,
+          "fn": 11822968,
+          "tn": 464494417
+        }
+      }
+    }
+  },
+  "test": {
+    "split": "test",
+    "files": [
+      "data/processed/thebe_h5/test1.h5",
+      "data/processed/thebe_h5/test2.h5",
+      "data/processed/thebe_h5/test3.h5",
+      "data/processed/thebe_h5/test4.h5",
+      "data/processed/thebe_h5/test5.h5",
+      "data/processed/thebe_h5/test6.h5",
+      "data/processed/thebe_h5/test7.h5"
+    ],
+    "shape": [
+      703,
+      3174,
+      1537
+    ],
+    "coverage": {
+      "patches_planned": 1950,
+      "patches_processed": 1950,
+      "patches_scored": 1382,
+      "no_data_patches": 568,
+      "constant_observed_patches": 0,
+      "raw_voxels": 3429541914,
+      "valid_voxels": 2303341553,
+      "positive_labels_excluded": 34415,
+      "positive_clicks": 591,
+      "negative_clicks": 791,
+      "excluded_no_data_voxels": 1126200361
+    },
+    "seconds": 401.57829747899086,
+    "modes": {
+      "no_prompts": {
+        "threshold": 0.01416015625,
+        "at_0_5": {
+          "threshold": 0.5,
+          "dice": 0.00040775465527204607,
+          "iou": 0.00020391890207683294,
+          "precision": 0.024359382542339807,
+          "recall": 0.00020559809333123627,
+          "specificity": 0.999788491678867,
+          "balanced_accuracy": 0.4999970448860991,
+          "accuracy": 0.9747568427599153,
+          "mcc": -6.352821469904266e-05,
+          "pr_auc_approx": 0.02479269200962379,
+          "roc_auc_approx": 0.4965936986746991,
+          "tp": 11859,
+          "fp": 474976,
+          "fn": 57668637,
+          "tn": 2245186081
+        },
+        "at_validation_threshold": {
+          "threshold": 0.01416015625,
+          "dice": 0.04880468631712534,
+          "iou": 0.02501271193861503,
+          "precision": 0.025041814646710226,
+          "recall": 0.9556000003883461,
+          "specificity": 0.04438906026770005,
+          "balanced_accuracy": 0.4999945303280231,
+          "accuracy": 0.06720769040890914,
+          "mcc": -8.29926672570325e-06,
+          "pr_auc_approx": 0.02479269200962379,
+          "roc_auc_approx": 0.4965936986746991,
+          "tp": 55119482,
+          "fp": 2145978273,
+          "fn": 2561014,
+          "tn": 99682784
+        }
+      },
+      "one_oracle_click": {
+        "threshold": 0.0986328125,
+        "at_0_5": {
+          "threshold": 0.5,
+          "dice": 0.00040286862768651964,
+          "iou": 0.00020147489780105503,
+          "precision": 0.04981957166954925,
+          "recall": 0.0002022520749474831,
+          "specificity": 0.9999009204887325,
+          "balanced_accuracy": 0.50005158628184,
+          "accuracy": 0.9748663723256331,
+          "mcc": 0.001598942085321778,
+          "pr_auc_approx": 0.03216801669843783,
+          "roc_auc_approx": 0.5782073650941496,
+          "tp": 11666,
+          "fp": 222499,
+          "fn": 57668830,
+          "tn": 2245438558
+        },
+        "at_validation_threshold": {
+          "threshold": 0.0986328125,
+          "dice": 0.06134335913225245,
+          "iou": 0.031642198953185964,
+          "precision": 0.03410983748075131,
+          "recall": 0.3042925983160755,
+          "specificity": 0.7786781663017457,
+          "balanced_accuracy": 0.5414853823089106,
+          "accuracy": 0.7667985582509916,
+          "mcc": 0.031125285916750154,
+          "pr_auc_approx": 0.03216801669843783,
+          "roc_auc_approx": 0.5782073650941496,
+          "tp": 17551748,
+          "fp": 497013823,
+          "fn": 40128748,
+          "tn": 1748647234
+        }
+      }
+    }
+  },
+  "started_utc": "2026-10-16T01:18:56.814962+00:00",
+  "peak_gpu_allocated_gib": 0.9499554634094238,
+  "finished_utc": "2026-10-16T01:27:28.084449+00:00"
+}

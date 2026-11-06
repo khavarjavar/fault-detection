@@ -1,0 +1,59 @@
+{
+  "protocol": "attention3d_opunake_kahu_two_survey_reproduction_variant_v1",
+  "paper": {
+    "doi": "10.1038/s41598-026-54829-x",
+    "published_surveys": ["kerry", "opunake", "kahu"],
+    "available_surveys": ["opunake", "kahu"],
+    "missing_survey": "kerry",
+    "claim_limit": "This is a two-survey reproduction variant, not an exact reproduction of the published three-survey corpus."
+  },
+  "output_root": "data/processed/attention3d_nzpam",
+  "patch": {
+    "shape": [64, 64, 64],
+    "stride": [32, 32, 32],
+    "require_all_spatial_traces_present": true,
+    "force_terminal_window": false
+  },
+  "pretext": {
+    "target": "original field-amplitude patch",
+    "corruption": "zero-mean Gaussian",
+    "noise_sigma_fraction_of_patch_rms": [0.05, 0.30],
+    "normalization": "per-survey global z-score over finite amplitudes on present traces",
+    "survey_sampling": "balanced",
+    "survey_sampling_rationale": "The authors did not publish their survey sampler; balanced sampling is frozen for the main two-survey variant and must be reported."
+  },
+  "validation": {
+    "method": "contiguous held-out inline region per survey",
+    "train_inline_fraction": 0.8,
+    "crossing_windows": "excluded",
+    "rationale": "The authors did not publish a pretext validation manifest; a spatial split prevents overlapping train/validation patches."
+  },
+  "surveys": [
+    {
+      "id": "opunake",
+      "path": "data/raw/nz_pretraining/opunake/OPUNAKE-3D-PR3461-T-PSTM.sgy",
+      "expected_bytes": 10377743896,
+      "sha256": "931bbbb5f2ec50f3eb6f8d65dd1352c982ef842ed103f7427af1ea73c43364ba",
+      "byte_order": "big",
+      "sample_format_code": 1,
+      "samples_per_trace": 1501,
+      "sample_interval_microseconds": 4000,
+      "trace_count": 1662034,
+      "inline": {"header_byte_one_based": 197, "minimum": 1987, "maximum": 2751, "step": 1, "count": 765},
+      "crossline": {"header_byte_one_based": 201, "minimum": 2038, "maximum": 6502, "step": 2, "count": 2233}
+    },
+    {
+      "id": "kahu",
+      "path": "data/raw/nz_pretraining/kahu/KAHU-3D-PR3177-T-PSTM-FULL.sgy",
+      "expected_bytes": 6203998800,
+      "sha256": "079826f39ea6e29b34accd4342e1d2e7fb5fea079a7dc06a74b1d3a4d525b225",
+      "byte_order": "big",
+      "sample_format_code": 1,
+      "samples_per_trace": 1500,
+      "sample_interval_microseconds": 4000,
+      "trace_count": 994230,
+      "inline": {"header_byte_one_based": 181, "minimum": 996, "maximum": 1594, "step": 1, "count": 599},
+      "crossline": {"header_byte_one_based": 185, "minimum": 1008, "maximum": 4400, "step": 2, "count": 1697}
+    }
+  ]
+}

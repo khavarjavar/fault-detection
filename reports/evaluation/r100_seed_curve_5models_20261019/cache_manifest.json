@@ -1,0 +1,6072 @@
+{
+  "status": "complete",
+  "protocol_hash": "1febc1e47ba203ff08db82816ceadf616a5e7db345054cfbe45274b84c5f5437",
+  "source_hashes": {
+    "scripts/faultseg3d_baseline.py": "0089293db07637f7042ed340f47d6ed33957d1f34414b96a5698b1b1ce3e3131",
+    "scripts/evaluate_thebe_zero_shot_r100_pinned.py": "834ec8aeb8a726c51f6dd65e4f85fac7652dfcc13f8ab58f0784fe359b9374ec",
+    "scripts/train_r100_fp16_clean.py": "80787c42d403460465028bbbfa8598628387ad122b2d44a5abed55b43c24cbb4"
+  },
+  "shape": [
+    200,
+    3174,
+    1537
+  ],
+  "valid_voxels": 613738550,
+  "positive_voxels": 17128496,
+  "labels_file": "labels.npy",
+  "members": {
+    "42": {
+      "run_dir": "runs/R100_fp16_clean_3seeds_20261014_150435/seed42",
+      "checkpoint_sha256": "d92b8d3130909a062968c6dd678543db29ea700fc12bb5a8ca070f78d6e1c40c",
+      "probabilities_file": "seed42.npy",
+      "probabilities_sha256": "37d54806f63774abf7111b1ac96d0fe5e0a684d65e57c4b07f5086c50a660200",
+      "validation_selection": {
+        "best_epoch": 95,
+        "threshold": 0.31640625,
+        "threshold_source": "complete val1.h5 + val2.h5 only",
+        "full_validation": {
+          "threshold": 0.31640625,
+          "dice": 0.5440719430427761,
+          "iou": 0.373694249824297,
+          "precision": 0.5267658204531103,
+          "recall": 0.562553828427201,
+          "specificity": 0.9854905395208107,
+          "balanced_accuracy": 0.7740221839740058,
+          "accuracy": 0.9736870284586164,
+          "mcc": 0.5308434126390161,
+          "pr_auc_approx": 0.5520908344574494,
+          "roc_auc_approx": 0.9560342463297409,
+          "tp": 9635701,
+          "fp": 8656490,
+          "fn": 7492795,
+          "tn": 587953564
+        },
+        "full_validation_coverage": {
+          "patches_planned": 650,
+          "patches_scored": null,
+          "raw_voxels": 975687600,
+          "valid_voxels": 613738550,
+          "excluded_no_data_voxels": 361949050,
+          "positive_labels_excluded": 23514,
+          "inference_seconds": 6.822515441002906
+        }
+      }
+    },
+    "43": {
+      "run_dir": "runs/R100_fp16_clean_3seeds_20261014_150435/seed43",
+      "checkpoint_sha256": "08bfae40b6108a58dfa5f32bccde6bcd45dc01c9754727202a38cd275c28572e",
+      "probabilities_file": "seed43.npy",
+      "probabilities_sha256": "7c59cefd55a4686e4dd2496f789adb67d01ded61e0b3c3e0b2dd7028209aaeb7",
+      "validation_selection": {
+        "best_epoch": 93,
+        "threshold": 0.279296875,
+        "threshold_source": "complete val1.h5 + val2.h5 only",
+        "full_validation": {
+          "threshold": 0.279296875,
+          "dice": 0.5698556833270347,
+          "iou": 0.39846026494216036,
+          "precision": 0.5643889729910121,
+          "recall": 0.5754293313318344,
+          "specificity": 0.9872490952021402,
+          "balanced_accuracy": 0.7813392132669873,
+          "accuracy": 0.975755840984732,
+          "mcc": 0.5574109712884272,
+          "pr_auc_approx": 0.5920526249841529,
+          "roc_auc_approx": 0.9612985077763903,
+          "tp": 9856239,
+          "fp": 7607318,
+          "fn": 7272257,
+          "tn": 589002736
+        },
+        "full_validation_coverage": {
+          "patches_planned": 650,
+          "patches_scored": null,
+          "raw_voxels": 975687600,
+          "valid_voxels": 613738550,
+          "excluded_no_data_voxels": 361949050,
+          "positive_labels_excluded": 23514,
+          "inference_seconds": 6.825998495187378
+        }
+      }
+    },
+    "44": {
+      "run_dir": "runs/R100_fp16_clean_3seeds_20261014_150435/seed44",
+      "checkpoint_sha256": "9edd1fc64e6a7182a2c06a214d6c69808e5ac1e35204c4bfb93e6e2738bd2e8d",
+      "probabilities_file": "seed44.npy",
+      "probabilities_sha256": "172d4584c0362db7962708c96727ba1e808b579f8fb88ee54870e31d2bce80aa",
+      "validation_selection": {
+        "best_epoch": 95,
+        "threshold": 0.244140625,
+        "threshold_source": "complete val1.h5 + val2.h5 only",
+        "full_validation": {
+          "threshold": 0.244140625,
+          "dice": 0.5729798256899185,
+          "iou": 0.40152188175400944,
+          "precision": 0.5655692044103381,
+          "recall": 0.5805872272731943,
+          "specificity": 0.9871964326635367,
+          "balanced_accuracy": 0.7838918299683655,
+          "accuracy": 0.9758485970939906,
+          "mcc": 0.5606058611978993,
+          "pr_auc_approx": 0.5934049314273396,
+          "roc_auc_approx": 0.9589852925995812,
+          "tp": 9944586,
+          "fp": 7638737,
+          "fn": 7183910,
+          "tn": 588971317
+        },
+        "full_validation_coverage": {
+          "patches_planned": 650,
+          "patches_scored": null,
+          "raw_voxels": 975687600,
+          "valid_voxels": 613738550,
+          "excluded_no_data_voxels": 361949050,
+          "positive_labels_excluded": 23514,
+          "inference_seconds": 6.806619164097356
+        }
+      }
+    },
+    "45": {
+      "run_dir": "runs/R100_seed_saturation_pilot_20261019/seed45",
+      "checkpoint_sha256": "bc5f995e60db9448c104c80fbba0f1d46940ada2545fa6bd3aacfb4cd2e26b16",
+      "probabilities_file": "seed45.npy",
+      "probabilities_sha256": "2437dc5f8fb492800af5b10a5b3624f667d1cc57fe450945c4cd87574b92c6db",
+      "validation_selection": {
+        "best_epoch": 94,
+        "threshold": 0.2744140625,
+        "threshold_source": "complete val1.h5 + val2.h5 only",
+        "full_validation": {
+          "threshold": 0.2744140625,
+          "dice": 0.5791614426761668,
+          "iou": 0.4076194580241575,
+          "precision": 0.5743474973175816,
+          "recall": 0.5840567671557386,
+          "specificity": 0.9875730605773533,
+          "balanced_accuracy": 0.785814913866546,
+          "accuracy": 0.9763115434088343,
+          "mcc": 0.5669961802153137,
+          "pr_auc_approx": 0.6047171514605841,
+          "roc_auc_approx": 0.9607207630737018,
+          "tp": 10004014,
+          "fp": 7414037,
+          "fn": 7124482,
+          "tn": 589196017
+        },
+        "full_validation_coverage": {
+          "patches_planned": 650,
+          "patches_scored": null,
+          "raw_voxels": 975687600,
+          "valid_voxels": 613738550,
+          "excluded_no_data_voxels": 361949050,
+          "positive_labels_excluded": 23514,
+          "inference_seconds": 7.4899695691419765
+        }
+      }
+    },
+    "46": {
+      "run_dir": "runs/R100_seed_saturation_pilot_20261019/seed46",
+      "checkpoint_sha256": "809fa15d354e43969c686bc9cc8b20b1d4998316c60ddbdfd821e475746601ad",
+      "probabilities_file": "seed46.npy",
+      "probabilities_sha256": "b299ed54c9467fee835d47481a67564352589cce2a477ee5193380a36bbded07",
+      "validation_selection": {
+        "best_epoch": 89,
+        "threshold": 0.3193359375,
+        "threshold_source": "complete val1.h5 + val2.h5 only",
+        "full_validation": {
+          "threshold": 0.3193359375,
+          "dice": 0.5689520443911419,
+          "iou": 0.39757720358789356,
+          "precision": 0.5622544820039171,
+          "recall": 0.5758110928128191,
+          "specificity": 0.98712943915625,
+          "balanced_accuracy": 0.7814702659845345,
+          "accuracy": 0.9756501787283852,
+          "mcc": 0.5564668984002348,
+          "pr_auc_approx": 0.5931321911264255,
+          "roc_auc_approx": 0.9627677368439731,
+          "tp": 9862778,
+          "fp": 7678706,
+          "fn": 7265718,
+          "tn": 588931348
+        },
+        "full_validation_coverage": {
+          "patches_planned": 650,
+          "patches_scored": null,
+          "raw_voxels": 975687600,
+          "valid_voxels": 613738550,
+          "excluded_no_data_voxels": 361949050,
+          "positive_labels_excluded": 23514,
+          "inference_seconds": 7.40768024767749
+        }
+      }
+    }
+  },
+  "test_files_opened": false,
+  "training_performed": false,
+  "original_three_seed_histograms_exact": true,
+  "labels_sha256": "c24eabbeaf658caac37cd3eb2b5a624270b20a78f9989041d3f1521ad350768a",
+  "tiles": [
+    {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "offset": 0,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        0,
+        128
+      ],
+      "offset": 0,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        0,
+        256
+      ],
+      "offset": 0,
+      "count": 135727
+    },
+    {
+      "origin": [
+        0,
+        0,
+        384
+      ],
+      "offset": 135727,
+      "count": 387868
+    },
+    {
+      "origin": [
+        0,
+        0,
+        512
+      ],
+      "offset": 523595,
+      "count": 444104
+    },
+    {
+      "origin": [
+        0,
+        0,
+        640
+      ],
+      "offset": 967699,
+      "count": 739048
+    },
+    {
+      "origin": [
+        0,
+        0,
+        768
+      ],
+      "offset": 1706747,
+      "count": 1020761
+    },
+    {
+      "origin": [
+        0,
+        0,
+        896
+      ],
+      "offset": 2727508,
+      "count": 1254546
+    },
+    {
+      "origin": [
+        0,
+        0,
+        1024
+      ],
+      "offset": 3982054,
+      "count": 1598102
+    },
+    {
+      "origin": [
+        0,
+        0,
+        1152
+      ],
+      "offset": 5580156,
+      "count": 1954075
+    },
+    {
+      "origin": [
+        0,
+        0,
+        1280
+      ],
+      "offset": 7534231,
+      "count": 2023396
+    },
+    {
+      "origin": [
+        0,
+        0,
+        1408
+      ],
+      "offset": 9557627,
+      "count": 1423392
+    },
+    {
+      "origin": [
+        0,
+        0,
+        1536
+      ],
+      "offset": 10981019,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        128,
+        0
+      ],
+      "offset": 10981019,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        128,
+        128
+      ],
+      "offset": 10981019,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        128,
+        256
+      ],
+      "offset": 10981019,
+      "count": 851013
+    },
+    {
+      "origin": [
+        0,
+        128,
+        384
+      ],
+      "offset": 11832032,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        128,
+        512
+      ],
+      "offset": 13929184,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        128,
+        640
+      ],
+      "offset": 16026336,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        128,
+        768
+      ],
+      "offset": 18123488,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        128,
+        896
+      ],
+      "offset": 20220640,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        128,
+        1024
+      ],
+      "offset": 22317792,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        128,
+        1152
+      ],
+      "offset": 24414944,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        128,
+        1280
+      ],
+      "offset": 26512096,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        128,
+        1408
+      ],
+      "offset": 28609248,
+      "count": 1550830
+    },
+    {
+      "origin": [
+        0,
+        128,
+        1536
+      ],
+      "offset": 30160078,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        256,
+        0
+      ],
+      "offset": 30160078,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        256,
+        128
+      ],
+      "offset": 30160078,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        256,
+        256
+      ],
+      "offset": 30160078,
+      "count": 853455
+    },
+    {
+      "origin": [
+        0,
+        256,
+        384
+      ],
+      "offset": 31013533,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        256,
+        512
+      ],
+      "offset": 33110685,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        256,
+        640
+      ],
+      "offset": 35207837,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        256,
+        768
+      ],
+      "offset": 37304989,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        256,
+        896
+      ],
+      "offset": 39402141,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        256,
+        1024
+      ],
+      "offset": 41499293,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        256,
+        1152
+      ],
+      "offset": 43596445,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        256,
+        1280
+      ],
+      "offset": 45693597,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        256,
+        1408
+      ],
+      "offset": 47790749,
+      "count": 1540261
+    },
+    {
+      "origin": [
+        0,
+        256,
+        1536
+      ],
+      "offset": 49331010,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        384,
+        0
+      ],
+      "offset": 49331010,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        384,
+        128
+      ],
+      "offset": 49331010,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        384,
+        256
+      ],
+      "offset": 49331010,
+      "count": 854964
+    },
+    {
+      "origin": [
+        0,
+        384,
+        384
+      ],
+      "offset": 50185974,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        384,
+        512
+      ],
+      "offset": 52283126,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        384,
+        640
+      ],
+      "offset": 54380278,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        384,
+        768
+      ],
+      "offset": 56477430,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        384,
+        896
+      ],
+      "offset": 58574582,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        384,
+        1024
+      ],
+      "offset": 60671734,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        384,
+        1152
+      ],
+      "offset": 62768886,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        384,
+        1280
+      ],
+      "offset": 64866038,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        384,
+        1408
+      ],
+      "offset": 66963190,
+      "count": 1565179
+    },
+    {
+      "origin": [
+        0,
+        384,
+        1536
+      ],
+      "offset": 68528369,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        512,
+        0
+      ],
+      "offset": 68528369,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        512,
+        128
+      ],
+      "offset": 68528369,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        512,
+        256
+      ],
+      "offset": 68528369,
+      "count": 854714
+    },
+    {
+      "origin": [
+        0,
+        512,
+        384
+      ],
+      "offset": 69383083,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        512,
+        512
+      ],
+      "offset": 71480235,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        512,
+        640
+      ],
+      "offset": 73577387,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        512,
+        768
+      ],
+      "offset": 75674539,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        512,
+        896
+      ],
+      "offset": 77771691,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        512,
+        1024
+      ],
+      "offset": 79868843,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        512,
+        1152
+      ],
+      "offset": 81965995,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        512,
+        1280
+      ],
+      "offset": 84063147,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        512,
+        1408
+      ],
+      "offset": 86160299,
+      "count": 1549548
+    },
+    {
+      "origin": [
+        0,
+        512,
+        1536
+      ],
+      "offset": 87709847,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        640,
+        0
+      ],
+      "offset": 87709847,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        640,
+        128
+      ],
+      "offset": 87709847,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        640,
+        256
+      ],
+      "offset": 87709847,
+      "count": 854286
+    },
+    {
+      "origin": [
+        0,
+        640,
+        384
+      ],
+      "offset": 88564133,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        640,
+        512
+      ],
+      "offset": 90661285,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        640,
+        640
+      ],
+      "offset": 92758437,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        640,
+        768
+      ],
+      "offset": 94855589,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        640,
+        896
+      ],
+      "offset": 96952741,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        640,
+        1024
+      ],
+      "offset": 99049893,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        640,
+        1152
+      ],
+      "offset": 101147045,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        640,
+        1280
+      ],
+      "offset": 103244197,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        640,
+        1408
+      ],
+      "offset": 105341349,
+      "count": 1548187
+    },
+    {
+      "origin": [
+        0,
+        640,
+        1536
+      ],
+      "offset": 106889536,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        768,
+        0
+      ],
+      "offset": 106889536,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        768,
+        128
+      ],
+      "offset": 106889536,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        768,
+        256
+      ],
+      "offset": 106889536,
+      "count": 856155
+    },
+    {
+      "origin": [
+        0,
+        768,
+        384
+      ],
+      "offset": 107745691,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        768,
+        512
+      ],
+      "offset": 109842843,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        768,
+        640
+      ],
+      "offset": 111939995,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        768,
+        768
+      ],
+      "offset": 114037147,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        768,
+        896
+      ],
+      "offset": 116134299,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        768,
+        1024
+      ],
+      "offset": 118231451,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        768,
+        1152
+      ],
+      "offset": 120328603,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        768,
+        1280
+      ],
+      "offset": 122425755,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        768,
+        1408
+      ],
+      "offset": 124522907,
+      "count": 1548172
+    },
+    {
+      "origin": [
+        0,
+        768,
+        1536
+      ],
+      "offset": 126071079,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        896,
+        0
+      ],
+      "offset": 126071079,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        896,
+        128
+      ],
+      "offset": 126071079,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        896,
+        256
+      ],
+      "offset": 126071079,
+      "count": 857137
+    },
+    {
+      "origin": [
+        0,
+        896,
+        384
+      ],
+      "offset": 126928216,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        896,
+        512
+      ],
+      "offset": 129025368,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        896,
+        640
+      ],
+      "offset": 131122520,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        896,
+        768
+      ],
+      "offset": 133219672,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        896,
+        896
+      ],
+      "offset": 135316824,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        896,
+        1024
+      ],
+      "offset": 137413976,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        896,
+        1152
+      ],
+      "offset": 139511128,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        896,
+        1280
+      ],
+      "offset": 141608280,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        896,
+        1408
+      ],
+      "offset": 143705432,
+      "count": 1554616
+    },
+    {
+      "origin": [
+        0,
+        896,
+        1536
+      ],
+      "offset": 145260048,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        0
+      ],
+      "offset": 145260048,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        128
+      ],
+      "offset": 145260048,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        256
+      ],
+      "offset": 145260048,
+      "count": 855636
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        384
+      ],
+      "offset": 146115684,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        512
+      ],
+      "offset": 148212836,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        640
+      ],
+      "offset": 150309988,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        768
+      ],
+      "offset": 152407140,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        896
+      ],
+      "offset": 154504292,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        1024
+      ],
+      "offset": 156601444,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        1152
+      ],
+      "offset": 158698596,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        1280
+      ],
+      "offset": 160795748,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        1408
+      ],
+      "offset": 162892900,
+      "count": 1548421
+    },
+    {
+      "origin": [
+        0,
+        1024,
+        1536
+      ],
+      "offset": 164441321,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        0
+      ],
+      "offset": 164441321,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        128
+      ],
+      "offset": 164441321,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        256
+      ],
+      "offset": 164441321,
+      "count": 857448
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        384
+      ],
+      "offset": 165298769,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        512
+      ],
+      "offset": 167395921,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        640
+      ],
+      "offset": 169493073,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        768
+      ],
+      "offset": 171590225,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        896
+      ],
+      "offset": 173687377,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        1024
+      ],
+      "offset": 175784529,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        1152
+      ],
+      "offset": 177881681,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        1280
+      ],
+      "offset": 179978833,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        1408
+      ],
+      "offset": 182075985,
+      "count": 1543195
+    },
+    {
+      "origin": [
+        0,
+        1152,
+        1536
+      ],
+      "offset": 183619180,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        0
+      ],
+      "offset": 183619180,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        128
+      ],
+      "offset": 183619180,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        256
+      ],
+      "offset": 183619180,
+      "count": 858723
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        384
+      ],
+      "offset": 184477903,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        512
+      ],
+      "offset": 186575055,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        640
+      ],
+      "offset": 188672207,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        768
+      ],
+      "offset": 190769359,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        896
+      ],
+      "offset": 192866511,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        1024
+      ],
+      "offset": 194963663,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        1152
+      ],
+      "offset": 197060815,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        1280
+      ],
+      "offset": 199157967,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        1408
+      ],
+      "offset": 201255119,
+      "count": 1548871
+    },
+    {
+      "origin": [
+        0,
+        1280,
+        1536
+      ],
+      "offset": 202803990,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        0
+      ],
+      "offset": 202803990,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        128
+      ],
+      "offset": 202803990,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        256
+      ],
+      "offset": 202803990,
+      "count": 859031
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        384
+      ],
+      "offset": 203663021,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        512
+      ],
+      "offset": 205760173,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        640
+      ],
+      "offset": 207857325,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        768
+      ],
+      "offset": 209954477,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        896
+      ],
+      "offset": 212051629,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        1024
+      ],
+      "offset": 214148781,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        1152
+      ],
+      "offset": 216245933,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        1280
+      ],
+      "offset": 218343085,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        1408
+      ],
+      "offset": 220440237,
+      "count": 1552561
+    },
+    {
+      "origin": [
+        0,
+        1408,
+        1536
+      ],
+      "offset": 221992798,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        0
+      ],
+      "offset": 221992798,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        128
+      ],
+      "offset": 221992798,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        256
+      ],
+      "offset": 221992798,
+      "count": 860289
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        384
+      ],
+      "offset": 222853087,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        512
+      ],
+      "offset": 224950239,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        640
+      ],
+      "offset": 227047391,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        768
+      ],
+      "offset": 229144543,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        896
+      ],
+      "offset": 231241695,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        1024
+      ],
+      "offset": 233338847,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        1152
+      ],
+      "offset": 235435999,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        1280
+      ],
+      "offset": 237533151,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        1408
+      ],
+      "offset": 239630303,
+      "count": 1546581
+    },
+    {
+      "origin": [
+        0,
+        1536,
+        1536
+      ],
+      "offset": 241176884,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        0
+      ],
+      "offset": 241176884,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        128
+      ],
+      "offset": 241176884,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        256
+      ],
+      "offset": 241176884,
+      "count": 861486
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        384
+      ],
+      "offset": 242038370,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        512
+      ],
+      "offset": 244135522,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        640
+      ],
+      "offset": 246232674,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        768
+      ],
+      "offset": 248329826,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        896
+      ],
+      "offset": 250426978,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        1024
+      ],
+      "offset": 252524130,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        1152
+      ],
+      "offset": 254621282,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        1280
+      ],
+      "offset": 256718434,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        1408
+      ],
+      "offset": 258815586,
+      "count": 1549067
+    },
+    {
+      "origin": [
+        0,
+        1664,
+        1536
+      ],
+      "offset": 260364653,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        0
+      ],
+      "offset": 260364653,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        128
+      ],
+      "offset": 260364653,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        256
+      ],
+      "offset": 260364653,
+      "count": 862452
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        384
+      ],
+      "offset": 261227105,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        512
+      ],
+      "offset": 263324257,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        640
+      ],
+      "offset": 265421409,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        768
+      ],
+      "offset": 267518561,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        896
+      ],
+      "offset": 269615713,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        1024
+      ],
+      "offset": 271712865,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        1152
+      ],
+      "offset": 273810017,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        1280
+      ],
+      "offset": 275907169,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        1408
+      ],
+      "offset": 278004321,
+      "count": 1550613
+    },
+    {
+      "origin": [
+        0,
+        1792,
+        1536
+      ],
+      "offset": 279554934,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        0
+      ],
+      "offset": 279554934,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        128
+      ],
+      "offset": 279554934,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        256
+      ],
+      "offset": 279554934,
+      "count": 862642
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        384
+      ],
+      "offset": 280417576,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        512
+      ],
+      "offset": 282514728,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        640
+      ],
+      "offset": 284611880,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        768
+      ],
+      "offset": 286709032,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        896
+      ],
+      "offset": 288806184,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        1024
+      ],
+      "offset": 290903336,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        1152
+      ],
+      "offset": 293000488,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        1280
+      ],
+      "offset": 295097640,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        1408
+      ],
+      "offset": 297194792,
+      "count": 1545557
+    },
+    {
+      "origin": [
+        0,
+        1920,
+        1536
+      ],
+      "offset": 298740349,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        0
+      ],
+      "offset": 298740349,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        128
+      ],
+      "offset": 298740349,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        256
+      ],
+      "offset": 298740349,
+      "count": 862404
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        384
+      ],
+      "offset": 299602753,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        512
+      ],
+      "offset": 301699905,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        640
+      ],
+      "offset": 303797057,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        768
+      ],
+      "offset": 305894209,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        896
+      ],
+      "offset": 307991361,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        1024
+      ],
+      "offset": 310088513,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        1152
+      ],
+      "offset": 312185665,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        1280
+      ],
+      "offset": 314282817,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        1408
+      ],
+      "offset": 316379969,
+      "count": 1523214
+    },
+    {
+      "origin": [
+        0,
+        2048,
+        1536
+      ],
+      "offset": 317903183,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        0
+      ],
+      "offset": 317903183,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        128
+      ],
+      "offset": 317903183,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        256
+      ],
+      "offset": 317903183,
+      "count": 862856
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        384
+      ],
+      "offset": 318766039,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        512
+      ],
+      "offset": 320863191,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        640
+      ],
+      "offset": 322960343,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        768
+      ],
+      "offset": 325057495,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        896
+      ],
+      "offset": 327154647,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        1024
+      ],
+      "offset": 329251799,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        1152
+      ],
+      "offset": 331348951,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        1280
+      ],
+      "offset": 333446103,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        1408
+      ],
+      "offset": 335543255,
+      "count": 1542883
+    },
+    {
+      "origin": [
+        0,
+        2176,
+        1536
+      ],
+      "offset": 337086138,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        0
+      ],
+      "offset": 337086138,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        128
+      ],
+      "offset": 337086138,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        256
+      ],
+      "offset": 337086138,
+      "count": 862126
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        384
+      ],
+      "offset": 337948264,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        512
+      ],
+      "offset": 340045416,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        640
+      ],
+      "offset": 342142568,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        768
+      ],
+      "offset": 344239720,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        896
+      ],
+      "offset": 346336872,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        1024
+      ],
+      "offset": 348434024,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        1152
+      ],
+      "offset": 350531176,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        1280
+      ],
+      "offset": 352628328,
+      "count": 2097152
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        1408
+      ],
+      "offset": 354725480,
+      "count": 1531669
+    },
+    {
+      "origin": [
+        0,
+        2304,
+        1536
+      ],
+      "offset": 356257149,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        0
+      ],
+      "offset": 356257149,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        128
+      ],
+      "offset": 356257149,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        256
+      ],
+      "offset": 356257149,
+      "count": 843792
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        384
+      ],
+      "offset": 357100941,
+      "count": 2052992
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        512
+      ],
+      "offset": 359153933,
+      "count": 2052992
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        640
+      ],
+      "offset": 361206925,
+      "count": 2052992
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        768
+      ],
+      "offset": 363259917,
+      "count": 2052992
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        896
+      ],
+      "offset": 365312909,
+      "count": 2052992
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        1024
+      ],
+      "offset": 367365901,
+      "count": 2052992
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        1152
+      ],
+      "offset": 369418893,
+      "count": 2048463
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        1280
+      ],
+      "offset": 371467356,
+      "count": 2017468
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        1408
+      ],
+      "offset": 373484824,
+      "count": 1429113
+    },
+    {
+      "origin": [
+        0,
+        2432,
+        1536
+      ],
+      "offset": 374913937,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        0
+      ],
+      "offset": 374913937,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        128
+      ],
+      "offset": 374913937,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        256
+      ],
+      "offset": 374913937,
+      "count": 436496
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        384
+      ],
+      "offset": 375350433,
+      "count": 1067008
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        512
+      ],
+      "offset": 376417441,
+      "count": 1067008
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        640
+      ],
+      "offset": 377484449,
+      "count": 1067008
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        768
+      ],
+      "offset": 378551457,
+      "count": 1067008
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        896
+      ],
+      "offset": 379618465,
+      "count": 1067008
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        1024
+      ],
+      "offset": 380685473,
+      "count": 1067008
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        1152
+      ],
+      "offset": 381752481,
+      "count": 1054381
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        1280
+      ],
+      "offset": 382806862,
+      "count": 973885
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        1408
+      ],
+      "offset": 383780747,
+      "count": 586818
+    },
+    {
+      "origin": [
+        0,
+        2560,
+        1536
+      ],
+      "offset": 384367565,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        0
+      ],
+      "offset": 384367565,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        128
+      ],
+      "offset": 384367565,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        256
+      ],
+      "offset": 384367565,
+      "count": 17021
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        384
+      ],
+      "offset": 384384586,
+      "count": 42368
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        512
+      ],
+      "offset": 384426954,
+      "count": 42368
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        640
+      ],
+      "offset": 384469322,
+      "count": 42368
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        768
+      ],
+      "offset": 384511690,
+      "count": 42368
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        896
+      ],
+      "offset": 384554058,
+      "count": 42368
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        1024
+      ],
+      "offset": 384596426,
+      "count": 42368
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        1152
+      ],
+      "offset": 384638794,
+      "count": 38723
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        1280
+      ],
+      "offset": 384677517,
+      "count": 17559
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        1408
+      ],
+      "offset": 384695076,
+      "count": 1571
+    },
+    {
+      "origin": [
+        0,
+        2688,
+        1536
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        0
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        128
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        256
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        384
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        512
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        640
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        768
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        896
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        1024
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        1152
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        1280
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        1408
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2816,
+        1536
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        0
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        128
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        256
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        384
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        512
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        640
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        768
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        896
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        1024
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        1152
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        1280
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        1408
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        2944,
+        1536
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        0
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        128
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        256
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        384
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        512
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        640
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        768
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        896
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        1024
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        1152
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        1280
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        1408
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        0,
+        3072,
+        1536
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        0,
+        0
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        0,
+        128
+      ],
+      "offset": 384696647,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        0,
+        256
+      ],
+      "offset": 384696647,
+      "count": 58578
+    },
+    {
+      "origin": [
+        128,
+        0,
+        384
+      ],
+      "offset": 384755225,
+      "count": 178526
+    },
+    {
+      "origin": [
+        128,
+        0,
+        512
+      ],
+      "offset": 384933751,
+      "count": 208327
+    },
+    {
+      "origin": [
+        128,
+        0,
+        640
+      ],
+      "offset": 385142078,
+      "count": 382537
+    },
+    {
+      "origin": [
+        128,
+        0,
+        768
+      ],
+      "offset": 385524615,
+      "count": 542352
+    },
+    {
+      "origin": [
+        128,
+        0,
+        896
+      ],
+      "offset": 386066967,
+      "count": 653351
+    },
+    {
+      "origin": [
+        128,
+        0,
+        1024
+      ],
+      "offset": 386720318,
+      "count": 891257
+    },
+    {
+      "origin": [
+        128,
+        0,
+        1152
+      ],
+      "offset": 387611575,
+      "count": 1097131
+    },
+    {
+      "origin": [
+        128,
+        0,
+        1280
+      ],
+      "offset": 388708706,
+      "count": 1135104
+    },
+    {
+      "origin": [
+        128,
+        0,
+        1408
+      ],
+      "offset": 389843810,
+      "count": 813320
+    },
+    {
+      "origin": [
+        128,
+        0,
+        1536
+      ],
+      "offset": 390657130,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        128,
+        0
+      ],
+      "offset": 390657130,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        128,
+        128
+      ],
+      "offset": 390657130,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        128,
+        256
+      ],
+      "offset": 390657130,
+      "count": 478092
+    },
+    {
+      "origin": [
+        128,
+        128,
+        384
+      ],
+      "offset": 391135222,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        128,
+        512
+      ],
+      "offset": 392314870,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        128,
+        640
+      ],
+      "offset": 393494518,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        128,
+        768
+      ],
+      "offset": 394674166,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        128,
+        896
+      ],
+      "offset": 395853814,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        128,
+        1024
+      ],
+      "offset": 397033462,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        128,
+        1152
+      ],
+      "offset": 398213110,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        128,
+        1280
+      ],
+      "offset": 399392758,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        128,
+        1408
+      ],
+      "offset": 400572406,
+      "count": 879296
+    },
+    {
+      "origin": [
+        128,
+        128,
+        1536
+      ],
+      "offset": 401451702,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        256,
+        0
+      ],
+      "offset": 401451702,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        256,
+        128
+      ],
+      "offset": 401451702,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        256,
+        256
+      ],
+      "offset": 401451702,
+      "count": 478314
+    },
+    {
+      "origin": [
+        128,
+        256,
+        384
+      ],
+      "offset": 401930016,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        256,
+        512
+      ],
+      "offset": 403109664,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        256,
+        640
+      ],
+      "offset": 404289312,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        256,
+        768
+      ],
+      "offset": 405468960,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        256,
+        896
+      ],
+      "offset": 406648608,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        256,
+        1024
+      ],
+      "offset": 407828256,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        256,
+        1152
+      ],
+      "offset": 409007904,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        256,
+        1280
+      ],
+      "offset": 410187552,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        256,
+        1408
+      ],
+      "offset": 411367200,
+      "count": 867384
+    },
+    {
+      "origin": [
+        128,
+        256,
+        1536
+      ],
+      "offset": 412234584,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        384,
+        0
+      ],
+      "offset": 412234584,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        384,
+        128
+      ],
+      "offset": 412234584,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        384,
+        256
+      ],
+      "offset": 412234584,
+      "count": 480764
+    },
+    {
+      "origin": [
+        128,
+        384,
+        384
+      ],
+      "offset": 412715348,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        384,
+        512
+      ],
+      "offset": 413894996,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        384,
+        640
+      ],
+      "offset": 415074644,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        384,
+        768
+      ],
+      "offset": 416254292,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        384,
+        896
+      ],
+      "offset": 417433940,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        384,
+        1024
+      ],
+      "offset": 418613588,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        384,
+        1152
+      ],
+      "offset": 419793236,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        384,
+        1280
+      ],
+      "offset": 420972884,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        384,
+        1408
+      ],
+      "offset": 422152532,
+      "count": 877274
+    },
+    {
+      "origin": [
+        128,
+        384,
+        1536
+      ],
+      "offset": 423029806,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        512,
+        0
+      ],
+      "offset": 423029806,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        512,
+        128
+      ],
+      "offset": 423029806,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        512,
+        256
+      ],
+      "offset": 423029806,
+      "count": 481937
+    },
+    {
+      "origin": [
+        128,
+        512,
+        384
+      ],
+      "offset": 423511743,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        512,
+        512
+      ],
+      "offset": 424691391,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        512,
+        640
+      ],
+      "offset": 425871039,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        512,
+        768
+      ],
+      "offset": 427050687,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        512,
+        896
+      ],
+      "offset": 428230335,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        512,
+        1024
+      ],
+      "offset": 429409983,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        512,
+        1152
+      ],
+      "offset": 430589631,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        512,
+        1280
+      ],
+      "offset": 431769279,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        512,
+        1408
+      ],
+      "offset": 432948927,
+      "count": 875751
+    },
+    {
+      "origin": [
+        128,
+        512,
+        1536
+      ],
+      "offset": 433824678,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        640,
+        0
+      ],
+      "offset": 433824678,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        640,
+        128
+      ],
+      "offset": 433824678,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        640,
+        256
+      ],
+      "offset": 433824678,
+      "count": 481794
+    },
+    {
+      "origin": [
+        128,
+        640,
+        384
+      ],
+      "offset": 434306472,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        640,
+        512
+      ],
+      "offset": 435486120,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        640,
+        640
+      ],
+      "offset": 436665768,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        640,
+        768
+      ],
+      "offset": 437845416,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        640,
+        896
+      ],
+      "offset": 439025064,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        640,
+        1024
+      ],
+      "offset": 440204712,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        640,
+        1152
+      ],
+      "offset": 441384360,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        640,
+        1280
+      ],
+      "offset": 442564008,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        640,
+        1408
+      ],
+      "offset": 443743656,
+      "count": 873077
+    },
+    {
+      "origin": [
+        128,
+        640,
+        1536
+      ],
+      "offset": 444616733,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        768,
+        0
+      ],
+      "offset": 444616733,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        768,
+        128
+      ],
+      "offset": 444616733,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        768,
+        256
+      ],
+      "offset": 444616733,
+      "count": 481760
+    },
+    {
+      "origin": [
+        128,
+        768,
+        384
+      ],
+      "offset": 445098493,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        768,
+        512
+      ],
+      "offset": 446278141,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        768,
+        640
+      ],
+      "offset": 447457789,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        768,
+        768
+      ],
+      "offset": 448637437,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        768,
+        896
+      ],
+      "offset": 449817085,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        768,
+        1024
+      ],
+      "offset": 450996733,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        768,
+        1152
+      ],
+      "offset": 452176381,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        768,
+        1280
+      ],
+      "offset": 453356029,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        768,
+        1408
+      ],
+      "offset": 454535677,
+      "count": 870146
+    },
+    {
+      "origin": [
+        128,
+        768,
+        1536
+      ],
+      "offset": 455405823,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        896,
+        0
+      ],
+      "offset": 455405823,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        896,
+        128
+      ],
+      "offset": 455405823,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        896,
+        256
+      ],
+      "offset": 455405823,
+      "count": 482655
+    },
+    {
+      "origin": [
+        128,
+        896,
+        384
+      ],
+      "offset": 455888478,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        896,
+        512
+      ],
+      "offset": 457068126,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        896,
+        640
+      ],
+      "offset": 458247774,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        896,
+        768
+      ],
+      "offset": 459427422,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        896,
+        896
+      ],
+      "offset": 460607070,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        896,
+        1024
+      ],
+      "offset": 461786718,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        896,
+        1152
+      ],
+      "offset": 462966366,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        896,
+        1280
+      ],
+      "offset": 464146014,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        896,
+        1408
+      ],
+      "offset": 465325662,
+      "count": 871221
+    },
+    {
+      "origin": [
+        128,
+        896,
+        1536
+      ],
+      "offset": 466196883,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        0
+      ],
+      "offset": 466196883,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        128
+      ],
+      "offset": 466196883,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        256
+      ],
+      "offset": 466196883,
+      "count": 482529
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        384
+      ],
+      "offset": 466679412,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        512
+      ],
+      "offset": 467859060,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        640
+      ],
+      "offset": 469038708,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        768
+      ],
+      "offset": 470218356,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        896
+      ],
+      "offset": 471398004,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        1024
+      ],
+      "offset": 472577652,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        1152
+      ],
+      "offset": 473757300,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        1280
+      ],
+      "offset": 474936948,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        1408
+      ],
+      "offset": 476116596,
+      "count": 871637
+    },
+    {
+      "origin": [
+        128,
+        1024,
+        1536
+      ],
+      "offset": 476988233,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        0
+      ],
+      "offset": 476988233,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        128
+      ],
+      "offset": 476988233,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        256
+      ],
+      "offset": 476988233,
+      "count": 482001
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        384
+      ],
+      "offset": 477470234,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        512
+      ],
+      "offset": 478649882,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        640
+      ],
+      "offset": 479829530,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        768
+      ],
+      "offset": 481009178,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        896
+      ],
+      "offset": 482188826,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        1024
+      ],
+      "offset": 483368474,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        1152
+      ],
+      "offset": 484548122,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        1280
+      ],
+      "offset": 485727770,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        1408
+      ],
+      "offset": 486907418,
+      "count": 871752
+    },
+    {
+      "origin": [
+        128,
+        1152,
+        1536
+      ],
+      "offset": 487779170,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        0
+      ],
+      "offset": 487779170,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        128
+      ],
+      "offset": 487779170,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        256
+      ],
+      "offset": 487779170,
+      "count": 483143
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        384
+      ],
+      "offset": 488262313,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        512
+      ],
+      "offset": 489441961,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        640
+      ],
+      "offset": 490621609,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        768
+      ],
+      "offset": 491801257,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        896
+      ],
+      "offset": 492980905,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        1024
+      ],
+      "offset": 494160553,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        1152
+      ],
+      "offset": 495340201,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        1280
+      ],
+      "offset": 496519849,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        1408
+      ],
+      "offset": 497699497,
+      "count": 872693
+    },
+    {
+      "origin": [
+        128,
+        1280,
+        1536
+      ],
+      "offset": 498572190,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        0
+      ],
+      "offset": 498572190,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        128
+      ],
+      "offset": 498572190,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        256
+      ],
+      "offset": 498572190,
+      "count": 483948
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        384
+      ],
+      "offset": 499056138,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        512
+      ],
+      "offset": 500235786,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        640
+      ],
+      "offset": 501415434,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        768
+      ],
+      "offset": 502595082,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        896
+      ],
+      "offset": 503774730,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        1024
+      ],
+      "offset": 504954378,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        1152
+      ],
+      "offset": 506134026,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        1280
+      ],
+      "offset": 507313674,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        1408
+      ],
+      "offset": 508493322,
+      "count": 871905
+    },
+    {
+      "origin": [
+        128,
+        1408,
+        1536
+      ],
+      "offset": 509365227,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        0
+      ],
+      "offset": 509365227,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        128
+      ],
+      "offset": 509365227,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        256
+      ],
+      "offset": 509365227,
+      "count": 483943
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        384
+      ],
+      "offset": 509849170,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        512
+      ],
+      "offset": 511028818,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        640
+      ],
+      "offset": 512208466,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        768
+      ],
+      "offset": 513388114,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        896
+      ],
+      "offset": 514567762,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        1024
+      ],
+      "offset": 515747410,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        1152
+      ],
+      "offset": 516927058,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        1280
+      ],
+      "offset": 518106706,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        1408
+      ],
+      "offset": 519286354,
+      "count": 871212
+    },
+    {
+      "origin": [
+        128,
+        1536,
+        1536
+      ],
+      "offset": 520157566,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        0
+      ],
+      "offset": 520157566,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        128
+      ],
+      "offset": 520157566,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        256
+      ],
+      "offset": 520157566,
+      "count": 483893
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        384
+      ],
+      "offset": 520641459,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        512
+      ],
+      "offset": 521821107,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        640
+      ],
+      "offset": 523000755,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        768
+      ],
+      "offset": 524180403,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        896
+      ],
+      "offset": 525360051,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        1024
+      ],
+      "offset": 526539699,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        1152
+      ],
+      "offset": 527719347,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        1280
+      ],
+      "offset": 528898995,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        1408
+      ],
+      "offset": 530078643,
+      "count": 873326
+    },
+    {
+      "origin": [
+        128,
+        1664,
+        1536
+      ],
+      "offset": 530951969,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        0
+      ],
+      "offset": 530951969,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        128
+      ],
+      "offset": 530951969,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        256
+      ],
+      "offset": 530951969,
+      "count": 484345
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        384
+      ],
+      "offset": 531436314,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        512
+      ],
+      "offset": 532615962,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        640
+      ],
+      "offset": 533795610,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        768
+      ],
+      "offset": 534975258,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        896
+      ],
+      "offset": 536154906,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        1024
+      ],
+      "offset": 537334554,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        1152
+      ],
+      "offset": 538514202,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        1280
+      ],
+      "offset": 539693850,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        1408
+      ],
+      "offset": 540873498,
+      "count": 872655
+    },
+    {
+      "origin": [
+        128,
+        1792,
+        1536
+      ],
+      "offset": 541746153,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        0
+      ],
+      "offset": 541746153,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        128
+      ],
+      "offset": 541746153,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        256
+      ],
+      "offset": 541746153,
+      "count": 484729
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        384
+      ],
+      "offset": 542230882,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        512
+      ],
+      "offset": 543410530,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        640
+      ],
+      "offset": 544590178,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        768
+      ],
+      "offset": 545769826,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        896
+      ],
+      "offset": 546949474,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        1024
+      ],
+      "offset": 548129122,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        1152
+      ],
+      "offset": 549308770,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        1280
+      ],
+      "offset": 550488418,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        1408
+      ],
+      "offset": 551668066,
+      "count": 870716
+    },
+    {
+      "origin": [
+        128,
+        1920,
+        1536
+      ],
+      "offset": 552538782,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        0
+      ],
+      "offset": 552538782,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        128
+      ],
+      "offset": 552538782,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        256
+      ],
+      "offset": 552538782,
+      "count": 484489
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        384
+      ],
+      "offset": 553023271,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        512
+      ],
+      "offset": 554202919,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        640
+      ],
+      "offset": 555382567,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        768
+      ],
+      "offset": 556562215,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        896
+      ],
+      "offset": 557741863,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        1024
+      ],
+      "offset": 558921511,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        1152
+      ],
+      "offset": 560101159,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        1280
+      ],
+      "offset": 561280807,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        1408
+      ],
+      "offset": 562460455,
+      "count": 867279
+    },
+    {
+      "origin": [
+        128,
+        2048,
+        1536
+      ],
+      "offset": 563327734,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        0
+      ],
+      "offset": 563327734,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        128
+      ],
+      "offset": 563327734,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        256
+      ],
+      "offset": 563327734,
+      "count": 485076
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        384
+      ],
+      "offset": 563812810,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        512
+      ],
+      "offset": 564992458,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        640
+      ],
+      "offset": 566172106,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        768
+      ],
+      "offset": 567351754,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        896
+      ],
+      "offset": 568531402,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        1024
+      ],
+      "offset": 569711050,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        1152
+      ],
+      "offset": 570890698,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        1280
+      ],
+      "offset": 572070346,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        1408
+      ],
+      "offset": 573249994,
+      "count": 870498
+    },
+    {
+      "origin": [
+        128,
+        2176,
+        1536
+      ],
+      "offset": 574120492,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        0
+      ],
+      "offset": 574120492,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        128
+      ],
+      "offset": 574120492,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        256
+      ],
+      "offset": 574120492,
+      "count": 485424
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        384
+      ],
+      "offset": 574605916,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        512
+      ],
+      "offset": 575785564,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        640
+      ],
+      "offset": 576965212,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        768
+      ],
+      "offset": 578144860,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        896
+      ],
+      "offset": 579324508,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        1024
+      ],
+      "offset": 580504156,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        1152
+      ],
+      "offset": 581683804,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        1280
+      ],
+      "offset": 582863452,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        1408
+      ],
+      "offset": 584043100,
+      "count": 866531
+    },
+    {
+      "origin": [
+        128,
+        2304,
+        1536
+      ],
+      "offset": 584909631,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        0
+      ],
+      "offset": 584909631,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        128
+      ],
+      "offset": 584909631,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        256
+      ],
+      "offset": 584909631,
+      "count": 485632
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        384
+      ],
+      "offset": 585395263,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        512
+      ],
+      "offset": 586574911,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        640
+      ],
+      "offset": 587754559,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        768
+      ],
+      "offset": 588934207,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        896
+      ],
+      "offset": 590113855,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        1024
+      ],
+      "offset": 591293503,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        1152
+      ],
+      "offset": 592473151,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        1280
+      ],
+      "offset": 593652799,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        1408
+      ],
+      "offset": 594832447,
+      "count": 867166
+    },
+    {
+      "origin": [
+        128,
+        2432,
+        1536
+      ],
+      "offset": 595699613,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        0
+      ],
+      "offset": 595699613,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        128
+      ],
+      "offset": 595699613,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        256
+      ],
+      "offset": 595699613,
+      "count": 485860
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        384
+      ],
+      "offset": 596185473,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        512
+      ],
+      "offset": 597365121,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        640
+      ],
+      "offset": 598544769,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        768
+      ],
+      "offset": 599724417,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        896
+      ],
+      "offset": 600904065,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        1024
+      ],
+      "offset": 602083713,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        1152
+      ],
+      "offset": 603263361,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        1280
+      ],
+      "offset": 604443009,
+      "count": 1179648
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        1408
+      ],
+      "offset": 605622657,
+      "count": 859987
+    },
+    {
+      "origin": [
+        128,
+        2560,
+        1536
+      ],
+      "offset": 606482644,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        0
+      ],
+      "offset": 606482644,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        128
+      ],
+      "offset": 606482644,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        256
+      ],
+      "offset": 606482644,
+      "count": 333339
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        384
+      ],
+      "offset": 606815983,
+      "count": 812544
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        512
+      ],
+      "offset": 607628527,
+      "count": 812544
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        640
+      ],
+      "offset": 608441071,
+      "count": 812544
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        768
+      ],
+      "offset": 609253615,
+      "count": 812544
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        896
+      ],
+      "offset": 610066159,
+      "count": 812544
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        1024
+      ],
+      "offset": 610878703,
+      "count": 812544
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        1152
+      ],
+      "offset": 611691247,
+      "count": 801342
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        1280
+      ],
+      "offset": 612492589,
+      "count": 723187
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        1408
+      ],
+      "offset": 613215776,
+      "count": 425756
+    },
+    {
+      "origin": [
+        128,
+        2688,
+        1536
+      ],
+      "offset": 613641532,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        0
+      ],
+      "offset": 613641532,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        128
+      ],
+      "offset": 613641532,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        256
+      ],
+      "offset": 613641532,
+      "count": 4931
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        384
+      ],
+      "offset": 613646463,
+      "count": 12416
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        512
+      ],
+      "offset": 613658879,
+      "count": 12416
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        640
+      ],
+      "offset": 613671295,
+      "count": 12416
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        768
+      ],
+      "offset": 613683711,
+      "count": 12416
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        896
+      ],
+      "offset": 613696127,
+      "count": 12416
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        1024
+      ],
+      "offset": 613708543,
+      "count": 12416
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        1152
+      ],
+      "offset": 613720959,
+      "count": 11756
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        1280
+      ],
+      "offset": 613732715,
+      "count": 5687
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        1408
+      ],
+      "offset": 613738402,
+      "count": 148
+    },
+    {
+      "origin": [
+        128,
+        2816,
+        1536
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        0
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        128
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        256
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        384
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        512
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        640
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        768
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        896
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        1024
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        1152
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        1280
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        1408
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        2944,
+        1536
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        0
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        128
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        256
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        384
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        512
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        640
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        768
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        896
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        1024
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        1152
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        1280
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        1408
+      ],
+      "offset": 613738550,
+      "count": 0
+    },
+    {
+      "origin": [
+        128,
+        3072,
+        1536
+      ],
+      "offset": 613738550,
+      "count": 0
+    }
+  ],
+  "updated_utc": "2026-10-19T18:46:14.064186+00:00",
+  "validation_data": {
+    "data/processed/thebe_h5/val1.h5": {
+      "bytes": 1116731622,
+      "mtime_ns": 1790766244011664010
+    },
+    "data/processed/thebe_h5/val2.h5": {
+      "bytes": 1179747245,
+      "mtime_ns": 1790766291515599558
+    }
+  },
+  "cache_script_sha256": "77ce239e08e96c4f7d318ad1877e3188e3ad36ade409b39e052b2c12829f4bf9"
+}

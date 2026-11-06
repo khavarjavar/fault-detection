@@ -1,0 +1,3 @@
+# Data-ingestion additions to the existing .venv_train environment.
+segyio==1.9.14
+PyYAML==6.0.3

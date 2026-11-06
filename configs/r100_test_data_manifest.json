@@ -1,0 +1,35 @@
+{
+  "description": "Expected Thebe test-file sizes and modification dates for frozen R100 evaluation.",
+  "source_record": "reports/evaluation/r100_clean_frozen_test_20261019/FROZEN_BEFORE_TEST.json",
+  "source_record_sha256": "65488a21a716965ef42267fae7d701ab453e5a934033db7fe1a304b14eb8aaa5",
+  "data_files": {
+    "data/processed/thebe_h5/test1.h5": {
+      "bytes": 1107063922,
+      "mtime_ns": 1790944825042015277
+    },
+    "data/processed/thebe_h5/test2.h5": {
+      "bytes": 1157609521,
+      "mtime_ns": 1790944890158978658
+    },
+    "data/processed/thebe_h5/test3.h5": {
+      "bytes": 1202815688,
+      "mtime_ns": 1790944956790843907
+    },
+    "data/processed/thebe_h5/test4.h5": {
+      "bytes": 1207246023,
+      "mtime_ns": 1790945024330026819
+    },
+    "data/processed/thebe_h5/test5.h5": {
+      "bytes": 1105804825,
+      "mtime_ns": 1790945088423894830
+    },
+    "data/processed/thebe_h5/test6.h5": {
+      "bytes": 971724277,
+      "mtime_ns": 1790945147500671011
+    },
+    "data/processed/thebe_h5/test7.h5": {
+      "bytes": 873254348,
+      "mtime_ns": 1790945201153854618
+    }
+  }
+}

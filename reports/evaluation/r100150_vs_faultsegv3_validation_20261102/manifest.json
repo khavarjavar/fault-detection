@@ -1,0 +1,917 @@
+{
+  "created_utc": "2026-11-03T01:51:44.280616+00:00",
+  "purpose": "predefined qualitative validation comparison; test files not read",
+  "selection": "Reference-label-only selection from the shared fixed validation subset: median-positive patch in each x slab plus a lower-quartile positive patch; within each patch, the section with most reference fault pixels.",
+  "test_files_read": false,
+  "r100": {
+    "run": "runs/r100_150_seed43_20261102",
+    "best_epoch": 144,
+    "full_validation": {
+      "threshold": 0.1923828125,
+      "dice": 0.5907350166343006,
+      "iou": 0.4191795181226091,
+      "precision": 0.5890816193773242,
+      "recall": 0.5923977213177386,
+      "specificity": 0.9881362458568289,
+      "balanced_accuracy": 0.7902669835872838,
+      "accuracy": 0.9770917942175866,
+      "mcc": 0.578953626804012,
+      "pr_auc_approx": 0.6228572284177549,
+      "roc_auc_approx": 0.9586068261190765,
+      "tp": 10146882,
+      "fp": 7078035,
+      "fn": 6981614,
+      "tn": 589532019
+    },
+    "threshold": 0.1923828125
+  },
+  "faultsegv3": {
+    "run": "runs/faultsegv3_matched_150_seed43_20261102",
+    "best_epoch": 147,
+    "full_validation": {
+      "threshold": 0.13525390625,
+      "dice": 0.535442943914331,
+      "iou": 0.3656006037384524,
+      "precision": 0.529591014057125,
+      "recall": 0.5414256453105982,
+      "specificity": 0.9861928994579096,
+      "balanced_accuracy": 0.7638092723842539,
+      "accuracy": 0.9737801316211928,
+      "mcc": 0.5219877409224986,
+      "pr_auc_approx": 0.5444219403662043,
+      "roc_auc_approx": 0.9496883101068022,
+      "tp": 9273807,
+      "fp": 8237455,
+      "fn": 7854689,
+      "tn": 588372599
+    },
+    "threshold": 0.13525390625
+  },
+  "swinunetr": {
+    "run": "runs/swinunetr_matched_150_seed43_20261102",
+    "best_epoch": 140,
+    "full_validation": {
+      "threshold": 0.21826171875,
+      "dice": 0.5778676671567087,
+      "iou": 0.4063388854969417,
+      "precision": 0.5779606430794255,
+      "recall": 0.577774721143059,
+      "specificity": 0.987887274189315,
+      "balanced_accuracy": 0.7828309976661869,
+      "accuracy": 0.9764416655919691,
+      "mcc": 0.5657503876134907,
+      "pr_auc_approx": 0.6076031389556888,
+      "roc_auc_approx": 0.9596525958164359,
+      "tp": 9896412,
+      "fp": 7226574,
+      "fn": 7232084,
+      "tn": 589383480
+    },
+    "threshold": 0.21826171875
+  },
+  "cases": [
+    {
+      "patch_id": "x0000_y1920_z0896",
+      "origin": [
+        0,
+        1920,
+        896
+      ],
+      "patch_reference_positive_voxels": 123066,
+      "displayed_x": 127,
+      "displayed_reference_positive_pixels": 1555,
+      "r100": {
+        "tp": 1083,
+        "fp": 376,
+        "fn": 472,
+        "section_dice": 0.7186463171864632,
+        "displayed_section_geometry": {
+          "modified_hausdorff_voxels": 15.069287160652804,
+          "bidirectional_chamfer_voxels": 15.616530188279821,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 56.36488268416781,
+          "prediction_positive_voxels": 1459,
+          "reference_positive_voxels": 1555,
+          "positive_volume_ratio": 0.9382636655948553,
+          "prediction_components": {
+            "all": 1,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "reference_components": {
+            "all": 2,
+            "at_least_8_voxels": 2,
+            "at_least_32_voxels": 2
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.8690884167237835,
+              "recall": 0.7099678456591639,
+              "f1": 0.7815108880003662
+            },
+            "2": {
+              "precision": 0.9362577107607951,
+              "recall": 0.7163987138263666,
+              "f1": 0.8117038845101795
+            },
+            "4": {
+              "precision": 0.973954763536669,
+              "recall": 0.7163987138263666,
+              "f1": 0.8255550679390589
+            },
+            "8": {
+              "precision": 0.9917751884852639,
+              "recall": 0.7163987138263666,
+              "f1": 0.8318900885609295
+            }
+          }
+        },
+        "patch_geometry": {
+          "modified_hausdorff_voxels": 1.8856817891424276,
+          "bidirectional_chamfer_voxels": 2.5167540542364013,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 8.48528137423857,
+          "prediction_positive_voxels": 137456,
+          "reference_positive_voxels": 123066,
+          "positive_volume_ratio": 1.1169291274600621,
+          "prediction_components": {
+            "all": 3,
+            "at_least_8_voxels": 2,
+            "at_least_32_voxels": 2
+          },
+          "reference_components": {
+            "all": 3,
+            "at_least_8_voxels": 3,
+            "at_least_32_voxels": 3
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.8704603654987778,
+              "recall": 0.8681764256577771,
+              "f1": 0.869316895442877
+            },
+            "2": {
+              "precision": 0.9282534047258759,
+              "recall": 0.8911315879284286,
+              "f1": 0.9093137888826294
+            },
+            "4": {
+              "precision": 0.964490455127459,
+              "recall": 0.919644743470983,
+              "f1": 0.9415338961298647
+            },
+            "8": {
+              "precision": 0.9879743336049354,
+              "recall": 0.9479141273788049,
+              "f1": 0.9675297386047537
+            }
+          }
+        }
+      },
+      "faultsegv3": {
+        "tp": 906,
+        "fp": 255,
+        "fn": 649,
+        "section_dice": 0.6671575846833578,
+        "displayed_section_geometry": {
+          "modified_hausdorff_voxels": 14.643355715499256,
+          "bidirectional_chamfer_voxels": 15.032992188529779,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 54.05089778068558,
+          "prediction_positive_voxels": 1161,
+          "reference_positive_voxels": 1555,
+          "positive_volume_ratio": 0.7466237942122187,
+          "prediction_components": {
+            "all": 5,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "reference_components": {
+            "all": 2,
+            "at_least_8_voxels": 2,
+            "at_least_32_voxels": 2
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.8940568475452196,
+              "recall": 0.6353697749196141,
+              "f1": 0.7428361578728924
+            },
+            "2": {
+              "precision": 0.9491817398794143,
+              "recall": 0.6636655948553055,
+              "f1": 0.7811517562218341
+            },
+            "4": {
+              "precision": 0.9913867355727821,
+              "recall": 0.7003215434083602,
+              "f1": 0.8208146728336084
+            },
+            "8": {
+              "precision": 1.0,
+              "recall": 0.7163987138263666,
+              "f1": 0.8347695766204571
+            }
+          }
+        },
+        "patch_geometry": {
+          "modified_hausdorff_voxels": 10.254050565754572,
+          "bidirectional_chamfer_voxels": 10.661786184305864,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 83.40863264674707,
+          "prediction_positive_voxels": 106436,
+          "reference_positive_voxels": 123066,
+          "positive_volume_ratio": 0.8648692571465718,
+          "prediction_components": {
+            "all": 6,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "reference_components": {
+            "all": 3,
+            "at_least_8_voxels": 3,
+            "at_least_32_voxels": 3
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.9029181855763088,
+              "recall": 0.7449823671850877,
+              "f1": 0.8163819426335231
+            },
+            "2": {
+              "precision": 0.9513510466383555,
+              "recall": 0.7841077145596672,
+              "f1": 0.8596708969432332
+            },
+            "4": {
+              "precision": 0.982637453493179,
+              "recall": 0.8344628085742609,
+              "f1": 0.9025087127765162
+            },
+            "8": {
+              "precision": 0.9965988951106768,
+              "recall": 0.8727755838330652,
+              "f1": 0.9305863456733166
+            }
+          }
+        }
+      },
+      "swinunetr": {
+        "tp": 1073,
+        "fp": 1032,
+        "fn": 482,
+        "section_dice": 0.5863387978142076,
+        "displayed_section_geometry": {
+          "modified_hausdorff_voxels": 13.135121555465,
+          "bidirectional_chamfer_voxels": 17.779441560510747,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 51.32826094181412,
+          "prediction_positive_voxels": 2105,
+          "reference_positive_voxels": 1555,
+          "positive_volume_ratio": 1.3536977491961415,
+          "prediction_components": {
+            "all": 6,
+            "at_least_8_voxels": 2,
+            "at_least_32_voxels": 1
+          },
+          "reference_components": {
+            "all": 2,
+            "at_least_8_voxels": 2,
+            "at_least_32_voxels": 2
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.6038004750593824,
+              "recall": 0.704823151125402,
+              "f1": 0.6504124562126399
+            },
+            "2": {
+              "precision": 0.672209026128266,
+              "recall": 0.7118971061093248,
+              "f1": 0.6914840549512644
+            },
+            "4": {
+              "precision": 0.7491686460807601,
+              "recall": 0.7163987138263666,
+              "f1": 0.7324173138316998
+            },
+            "8": {
+              "precision": 0.7900237529691211,
+              "recall": 0.7163987138263666,
+              "f1": 0.7514120547117331
+            }
+          }
+        },
+        "patch_geometry": {
+          "modified_hausdorff_voxels": 2.3513348858860366,
+          "bidirectional_chamfer_voxels": 3.5442221384917882,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 16.15549442140351,
+          "prediction_positive_voxels": 184360,
+          "reference_positive_voxels": 123066,
+          "positive_volume_ratio": 1.498057952643297,
+          "prediction_components": {
+            "all": 22,
+            "at_least_8_voxels": 8,
+            "at_least_32_voxels": 4
+          },
+          "reference_components": {
+            "all": 3,
+            "at_least_8_voxels": 3,
+            "at_least_32_voxels": 3
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.7365155131264917,
+              "recall": 0.9344579331415663,
+              "f1": 0.823762658419257
+            },
+            "2": {
+              "precision": 0.8040410067259709,
+              "recall": 0.9464840004550403,
+              "f1": 0.8694670975325327
+            },
+            "4": {
+              "precision": 0.8578162291169451,
+              "recall": 0.9579900216144183,
+              "f1": 0.9051399482097254
+            },
+            "8": {
+              "precision": 0.9052288999783034,
+              "recall": 0.9661238684933288,
+              "f1": 0.9346856043965145
+            }
+          }
+        }
+      }
+    },
+    {
+      "patch_id": "x0128_y0640_z0640",
+      "origin": [
+        128,
+        640,
+        640
+      ],
+      "patch_reference_positive_voxels": 84693,
+      "displayed_x": 185,
+      "displayed_reference_positive_pixels": 1762,
+      "r100": {
+        "tp": 912,
+        "fp": 668,
+        "fn": 850,
+        "section_dice": 0.5457809694793537,
+        "displayed_section_geometry": {
+          "modified_hausdorff_voxels": 4.28811350925498,
+          "bidirectional_chamfer_voxels": 5.744871929933794,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 24.159868877846794,
+          "prediction_positive_voxels": 1580,
+          "reference_positive_voxels": 1762,
+          "positive_volume_ratio": 0.8967082860385925,
+          "prediction_components": {
+            "all": 3,
+            "at_least_8_voxels": 3,
+            "at_least_32_voxels": 2
+          },
+          "reference_components": {
+            "all": 3,
+            "at_least_8_voxels": 3,
+            "at_least_32_voxels": 3
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.6632911392405063,
+              "recall": 0.5856980703745743,
+              "f1": 0.6220843820891675
+            },
+            "2": {
+              "precision": 0.7329113924050633,
+              "recall": 0.6475595913734393,
+              "f1": 0.6875969250432455
+            },
+            "4": {
+              "precision": 0.8620253164556962,
+              "recall": 0.7434733257661748,
+              "f1": 0.7983723088460736
+            },
+            "8": {
+              "precision": 0.9867088607594937,
+              "recall": 0.8229284903518729,
+              "f1": 0.8974072431727299
+            }
+          }
+        },
+        "patch_geometry": {
+          "modified_hausdorff_voxels": 1.8252165604390564,
+          "bidirectional_chamfer_voxels": 3.010466395162518,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 11.832159566199232,
+          "prediction_positive_voxels": 97277,
+          "reference_positive_voxels": 84693,
+          "positive_volume_ratio": 1.1485837082167358,
+          "prediction_components": {
+            "all": 3,
+            "at_least_8_voxels": 3,
+            "at_least_32_voxels": 3
+          },
+          "reference_components": {
+            "all": 2,
+            "at_least_8_voxels": 2,
+            "at_least_32_voxels": 2
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.7317454280045643,
+              "recall": 0.7516441736625223,
+              "f1": 0.7415613362068819
+            },
+            "2": {
+              "precision": 0.8103045940972686,
+              "recall": 0.7937964176496286,
+              "f1": 0.801965561132553
+            },
+            "4": {
+              "precision": 0.9064938269066686,
+              "recall": 0.8531047430129999,
+              "f1": 0.8789893291188451
+            },
+            "8": {
+              "precision": 0.9734058410518417,
+              "recall": 0.917147816230385,
+              "f1": 0.9444397814235905
+            }
+          }
+        }
+      },
+      "faultsegv3": {
+        "tp": 604,
+        "fp": 1112,
+        "fn": 1158,
+        "section_dice": 0.34732604945370904,
+        "displayed_section_geometry": {
+          "modified_hausdorff_voxels": 14.577692345804046,
+          "bidirectional_chamfer_voxels": 19.611768167096898,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 48.29906747018934,
+          "prediction_positive_voxels": 1716,
+          "reference_positive_voxels": 1762,
+          "positive_volume_ratio": 0.9738933030646992,
+          "prediction_components": {
+            "all": 1,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "reference_components": {
+            "all": 3,
+            "at_least_8_voxels": 3,
+            "at_least_32_voxels": 3
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.42074592074592077,
+              "recall": 0.39216799091940974,
+              "f1": 0.4059546283036063
+            },
+            "2": {
+              "precision": 0.4807692307692308,
+              "recall": 0.4409761634506243,
+              "f1": 0.46001373528784906
+            },
+            "4": {
+              "precision": 0.6043123543123543,
+              "recall": 0.5192962542565267,
+              "f1": 0.5585879987072216
+            },
+            "8": {
+              "precision": 0.7628205128205128,
+              "recall": 0.6208853575482406,
+              "f1": 0.6845733576623143
+            }
+          }
+        },
+        "patch_geometry": {
+          "modified_hausdorff_voxels": 7.79397359468982,
+          "bidirectional_chamfer_voxels": 10.148471336056721,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 34.77067730142742,
+          "prediction_positive_voxels": 91759,
+          "reference_positive_voxels": 84693,
+          "positive_volume_ratio": 1.0834307439812028,
+          "prediction_components": {
+            "all": 2,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "reference_components": {
+            "all": 2,
+            "at_least_8_voxels": 2,
+            "at_least_32_voxels": 2
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.6329406379755664,
+              "recall": 0.6106171702501978,
+              "f1": 0.6215785365835284
+            },
+            "2": {
+              "precision": 0.7061868590546976,
+              "recall": 0.647515142927987,
+              "f1": 0.6755795356805828
+            },
+            "4": {
+              "precision": 0.8166501378611363,
+              "recall": 0.7014157014157014,
+              "f1": 0.7546592702882619
+            },
+            "8": {
+              "precision": 0.9069083141708171,
+              "recall": 0.7521873118203394,
+              "f1": 0.8223334643488462
+            }
+          }
+        }
+      },
+      "swinunetr": {
+        "tp": 1040,
+        "fp": 1336,
+        "fn": 722,
+        "section_dice": 0.5026582890285162,
+        "displayed_section_geometry": {
+          "modified_hausdorff_voxels": 5.280663774948871,
+          "bidirectional_chamfer_voxels": 8.572085104846131,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 21.587033144922902,
+          "prediction_positive_voxels": 2376,
+          "reference_positive_voxels": 1762,
+          "positive_volume_ratio": 1.348467650397276,
+          "prediction_components": {
+            "all": 3,
+            "at_least_8_voxels": 3,
+            "at_least_32_voxels": 3
+          },
+          "reference_components": {
+            "all": 3,
+            "at_least_8_voxels": 3,
+            "at_least_32_voxels": 3
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.5063131313131313,
+              "recall": 0.6515323496027242,
+              "f1": 0.5698159029272585
+            },
+            "2": {
+              "precision": 0.5618686868686869,
+              "recall": 0.7031782065834279,
+              "f1": 0.6246310988354901
+            },
+            "4": {
+              "precision": 0.6641414141414141,
+              "recall": 0.7690124858115778,
+              "f1": 0.7127399783596969
+            },
+            "8": {
+              "precision": 0.7765151515151515,
+              "recall": 0.800794551645857,
+              "f1": 0.788467986163546
+            }
+          }
+        },
+        "patch_geometry": {
+          "modified_hausdorff_voxels": 3.3839269709710353,
+          "bidirectional_chamfer_voxels": 4.775627638736467,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 16.76305461424021,
+          "prediction_positive_voxels": 130385,
+          "reference_positive_voxels": 84693,
+          "positive_volume_ratio": 1.539501493629934,
+          "prediction_components": {
+            "all": 10,
+            "at_least_8_voxels": 5,
+            "at_least_32_voxels": 5
+          },
+          "reference_components": {
+            "all": 2,
+            "at_least_8_voxels": 2,
+            "at_least_32_voxels": 2
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.593120374276182,
+              "recall": 0.7841852337265182,
+              "f1": 0.6754001967714574
+            },
+            "2": {
+              "precision": 0.6626912604977566,
+              "recall": 0.8144238602954199,
+              "f1": 0.7307644028026847
+            },
+            "4": {
+              "precision": 0.7621122061586839,
+              "recall": 0.8594925200429787,
+              "f1": 0.8078784305977436
+            },
+            "8": {
+              "precision": 0.8651301913563677,
+              "recall": 0.9273139456625695,
+              "f1": 0.895143424210393
+            }
+          }
+        }
+      }
+    },
+    {
+      "patch_id": "x0128_y2048_z1408",
+      "origin": [
+        128,
+        2048,
+        1408
+      ],
+      "patch_reference_positive_voxels": 18513,
+      "displayed_x": 180,
+      "displayed_reference_positive_pixels": 921,
+      "r100": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 921,
+        "section_dice": 0.0,
+        "displayed_section_geometry": {
+          "modified_hausdorff_voxels": 179.60512242138307,
+          "bidirectional_chamfer_voxels": 359.21024484276614,
+          "prediction_empty": true,
+          "target_empty": false,
+          "hd95_voxels": 179.60512242138307,
+          "prediction_positive_voxels": 0,
+          "reference_positive_voxels": 921,
+          "positive_volume_ratio": 0.0,
+          "prediction_components": {
+            "all": 0,
+            "at_least_8_voxels": 0,
+            "at_least_32_voxels": 0
+          },
+          "reference_components": {
+            "all": 1,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "8": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "patch_geometry": {
+          "modified_hausdorff_voxels": 83.30933776769234,
+          "bidirectional_chamfer_voxels": 126.58803848183194,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 87.94315463756296,
+          "prediction_positive_voxels": 206,
+          "reference_positive_voxels": 18513,
+          "positive_volume_ratio": 0.011127315940150165,
+          "prediction_components": {
+            "all": 2,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "reference_components": {
+            "all": 1,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "8": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        }
+      },
+      "faultsegv3": {
+        "tp": 0,
+        "fp": 26,
+        "fn": 921,
+        "section_dice": 0.0,
+        "displayed_section_geometry": {
+          "modified_hausdorff_voxels": 37.76977561356803,
+          "bidirectional_chamfer_voxels": 54.232022603521244,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 70.02856560004639,
+          "prediction_positive_voxels": 26,
+          "reference_positive_voxels": 921,
+          "positive_volume_ratio": 0.02823018458197611,
+          "prediction_components": {
+            "all": 2,
+            "at_least_8_voxels": 2,
+            "at_least_32_voxels": 0
+          },
+          "reference_components": {
+            "all": 1,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "8": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "patch_geometry": {
+          "modified_hausdorff_voxels": 44.79445121466555,
+          "bidirectional_chamfer_voxels": 58.70418574650991,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 108.07867504739313,
+          "prediction_positive_voxels": 8417,
+          "reference_positive_voxels": 18513,
+          "positive_volume_ratio": 0.45465348673904826,
+          "prediction_components": {
+            "all": 32,
+            "at_least_8_voxels": 8,
+            "at_least_32_voxels": 5
+          },
+          "reference_components": {
+            "all": 1,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.0008316502316739931,
+              "recall": 0.0003781126775779182,
+              "f1": 0.0005198663200891199
+            },
+            "2": {
+              "precision": 0.0043958655102768205,
+              "recall": 0.0015124507103116728,
+              "f1": 0.0022505667148568905
+            },
+            "4": {
+              "precision": 0.023048592134964952,
+              "recall": 0.009776913520229028,
+              "f1": 0.013729816955975943
+            },
+            "8": {
+              "precision": 0.14280622549601996,
+              "recall": 0.0962566844919786,
+              "f1": 0.11499946848091847
+            }
+          }
+        }
+      },
+      "swinunetr": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 921,
+        "section_dice": 0.0,
+        "displayed_section_geometry": {
+          "modified_hausdorff_voxels": 40.624306270894685,
+          "bidirectional_chamfer_voxels": 63.08516033107211,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 64.53681120105021,
+          "prediction_positive_voxels": 2,
+          "reference_positive_voxels": 921,
+          "positive_volume_ratio": 0.002171552660152009,
+          "prediction_components": {
+            "all": 1,
+            "at_least_8_voxels": 0,
+            "at_least_32_voxels": 0
+          },
+          "reference_components": {
+            "all": 1,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "4": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "8": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "patch_geometry": {
+          "modified_hausdorff_voxels": 20.257275843237675,
+          "bidirectional_chamfer_voxels": 34.834705413617925,
+          "prediction_empty": false,
+          "target_empty": false,
+          "hd95_voxels": 31.448370387032774,
+          "prediction_positive_voxels": 50,
+          "reference_positive_voxels": 18513,
+          "positive_volume_ratio": 0.002700804839842273,
+          "prediction_components": {
+            "all": 12,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "reference_components": {
+            "all": 1,
+            "at_least_8_voxels": 1,
+            "at_least_32_voxels": 1
+          },
+          "tolerance_f1": {
+            "1": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "2": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "4": {
+              "precision": 0.02,
+              "recall": 0.00016204829039053638,
+              "f1": 0.0003214917215881691
+            },
+            "8": {
+              "precision": 0.02,
+              "recall": 0.013179927618430292,
+              "f1": 0.01588903721551135
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "split": "test",
+  "patches_planned": 1950,
+  "patches_processed": 1950,
+  "patches_scored": 1382,
+  "no_data_patches": 568,
+  "constant_observed_patches": 0,
+  "raw_voxels": 3429541914,
+  "valid_voxels": 2303341553,
+  "positive_labels_excluded": 34415,
+  "positive_clicks": 591,
+  "negative_clicks": 791,
+  "minutes": 6.69
+}

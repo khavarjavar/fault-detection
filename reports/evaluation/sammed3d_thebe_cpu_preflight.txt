@@ -1,0 +1,44 @@
+{
+  "status": "cpu_preflight_pass",
+  "model": "SAM-Med3D-turbo vit_b_ori, prompt-free",
+  "sam_source_commit": "f3de1fa10da98e46f49f176773d2b1e306ba131f",
+  "checkpoint": "external/SAM-Med3D/ckpt/sam_med3d_turbo.pth",
+  "checkpoint_sha256": "899a46d04d3b70f723282ceb489149373558bf0aaba389a346f5ab57da5cdd3c",
+  "parameters_total": 100583152,
+  "parameters_trainable": 7649940,
+  "image_encoder_frozen": true,
+  "trainable_components": [
+    "residual feature adapter",
+    "SAM-Med3D mask decoder",
+    "no-mask prompt embedding"
+  ],
+  "train_files": [
+    "data/processed/thebe_h5/train1.h5",
+    "data/processed/thebe_h5/train2.h5",
+    "data/processed/thebe_h5/train3.h5",
+    "data/processed/thebe_h5/train4.h5",
+    "data/processed/thebe_h5/train5.h5",
+    "data/processed/thebe_h5/train6.h5",
+    "data/processed/thebe_h5/train7.h5",
+    "data/processed/thebe_h5/train8.h5",
+    "data/processed/thebe_h5/train9.h5"
+  ],
+  "validation_files": [
+    "data/processed/thebe_h5/val1.h5",
+    "data/processed/thebe_h5/val2.h5"
+  ],
+  "train_shape": [
+    900,
+    3174,
+    1537
+  ],
+  "validation_shape": [
+    200,
+    3174,
+    1537
+  ],
+  "validation_patches": 128,
+  "full_validation_patches": 650,
+  "test_files_opened": false,
+  "gpu_executed": false
+}

@@ -1,0 +1,47 @@
+{
+  "checkpoint": "runs/p1_attention3d_caft_seed42/best.pt",
+  "checkpoint_epoch": 93,
+  "cracks_expert": {
+    "accuracy": 0.9113644373583956,
+    "balanced_accuracy": 0.4986262078629278,
+    "dice": 0.03527294979404324,
+    "fn": 170009,
+    "fp": 463753,
+    "iou": 0.01795310437159486,
+    "mcc": -0.001735214036844223,
+    "pr_auc_approx": 0.025374405376357663,
+    "precision": 0.024374183477476077,
+    "recall": 0.06380131611553182,
+    "roc_auc_approx": 0.5010833013464665,
+    "specificity": 0.9334510996103237,
+    "threshold": 0.98095703125,
+    "tn": 6504852,
+    "tp": 11586
+  },
+  "cracks_labels_used_for_threshold": false,
+  "efficiency": {
+    "peak_cuda_gib": 1.0148916244506836,
+    "wall_seconds": 49.497310161590576
+  },
+  "experiment": "p1_cracks_expert_zero_shot",
+  "expert_sections_scored": 40,
+  "image_shape": [
+    255,
+    701
+  ],
+  "input_sections": 396,
+  "label_policy": "score green and blue pixels as fault; use RGB colours and score all other pixels as background",
+  "metrics_scope": "expert-labelled 2D planes only; not dense 3D ground truth",
+  "missing_nominal_section_numbers": [
+    9,
+    185,
+    249,
+    336
+  ],
+  "status": "complete_40_expert_sections",
+  "threshold": 0.98095703125,
+  "threshold_source": "runs/p1_attention3d_caft_seed42/final_metrics.json",
+  "tiles_inferred": 1200,
+  "training_performed": false,
+  "weight_updates": 0
+}

@@ -1,0 +1,8 @@
+{
+  "regression_tests_passed": 6,
+  "validation_histograms_exact": 8,
+  "independent_verifier": "verification.json",
+  "test_inference_passes": 1,
+  "thresholds_retuned": false,
+  "original_training_and_checkpoint_files_modified": false
+}

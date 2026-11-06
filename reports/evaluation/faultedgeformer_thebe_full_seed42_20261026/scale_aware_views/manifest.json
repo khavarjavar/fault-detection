@@ -1,0 +1,16 @@
+{
+  "full_section_2d": "/shared/home/khavarj/projects/fault_detection/reports/evaluation/faultedgeformer_thebe_full_seed42_20261026/scale_aware_views/validation_2d_full_section.png",
+  "context_2d": "/shared/home/khavarj/projects/fault_detection/reports/evaluation/faultedgeformer_thebe_full_seed42_20261026/scale_aware_views/validation_2d_context_512.png",
+  "context_2d_unlabelled_with_axes": "/shared/home/khavarj/projects/fault_detection/reports/evaluation/faultedgeformer_thebe_full_seed42_20261026/scale_aware_views/validation_2d_context_512_unlabelled_with_axes.png",
+  "context_2d_unlabelled_clean": "/shared/home/khavarj/projects/fault_detection/reports/evaluation/faultedgeformer_thebe_full_seed42_20261026/scale_aware_views/validation_2d_context_512_unlabelled_clean.png",
+  "cube_3d": "/shared/home/khavarj/projects/fault_detection/reports/evaluation/faultedgeformer_thebe_full_seed42_20261026/scale_aware_views/validation_3d_cube.png",
+  "spatial_cube_cache": "/shared/home/khavarj/projects/fault_detection/reports/evaluation/faultedgeformer_thebe_full_seed42_20261026/scale_aware_views/validation_x0000_y1920_z0896_spatial_cube.npz",
+  "origin_xyz": [
+    0,
+    1920,
+    896
+  ],
+  "displayed_survey_x": 127,
+  "threshold": 0.24560546875,
+  "scope": "Prediction exists only for the marked 128^3 validation cube."
+}

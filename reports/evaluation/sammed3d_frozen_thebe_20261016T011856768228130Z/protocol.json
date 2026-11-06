@@ -1,0 +1,83 @@
+{
+  "experiment": "frozen_SAM-Med3D-turbo_Thebe",
+  "training_performed": false,
+  "weight_updates": 0,
+  "adapter_used": false,
+  "patch_size": 128,
+  "precision": "float16_autocast",
+  "histogram_bins": 2048,
+  "modes": [
+    "no_prompts",
+    "one_oracle_click"
+  ],
+  "seed": 42,
+  "normalization": "R100 observed-voxel per-patch z-score and axis reversal",
+  "scoring": "all observed nonzero finite seismic voxels; no padding or overlap",
+  "prompt_policy": "one uniformly sampled GT-positive voxel if any fault is present; otherwise one uniformly sampled observed negative voxel; no clicks for no-data patches",
+  "prompt_information": "GT patch presence and one labelled voxel; oracle-assisted, not automatic",
+  "mask_policy": "single mask; no mask prompts, boxes, corrections, or GT-based output selection",
+  "threshold_policy": "report 0.5 plus per-mode best-Dice validation threshold; freeze before opening test",
+  "test_threshold_tuning": false,
+  "checkpoint_sha256": "899a46d04d3b70f723282ceb489149373558bf0aaba389a346f5ab57da5cdd3c",
+  "data_files": [
+    {
+      "path": "data/processed/thebe_h5/val1.h5",
+      "bytes": 1116731622,
+      "mtime_ns": 1790766244011664010
+    },
+    {
+      "path": "data/processed/thebe_h5/val2.h5",
+      "bytes": 1179747245,
+      "mtime_ns": 1790766291515599558
+    },
+    {
+      "path": "data/processed/thebe_h5/test1.h5",
+      "bytes": 1107063922,
+      "mtime_ns": 1790944825042015277
+    },
+    {
+      "path": "data/processed/thebe_h5/test2.h5",
+      "bytes": 1157609521,
+      "mtime_ns": 1790944890158978658
+    },
+    {
+      "path": "data/processed/thebe_h5/test3.h5",
+      "bytes": 1202815688,
+      "mtime_ns": 1790944956790843907
+    },
+    {
+      "path": "data/processed/thebe_h5/test4.h5",
+      "bytes": 1207246023,
+      "mtime_ns": 1790945024330026819
+    },
+    {
+      "path": "data/processed/thebe_h5/test5.h5",
+      "bytes": 1105804825,
+      "mtime_ns": 1790945088423894830
+    },
+    {
+      "path": "data/processed/thebe_h5/test6.h5",
+      "bytes": 971724277,
+      "mtime_ns": 1790945147500671011
+    },
+    {
+      "path": "data/processed/thebe_h5/test7.h5",
+      "bytes": 873254348,
+      "mtime_ns": 1790945201153854618
+    }
+  ],
+  "source_hashes": {
+    "scripts/train_sammed3d_thebe.py": "0d1c9f7329dc4b4e477a823d5eb210ee419fff5226f0ffdadeab1bca2a0157ef",
+    "scripts/train_r100_fp16_clean.py": "80787c42d403460465028bbbfa8598628387ad122b2d44a5abed55b43c24cbb4",
+    "scripts/faultseg3d_baseline.py": "0089293db07637f7042ed340f47d6ed33957d1f34414b96a5698b1b1ce3e3131"
+  },
+  "sam_commit": "f3de1fa10da98e46f49f176773d2b1e306ba131f",
+  "gpu": "NVIDIA RTX A5500",
+  "torch": "2.7.1+cu118",
+  "point_coordinate_order": [
+    1,
+    0,
+    2
+  ],
+  "evaluator_sha256": "0c81f1a3a016b83b3556853296d7d108f0c30f0570bb36e75b950f04b8ceb22b"
+}

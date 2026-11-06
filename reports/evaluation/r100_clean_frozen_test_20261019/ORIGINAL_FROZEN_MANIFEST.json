@@ -1,0 +1,16 @@
+{
+  "status": "frozen_before_test",
+  "threshold": 0.27490234375,
+  "threshold_source": "complete val1.h5 + val2.h5 only",
+  "member_thresholds": {
+    "42": 0.31640625,
+    "43": 0.279296875,
+    "44": 0.244140625
+  },
+  "protocol_hash": "1febc1e47ba203ff08db82816ceadf616a5e7db345054cfbe45274b84c5f5437",
+  "checkpoint_hashes": {
+    "42": "d92b8d3130909a062968c6dd678543db29ea700fc12bb5a8ca070f78d6e1c40c",
+    "43": "08bfae40b6108a58dfa5f32bccde6bcd45dc01c9754727202a38cd275c28572e",
+    "44": "9edd1fc64e6a7182a2c06a214d6c69808e5ac1e35204c4bfb93e6e2738bd2e8d"
+  }
+}

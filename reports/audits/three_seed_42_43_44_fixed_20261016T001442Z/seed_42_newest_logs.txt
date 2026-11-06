@@ -1,0 +1,3 @@
+runs/R100_fp16_clean_3seeds_20261014_150435/seed44.log
+reports/training/r100_fp16_3seed_queue_20261014_150435.log
+runs/R100_fp16_clean_3seeds_20261014_150435/seed43.log

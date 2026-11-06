@@ -1,0 +1,8 @@
+numpy>=1.26,<3
+h5py>=3.10,<4
+scipy>=1.13,<2
+matplotlib>=3.9,<4
+pillow>=10,<13
+monai==1.5.1
+gdown>=5.2,<6
+segyio>=1.9.13,<2

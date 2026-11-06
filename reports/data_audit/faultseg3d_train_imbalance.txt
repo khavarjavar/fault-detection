@@ -1,0 +1,3 @@
+positive_pct=7.036475
+negative_pct=92.963525
+pos_weight=13.211662

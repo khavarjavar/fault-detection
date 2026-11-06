@@ -1,0 +1,42 @@
+{
+  "axis_transform": "np.transpose, matching Baseline A",
+  "checkpoint": "runs/p1_attention3d_caft_seed42/best.pt",
+  "checkpoint_epoch": 93,
+  "checkpoint_training_data": "data/faultseg3d",
+  "complete_official_test_evaluation": false,
+  "concatenated_test_shape": [
+    703,
+    3174,
+    1537
+  ],
+  "data_split": "official Thebe test only",
+  "edge_policy": "zero-pad normalized inputs to 128^3; exclude padding from every metric",
+  "evaluator_patch": "raw_zero_no_data_mask_v1",
+  "experiment": "A_to_T0_zero_shot",
+  "histogram_bins": 2048,
+  "no_data_policy": "score only finite raw seismic != 0",
+  "normalization": "independent z-score on each valid 3D patch, matching Baseline A",
+  "overlap_policy": "non-overlapping partition; every valid voxel evaluated once",
+  "patch_count_planned": 1950,
+  "patch_count_this_run": 9,
+  "patch_shape": [
+    128,
+    128,
+    128
+  ],
+  "test_block_count": 7,
+  "test_files": [
+    "data/processed/thebe_h5/test1.h5",
+    "data/processed/thebe_h5/test2.h5",
+    "data/processed/thebe_h5/test3.h5",
+    "data/processed/thebe_h5/test4.h5",
+    "data/processed/thebe_h5/test5.h5",
+    "data/processed/thebe_h5/test6.h5",
+    "data/processed/thebe_h5/test7.h5"
+  ],
+  "threshold": 0.98095703125,
+  "threshold_selected_using_thebe": false,
+  "threshold_source": "runs/p1_attention3d_caft_seed42/final_metrics.json",
+  "training_performed": false,
+  "weight_updates": 0
+}

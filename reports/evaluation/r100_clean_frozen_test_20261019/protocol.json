@@ -1,0 +1,105 @@
+{
+  "checkpoint_hashes": {
+    "42": "d92b8d3130909a062968c6dd678543db29ea700fc12bb5a8ca070f78d6e1c40c",
+    "43": "08bfae40b6108a58dfa5f32bccde6bcd45dc01c9754727202a38cd275c28572e",
+    "44": "9edd1fc64e6a7182a2c06a214d6c69808e5ac1e35204c4bfb93e6e2738bd2e8d"
+  },
+  "protocol_hash": "1febc1e47ba203ff08db82816ceadf616a5e7db345054cfbe45274b84c5f5437",
+  "thresholds": {
+    "seed42": 0.31640625,
+    "seed43": 0.279296875,
+    "seed44": 0.244140625,
+    "ensemble": 0.27490234375
+  },
+  "source_hashes": {
+    "scripts/evaluate_r100_frozen_test.py": "ce9ab38fa46b5df56ef8423ad59799b5c59ee5c4332d912a9a23b070b892e2f6",
+    "scripts/faultseg3d_baseline.py": "0089293db07637f7042ed340f47d6ed33957d1f34414b96a5698b1b1ce3e3131",
+    "scripts/evaluate_thebe_zero_shot_r100_pinned.py": "834ec8aeb8a726c51f6dd65e4f85fac7652dfcc13f8ab58f0784fe359b9374ec",
+    "scripts/train_r100_fp16_clean.py": "80787c42d403460465028bbbfa8598628387ad122b2d44a5abed55b43c24cbb4"
+  },
+  "validation_reference_sha256": "6da315d06913e108189d517ab69210425c640db9fbcb4541e9dd65c94db9878c",
+  "original_manifest_sha256": "387cc203e86b0d6263e06ee25a92e1a2f5c00302f98d3b6e0079980e2f9a8c1b",
+  "prior_validation_result_sha256": "5f39e3e0fd68e409972cc68b88a0954bb6bbf1d5d7eeb7a7c0df3cf00dc5b774",
+  "data_files": {
+    "data/processed/thebe_h5/val1.h5": {
+      "bytes": 1116731622,
+      "mtime_ns": 1790766244011664010
+    },
+    "data/processed/thebe_h5/val2.h5": {
+      "bytes": 1179747245,
+      "mtime_ns": 1790766291515599558
+    },
+    "data/processed/thebe_h5/test1.h5": {
+      "bytes": 1107063922,
+      "mtime_ns": 1790944825042015277
+    },
+    "data/processed/thebe_h5/test2.h5": {
+      "bytes": 1157609521,
+      "mtime_ns": 1790944890158978658
+    },
+    "data/processed/thebe_h5/test3.h5": {
+      "bytes": 1202815688,
+      "mtime_ns": 1790944956790843907
+    },
+    "data/processed/thebe_h5/test4.h5": {
+      "bytes": 1207246023,
+      "mtime_ns": 1790945024330026819
+    },
+    "data/processed/thebe_h5/test5.h5": {
+      "bytes": 1105804825,
+      "mtime_ns": 1790945088423894830
+    },
+    "data/processed/thebe_h5/test6.h5": {
+      "bytes": 971724277,
+      "mtime_ns": 1790945147500671011
+    },
+    "data/processed/thebe_h5/test7.h5": {
+      "bytes": 873254348,
+      "mtime_ns": 1790945201153854618
+    }
+  },
+  "precision": "float16_autocast; FP32 sigmoid and ensemble probability mean",
+  "ensemble": "equal probability mean; seed order 42,43,44",
+  "mask": "finite raw seismic != 0; per-patch observed zscore; reverse axes",
+  "training_performed": false,
+  "threshold_search": false,
+  "overlap": false,
+  "histogram_bins": 2048,
+  "expected_splits": {
+    "val": {
+      "files": 2,
+      "shape": [
+        200,
+        3174,
+        1537
+      ],
+      "patches": 650,
+      "valid_voxels": 613738550,
+      "positive_voxels": 17128496,
+      "positive_labels_excluded": 23514
+    },
+    "test": {
+      "files": 7,
+      "shape": [
+        703,
+        3174,
+        1537
+      ],
+      "patches": 1950,
+      "valid_voxels": 2303341553,
+      "positive_voxels": 57680496,
+      "positive_labels_excluded": 34415
+    }
+  },
+  "environment": {
+    "torch": "2.7.1+cu118",
+    "cuda_build": "11.8",
+    "gpu": "NVIDIA RTX A5500",
+    "numpy": "2.5.3"
+  },
+  "command": [
+    "scripts/evaluate_r100_frozen_test.py",
+    "--output-dir",
+    "reports/evaluation/r100_clean_frozen_test_20261019"
+  ]
+}

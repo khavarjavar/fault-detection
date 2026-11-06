@@ -1,0 +1,10 @@
+{
+  "stage": "interactive_validation",
+  "completed_interactions": 744,
+  "total_interactions": 744,
+  "crop_policy": "label_centered",
+  "normalization": "sam_positive_zscore",
+  "sample": 186,
+  "minutes": 3.58,
+  "test_files_opened": false
+}

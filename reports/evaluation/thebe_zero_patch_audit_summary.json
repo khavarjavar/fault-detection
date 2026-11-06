@@ -1,0 +1,8 @@
+{
+  "status": "AUDIT COMPLETED",
+  "first_patch_std": 0.0,
+  "first_patch_zero_percent": 100.0,
+  "first_patch_fault_voxels": 0,
+  "other_sampled_patch_varies": true,
+  "report": "reports/evaluation/THEBE_ZERO_PATCH_AUDIT.md"
+}

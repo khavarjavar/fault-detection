@@ -1,0 +1,43 @@
+{
+  "status": "complete",
+  "experiment": "attention3d_opunake_kahu_denoising_pretraining_variant",
+  "claim_scope": "two-survey self-supervised denoising pretraining variant",
+  "seed": 42,
+  "epochs": 50,
+  "training_patches": 17600,
+  "balanced_training_counts": {
+    "opunake": 8800,
+    "kahu": 8800
+  },
+  "best_epoch": 50,
+  "best_checkpoint": "runs/attention3d_two_survey_pretext_seed42_20261026/best.pt",
+  "best_checkpoint_sha256": "b8baa66e3f33395e17af6c971f6712abffca0d1edc006227df02f776869dc574",
+  "validation": {
+    "network_mse": 0.00986143494674252,
+    "noisy_identity_mse": 0.03193138906135573,
+    "identity_minus_network_mse": 0.02206995411461321,
+    "network_to_identity_mse_ratio": 0.3088320062679988,
+    "patches": 64,
+    "voxels": 16777216,
+    "noise_fraction_range_realized": [
+      0.055507101118564606,
+      0.2885770797729492
+    ],
+    "per_survey": {
+      "opunake": {
+        "network_mse": 0.008240480839049269,
+        "noisy_identity_mse": 0.04288604615430813,
+        "patches": 32
+      },
+      "kahu": {
+        "network_mse": 0.011482389054435771,
+        "noisy_identity_mse": 0.020976731968403328,
+        "patches": 32
+      }
+    }
+  },
+  "beats_noisy_identity_baseline": true,
+  "kerry_included": false,
+  "thebe_data_read": false,
+  "fault_segmentation_test_status": "not applicable until transfer and supervised Thebe fine-tuning"
+}

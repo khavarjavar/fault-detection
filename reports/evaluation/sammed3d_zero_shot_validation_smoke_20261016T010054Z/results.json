@@ -1,0 +1,113 @@
+{
+  "status": "complete",
+  "experiment": "untouched SAM-Med3D-turbo zero-shot Thebe validation smoke",
+  "training_performed": false,
+  "weight_updates": 0,
+  "data": "two deterministic positive Thebe validation patches",
+  "test_files_opened": false,
+  "checkpoint": "external/SAM-Med3D/ckpt/sam_med3d_turbo.pth",
+  "checkpoint_sha256": "899a46d04d3b70f723282ceb489149373558bf0aaba389a346f5ab57da5cdd3c",
+  "source_commit": "f3de1fa10da98e46f49f176773d2b1e306ba131f",
+  "normalization": "R100 per-patch z-score over observed voxels; axis reversal",
+  "threshold": "fixed probability 0.5; no tuning",
+  "rows": [
+    {
+      "patch": 1,
+      "coordinate": [
+        0,
+        384,
+        896
+      ],
+      "mode": "no_prompt",
+      "point_xyz": null,
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0,
+      "fp": 227,
+      "fn": 14629,
+      "tn": 2082296,
+      "decoder_seconds": 0.07177003598189913
+    },
+    {
+      "patch": 1,
+      "coordinate": [
+        0,
+        384,
+        896
+      ],
+      "mode": "one_positive_point",
+      "point_xyz": [
+        14,
+        108,
+        49
+      ],
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0,
+      "fp": 4981,
+      "fn": 14629,
+      "tn": 2077542,
+      "decoder_seconds": 0.073130726988893
+    },
+    {
+      "patch": 2,
+      "coordinate": [
+        0,
+        384,
+        1024
+      ],
+      "mode": "no_prompt",
+      "point_xyz": null,
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0,
+      "fp": 105,
+      "fn": 47,
+      "tn": 2097000,
+      "decoder_seconds": 0.0037734289944637567
+    },
+    {
+      "patch": 2,
+      "coordinate": [
+        0,
+        384,
+        1024
+      ],
+      "mode": "one_positive_point",
+      "point_xyz": [
+        120,
+        125,
+        23
+      ],
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0,
+      "fp": 9391,
+      "fn": 47,
+      "tn": 2087714,
+      "decoder_seconds": 0.004440243996214122
+    }
+  ],
+  "summary": {
+    "no_prompt": {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "one_positive_point": {
+      "dice": 0.0,
+      "iou": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  }
+}

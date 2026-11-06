@@ -1,0 +1,100 @@
+SAM-Med3D readiness check
+Generated UTC: 2026-10-16T00:20:33+00:00
+
+## GPU state
+0, NVIDIA RTX A5500, 24564 MiB, 471 MiB, 23776 MiB, 0 %
+
+Active GPU processes:
+3910377, /opt/conda/bin/python3.11, 464 MiB
+
+## SAM-Med3D repository
+Repository: external/SAM-Med3D
+Commit: f3de1fa10da98e46f49f176773d2b1e306ba131f
+Working-tree changes:
+
+## Available checkpoints
+2026-10-14T11:33:29.4643765630  402163626 bytes  external/SAM-Med3D/ckpt/sam_med3d_turbo.pth
+
+## Relevant project scripts
+external/SAM-Med3D/ckpt/sam_med3d_turbo.pth
+external/SAM-Med3D/paper/SAM_Med3D_ECCV.pdf
+external/SAM-Med3D/paper/SAM_Med3D_ECCV_Supplementary.pdf
+external/SAM-Med3D/utils/infer_utils.py
+scripts/evaluate_cracks_expert_zero_shot.py
+scripts/evaluate_cracks_expert_zero_shot.py.before_cracks_label_fix
+scripts/evaluate_cracks_expert_zero_shot.py.before_rgb_fix
+scripts/evaluate_thebe_p1_zero_shot.py
+scripts/evaluate_thebe_zero_shot.py
+scripts/evaluate_thebe_zero_shot.py.before_trace_envelope_20261009_113958.bak
+scripts/evaluate_thebe_zero_shot.py.before_zero_mask_20261005_094558.bak
+scripts/evaluate_thebe_zero_shot_r100_pinned.py
+scripts/p1_thebe_adapter.py
+scripts/__pycache__/evaluate_cracks_expert_zero_shot.cpython-313.pyc
+scripts/__pycache__/evaluate_thebe_zero_shot.cpython-313.pyc
+scripts/__pycache__/evaluate_thebe_zero_shot.py.cpython-313.pyc
+scripts/__pycache__/evaluate_thebe_zero_shot_r100_pinned.cpython-313.pyc
+scripts/__pycache__/p1_thebe_adapter.cpython-313.pyc
+scripts/__pycache__/train_paper_attention3d_thebe_bf16.cpython-313.pyc
+scripts/train_paper_attention3d_thebe_bf16.py
+scripts/train_paper_attention3d_thebe.py
+scripts/train_paper_attention3d_thebe.py.before_sampler_fix
+scripts/train_sammed3d_thebe.py
+scripts/train_sammed3d_thebe.py.before_torchvision_bypass_20261014_153946.bak
+
+## Python and source validation
+Python: 3.13.3 (main, Apr  8 2025, 19:55:40) [GCC 14.2.0]
+PyTorch: 2.7.1+cu118
+PyTorch CUDA build: 11.8
+CUDA available: True
+BF16 supported: True
+Training script syntax: PASS
+
+## Previous CPU preflight
+{
+  "status": "cpu_preflight_pass",
+  "model": "SAM-Med3D-turbo vit_b_ori, prompt-free",
+  "sam_source_commit": "f3de1fa10da98e46f49f176773d2b1e306ba131f",
+  "checkpoint": "external/SAM-Med3D/ckpt/sam_med3d_turbo.pth",
+  "checkpoint_sha256": "899a46d04d3b70f723282ceb489149373558bf0aaba389a346f5ab57da5cdd3c",
+  "parameters_total": 100583152,
+  "parameters_trainable": 7649940,
+  "image_encoder_frozen": true,
+  "trainable_components": [
+    "residual feature adapter",
+    "SAM-Med3D mask decoder",
+    "no-mask prompt embedding"
+  ],
+  "train_files": [
+    "data/processed/thebe_h5/train1.h5",
+    "data/processed/thebe_h5/train2.h5",
+    "data/processed/thebe_h5/train3.h5",
+    "data/processed/thebe_h5/train4.h5",
+    "data/processed/thebe_h5/train5.h5",
+    "data/processed/thebe_h5/train6.h5",
+    "data/processed/thebe_h5/train7.h5",
+    "data/processed/thebe_h5/train8.h5",
+    "data/processed/thebe_h5/train9.h5"
+  ],
+  "validation_files": [
+    "data/processed/thebe_h5/val1.h5",
+    "data/processed/thebe_h5/val2.h5"
+  ],
+  "train_shape": [
+    900,
+    3174,
+    1537
+  ],
+  "validation_shape": [
+    200,
+    3174,
+    1537
+  ],
+  "validation_patches": 128,
+  "full_validation_patches": 650,
+  "test_files_opened": false,
+  "gpu_executed": false
+}
+
+## Readiness conclusion
+This command did not train or evaluate SAM-Med3D.
+Dataset paths and the frozen test split are still required.

@@ -1,0 +1,10 @@
+=== CPU ALLOCATED ===
+Available CPUs: 32
+Cpus_allowed_list:	0-31
+CPU quota: 4.00 CPUs
+=== RAM ALLOCATED ===
+RAM limit: 8.00 GiB
+RAM currently used: 7.81 GiB
+=== GPU ALLOCATED ===
+CUDA_VISIBLE_DEVICES: not set
+No accessible nvidia-smi command

@@ -1,0 +1,5 @@
+               total        used        free      shared  buff/cache   available
+Mem:           440Gi        56Gi       125Gi       575Mi       261Gi       383Gi
+Swap:             0B          0B          0B
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/rbd1        99G   32G   67G  33% /home/coder

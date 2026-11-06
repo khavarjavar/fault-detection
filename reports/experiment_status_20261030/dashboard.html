@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fault Detection — Experiment Status</title>
+  <style>
+    :root { --bg:#07111f; --panel:#0d1b2d; --panel2:#12233a; --text:#e7eef8; --muted:#9eb0c7; --line:#243a56; --blue:#54a6ff; --green:#3ddc97; --amber:#ffbf69; --red:#ff6b6b; --violet:#a78bfa; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--text); background:radial-gradient(circle at 85% -10%, #153a64 0, transparent 30%), var(--bg); font:15px/1.55 Inter, ui-sans-serif, system-ui, sans-serif; }
+    a { color:#8fc8ff; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    header { max-width:1440px; margin:auto; padding:44px 28px 24px; }
+    h1 { font-size:clamp(32px,5vw,62px); line-height:1.02; margin:0 0 14px; letter-spacing:-.045em; }
+    h2 { font-size:28px; margin:0 0 18px; letter-spacing:-.02em; }
+    h3 { margin:0 0 8px; }
+    p { margin:8px 0; }
+    .kicker { color:var(--blue); text-transform:uppercase; letter-spacing:.16em; font-weight:800; font-size:12px; }
+    .subtitle { max-width:900px; color:var(--muted); font-size:18px; }
+    nav { display:flex; gap:10px; flex-wrap:wrap; margin-top:24px; }
+    nav a, .button { border:1px solid var(--line); background:#0b1829cc; padding:9px 13px; border-radius:999px; font-weight:700; }
+    main { max-width:1440px; margin:auto; padding:0 28px 60px; }
+    section { margin-top:28px; border:1px solid var(--line); background:linear-gradient(145deg,#0d1b2de8,#0a1728e8); border-radius:20px; padding:24px; box-shadow:0 18px 60px #0005; }
+    .decision { border-color:#2d669b; background:linear-gradient(135deg,#0c2945,#0d1b2d); }
+    .metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; margin-top:20px; }
+    .metric { padding:16px; background:var(--panel2); border:1px solid var(--line); border-radius:14px; }
+    .metric b { display:block; font-size:30px; line-height:1.1; color:white; }
+    .metric span { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(360px,1fr)); gap:18px; }
+    .card { border:1px solid var(--line); background:var(--panel2); border-radius:16px; padding:16px; overflow:hidden; }
+    .card img { display:block; width:100%; margin-top:12px; border-radius:10px; background:white; }
+    .tag { display:inline-flex; align-items:center; gap:6px; padding:5px 9px; border-radius:999px; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
+    .complete { color:#a7f3d0; background:#064e3b; }
+    .active { color:#bfdbfe; background:#1e3a8a; }
+    .stopped { color:#fecaca; background:#7f1d1d; }
+    .pending { color:#fde68a; background:#713f12; }
+    .notset { color:#ddd6fe; background:#4c1d95; }
+    .table-wrap { overflow:auto; border:1px solid var(--line); border-radius:14px; }
+    table { width:100%; border-collapse:collapse; min-width:980px; }
+    th,td { text-align:left; vertical-align:top; padding:13px 14px; border-bottom:1px solid var(--line); }
+    th { color:#cfe4fb; background:#10223a; position:sticky; top:0; }
+    tr:last-child td { border-bottom:0; }
+    td small { color:var(--muted); }
+    ol,ul { padding-left:22px; }
+    li { margin:7px 0; }
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .callout { border-left:4px solid var(--amber); padding:10px 15px; background:#3b2a0d55; border-radius:0 10px 10px 0; }
+    footer { max-width:1440px; margin:auto; padding:0 28px 50px; color:var(--muted); }
+    @media(max-width:800px){ .split{grid-template-columns:1fr}.grid{grid-template-columns:1fr} header,main,footer{padding-left:16px;padding-right:16px} }
+  </style>
+</head>
+<body>
+<header>
+  <div class="kicker">Evidence snapshot · 30 October 2026 · 16:55 +04</div>
+  <h1>What is done, what failed,<br>and what should run next</h1>
+  <p class="subtitle">A visual, protocol-aware view of the Thebe fault-segmentation program. Published OIS/ODS claims are kept separate from the local pooled full-grid evaluator.</p>
+  <nav>
+    <a href="#status">Status matrix</a><a href="#visuals">Visual evidence</a><a href="#swin">SwinUNETR decision</a><a href="#joint">Joint experiment</a><a href="#queue">Run queue</a>
+    <a href="EXPERIMENT_STATUS_AND_ROADMAP.md">Full Markdown report</a>
+    <a href="http://192.168.128.145:5174/">Open 3D viewer</a>
+  </nav>
+</header>
+<main>
+  <section class="decision">
+    <div class="kicker">Decision</div>
+    <h2>Exploit validated complementarity before another blind architecture run</h2>
+    <p>Finish SAM validation, freeze one evaluator, measure R100-5 inference controls, and cross-fit R100-5 + FaultEdgeFormer fusion. Then run SwinUNETR from scratch as a matched architecture control.</p>
+    <div class="metrics">
+      <div class="metric"><b>0.5813</b><span>best verified full-grid test Dice · R100-3 ensemble</span></div>
+      <div class="metric"><b>0.5746</b><span>best tested single model · FaultEdgeFormer</span></div>
+      <div class="metric"><b>0.5973</b><span>R100-5 validation Dice · test not run</span></div>
+      <div class="metric"><b>47 / 100</b><span>SAM epochs complete at snapshot</span></div>
+    </div>
+  </section>
+
+  <section id="status">
+    <div class="kicker">Status matrix</div>
+    <h2>Completed, active, stopped, and not implemented</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Experiment</th><th>Status</th><th>Trustworthy result</th><th>Decision</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr><td>R100 3-seed ensemble</td><td><span class="tag complete">Complete + tested</span></td><td>Dice 0.5813 · PR-AUC 0.6203</td><td>Frozen reference</td><td><a href="../evaluation/r100_clean_frozen_test_20261019/report.md">report</a></td></tr>
+        <tr><td>R100 5-seed ensemble curve</td><td><span class="tag pending">Validation only</span></td><td>Dice 0.5973 validation</td><td>Optimize inference on validation, then freeze</td><td><a href="../evaluation/r100_seed_curve_5models_20261019/report.md">report</a></td></tr>
+        <tr><td>FaultEdgeFormer seed 42</td><td><span class="tag complete">Complete + tested</span></td><td>Dice 0.5746 · PR-AUC 0.6040</td><td>Cache logits for fusion</td><td><a href="../evaluation/faultedgeformer_thebe_full_seed42_20261026/report.md">report</a></td></tr>
+        <tr><td>Frozen SAM-Med3D</td><td><span class="tag complete">Negative control</span></td><td>Dice 0.0488 automatic</td><td>Do not reuse frozen features as a detector</td><td><a href="../evaluation/sammed3d_frozen_thebe_20261016T011856768228130Z/report.md">report</a></td></tr>
+        <tr><td>SAM seismic adapter</td><td><span class="tag active">Active</span></td><td>Best subset PR-AUC 0.2293 at epoch 47</td><td>Finish complete validation; no test yet</td><td><a href="assets/sam_training_progress.png">plot</a></td></tr>
+        <tr><td>Attention3D field denoising</td><td><span class="tag complete">Complete pretext</span></td><td>MSE 0.00986 vs identity 0.03193</td><td>Reconstruction evidence only</td><td><a href="../evaluation/attention3d_two_survey_pretext_seed42_20261026/report.md">report</a></td></tr>
+        <tr><td>Attention3D linear probe</td><td><span class="tag complete">Sampled negative control</span></td><td>Dice 0.0542 · ROC-AUC 0.5095</td><td>Not a full-grid leaderboard result</td><td><a href="../evaluation/attention3d_faultedgeformer_comparison_20261028/report.md">comparison</a></td></tr>
+        <tr><td>Attention3D FP16 / BF16 / pretrained e2e</td><td><span class="tag stopped">Stopped / incomplete</span></td><td>NaNs, early stop, or collapse</td><td>Never resume unchanged</td><td><a href="assets/attention3d_training_status.png">plot</a></td></tr>
+        <tr><td>SwinUNETR, nnU-Net, 2.5D, FaultSSL, TopSUMseg</td><td><span class="tag notset">Not implemented</span></td><td>No local run</td><td>Use ranked controlled queue</td><td><a href="EXPERIMENT_STATUS_AND_ROADMAP.md">readiness table</a></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="visuals">
+    <div class="kicker">Visual evidence</div>
+    <h2>Metrics, dynamics, failures, and data</h2>
+    <div class="grid">
+      <article class="card"><h3>Comparable leaderboard</h3><p>Full-grid results are separated from sampled and assisted diagnostics.</p><a href="assets/test_leaderboard.png"><img src="assets/test_leaderboard.png" alt="Test leaderboard"></a></article>
+      <article class="card"><h3>Live SAM progress</h3><p>Ranking improves, while Dice at a fixed 0.5 threshold is poorly calibrated and unstable.</p><a href="assets/sam_training_progress.png"><img src="assets/sam_training_progress.png" alt="SAM training progress"></a></article>
+      <article class="card"><h3>Attention3D failure history</h3><p>Three different supervised attempts ended without a reliable completed result.</p><a href="assets/attention3d_training_status.png"><img src="assets/attention3d_training_status.png" alt="Attention3D training histories"></a></article>
+      <article class="card"><h3>R100 patch behavior</h3><p>Pooled Dice hides many hard or fault-free patches; structural review remains necessary.</p><a href="assets/r100_patch_distribution.png"><img src="assets/r100_patch_distribution.png" alt="R100 patch distributions"></a></article>
+      <article class="card"><h3>Historical prediction example</h3><p>A saved synthetic-to-Thebe zero-shot example. This is not the current best model.</p><a href="assets/historical_zero_shot_example.png"><img src="assets/historical_zero_shot_example.png" alt="Historical prediction"></a></article>
+      <article class="card"><h3>Datasets in the live viewer</h3><p>Kahu, Opunake and Thebe train/validation masks are available as marked downsampled previews.</p><a href="assets/dataset_overview.png"><img src="assets/dataset_overview.png" alt="Dataset preview"></a><p><a class="button" href="http://192.168.128.145:5174/">Open 3D viewer</a></p></article>
+    </div>
+  </section>
+
+  <section id="swin">
+    <div class="kicker">Architecture decision</div>
+    <h2>Yes to SwinUNETR—but in the right order</h2>
+    <div class="split">
+      <div><h3>Why it deserves a run</h3><ul><li>Hierarchical shifted windows add longer-range context.</li><li>FaultSeg SwinUNETR provides a concrete seismic-specific decoder and SimMIM hypothesis.</li><li>It is a necessary architecture control for a globally credible study.</li></ul></div>
+      <div><h3>Why it was not first</h3><ul><li>Standard SwinUNETR is roughly 42× larger than local R100.</li><li>Published OIS/ODS is not the local pooled Dice protocol.</li><li>Task-specific supervision and structural losses—not the backbone alone—may drive reported gains.</li><li>Existing five-seed and heterogeneous fusion controls are cheaper and more attributable.</li></ul></div>
+    </div>
+    <div class="callout"><b>Run order:</b> S0 scratch SwinUNETR → S1 scratch multi-decoder → S2 Thebe-train SimMIM → optional S3 Thebe + Opunake/Kahu SimMIM. Keep the evaluator and compute budget fixed.</div>
+  </section>
+
+  <section id="joint">
+    <div class="kicker">Joint experiment</div>
+    <h2>Measure fusion first; distill only if complementarity is real</h2>
+    <ol>
+      <li>Cache matched full-validation logits from R100-5 and FaultEdgeFormer; add SAM/Swin only if they pass validation gates.</li>
+      <li>Cross-fit val1 → val2 and val2 → val1 with equal mean, constrained convex weights, and calibrated-logit fusion.</li>
+      <li>Require at least +0.005 Dice in both directions without damaging PR-AUC, MCC, precision/recall balance or continuity.</li>
+      <li>Freeze hashes, weights, temperatures, threshold, overlap, TTA, mask and coverage before one test evaluation.</li>
+      <li>If fusion succeeds, distill low-entropy teacher agreement into a small student and add FaultSSL panning/patching consistency as isolated arms.</li>
+    </ol>
+  </section>
+
+  <section id="queue">
+    <div class="kicker">Ranked queue</div>
+    <h2>Recommended execution order</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Rank</th><th>Action</th><th>Training</th><th>Reason</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Finish SAM complete validation</td><td>Already running</td><td>Close active work without contaminating test</td></tr>
+        <tr><td>2</td><td>Canonical evaluator and frozen manifest</td><td>No</td><td>Makes every later comparison defensible</td></tr>
+        <tr><td>3</td><td>R100-5 overlap/Gaussian; TTA separately</td><td>No</td><td>Highest information per compute</td></tr>
+        <tr><td>4</td><td>Cross-fitted R100-5 + FEF fusion</td><td>No</td><td>Tests complementary errors directly</td></tr>
+        <tr><td>5</td><td>Real-Thebe loss + foreground-sampling ablation</td><td>Low/moderate</td><td>Targets class imbalance in the actual domain</td></tr>
+        <tr><td>6</td><td>SwinUNETR S0 scratch control</td><td>High</td><td>Clean architecture comparison</td></tr>
+        <tr><td>7</td><td>2.5D context and 3D nnU-Net baselines</td><td>Moderate/high</td><td>Strong dimensional/framework controls</td></tr>
+        <tr><td>8</td><td>SimMIM, joint student, structural loss</td><td>High</td><td>Research contributions after the controls</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+</main>
+<footer>Static dashboard generated from local authoritative reports. Full caveats, paths, paper links, and protocol details are in <a href="EXPERIMENT_STATUS_AND_ROADMAP.md">the Markdown report</a>.</footer>
+</body>
+</html>

@@ -1,0 +1,689 @@
+=== REPOSITORY ===
+2026-10-14T11:55:06+04:00
+/home/khavarj/projects/fault_detection
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+=== RELEVANT DOCUMENTATION ===
+./reports/2026-10-02_baseline_A_report.md:5:**Run directory:** `runs/baseline_A_synthetic_bce_seed42`  
+./reports/2026-10-02_baseline_A_report.md:207:- `runs/baseline_A_synthetic_bce_seed42/run_config.json`
+./reports/2026-10-02_baseline_A_report.md:208:- `runs/baseline_A_synthetic_bce_seed42/history.csv`
+./reports/2026-10-02_baseline_A_report.md:209:- `runs/baseline_A_synthetic_bce_seed42/best.pt`
+./reports/2026-10-02_baseline_A_report.md:210:- `runs/baseline_A_synthetic_bce_seed42/last.pt`
+./reports/2026-10-02_baseline_A_report.md:211:- `runs/baseline_A_synthetic_bce_seed42/final_metrics.json`
+./reports/2026-10-02_baseline_A_report.md:212:- `runs/baseline_A_synthetic_bce_seed42/validation_per_volume.csv`
+./reports/2026-10-02_baseline_A_report.md:213:- `runs/baseline_A_synthetic_bce_seed42/test_per_volume.csv`
+./reports/2026-10-02_baseline_A_report.md:214:- `reports/training/baseline_A_synthetic_bce_seed42.log`
+./reports/data_audit/thebe_preprocessing_candidates.txt:1:./reports/data_audit/thebe_train_val.log
+./reports/data_audit/thebe_preprocessing_candidates.txt:2:./reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_preprocessing_candidates.txt:3:./download_thebe.log
+./reports/attention3d_paper_preflight.txt:3:external/attention3d_paper/fault-detection-global-attention.py
+./reports/attention3d_paper_preflight.txt:4:external/attention3d_paper/LICENSE
+./reports/attention3d_paper_preflight.txt:5:external/attention3d_paper/README.md
+./reports/attention3d_paper_preflight.txt:6:external/attention3d_paper/configs/finetune_config.yaml
+./reports/attention3d_paper_preflight.txt:13:PYTORCH AND THEBE FILES
+./reports/attention3d_paper_preflight.txt:16:Thebe H5 directory: data/processed/thebe_h5 files: 18
+./reports/EXPERIMENT_NAMING.md:5:## Formal roadmap
+./reports/EXPERIMENT_NAMING.md:24:- Baseline A run: `runs/baseline_A_synthetic_bce_seed42`
+./reports/EXPERIMENT_NAMING.md:25:- Baseline A log: `reports/training/baseline_A_synthetic_bce_seed42.log`
+./reports/EXPERIMENT_NAMING.md:26:- Loss Ablation L1 run: `runs/loss_ablation_L1_weighted_bce_dice_seed42`
+./reports/EXPERIMENT_NAMING.md:27:- Loss Ablation L1 log: `reports/training/loss_ablation_L1_weighted_bce_dice_seed42.log`
+./reports/EXPERIMENT_NAMING.md:28:- Future Baseline B run: `runs/baseline_B_real_finetune_seed42`
+./reports/EXPERIMENT_NAMING.md:29:- Future Baseline B log: `reports/training/baseline_B_real_finetune_seed42.log`
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:1:# Thebe Zero-Shot Compatibility Audit
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:4:- Source log: `reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.log`
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:14:    -rw-rw-r-- 1 khavarj khavarj 17M Sep 30 18:59 runs/baseline_A_synthetic_bce_seed42/best.pt
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:17:    -rw-rw-r-- 1 khavarj khavarj 6.9K Sep 30 19:00 runs/baseline_A_synthetic_bce_seed42/final_metrics.json
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:19:    === THEBE DIRECTORY SIZES ===
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:20:    21G	data/thebe
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:21:    17G	data/processed/thebe_h5
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:25:    === THEBE FILE INVENTORY ===
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:27:    ROOT: data/thebe
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:33:        data/thebe: 1
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:35:        data/thebe/fault: 18
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:40:        data/thebe/seis: 18
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:46:    ROOT: data/processed/thebe_h5
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:51:        data/processed/thebe_h5: 18
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:57:    TOTAL THEBE FILES FOUND: 55
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:59:    === EXISTING THEBE AUDIT REPORTS ===
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:61:    --- reports/data_audit/thebe_h5_statistics.csv ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:63:    train,100x3174x1537,float64,bool,float32,uint8,-2.789945602416992,3.0317649841308594,-1.4305969246317352e-05,0.09593104272920336,5477591,487843800,1.1228165654662414,43e21d81dd46fe4cf398fb6b22f4fde8acf963ff247dcf5e5583fc11538a89af,de7cb1337c12fb2fdcd35aeb1a064f073e43e71ad5a4c588a509e7ec85cb6fc3,data/thebe/seis/seistrain1.npz,data/thebe/fault/faulttrain1.npz,data/processed/thebe_h5/train1.h5,717073164
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:64:    train,100x3174x1537,float64,bool,float32,uint8,-2.3829421997070312,2.607198715209961,-1.0810308912158474e-05,0.0975952528214434,5664598,487843800,1.1611499418461402,026eb129231902f0208d1d23bd7e2c0edcca74ae042c69c5091464cdf4e9297d,798f470159dc878acad8eabf2ee3caf73e27ad9cbd61947c6e6db30751ad7778,data/thebe/seis/seistrain2.npz,data/thebe/fault/faulttrain2.npz,data/processed/thebe_h5/train2.h5,748153745
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:65:    train,100x3174x1537,float64,bool,float32,uint8,-8.393916130065918,7.38558292388916,-7.093819185128362e-06,0.10218002205944188,5068071,487843800,1.0388716634299748,2e8599638fc6912a0e935b827ab62481a6b49863943bed49dd0e3a799b050d42,283322439cfdbc306c21a5b8f304282cb5aae69dbc6ca9ccfec9bd4f4a576469,data/thebe/seis/seistrain3.npz,data/thebe/fault/faulttrain3.npz,data/processed/thebe_h5/train3.h5,780327606
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:66:    train,100x3174x1537,float64,bool,float32,uint8,-2.807478904724121,3.005870819091797,-4.016161870267805e-06,0.10568906220763231,3575397,487843800,0.7328979070759944,207742571324b7631cca8b497140dd7ac1f46e84bce4aa5549b21370db84b18e,753ebc026f3874ee359859ce13d505f66ef344406c94c6dfef329fdc182b342c,data/thebe/seis/seistrain4.npz,data/thebe/fault/faulttrain4.npz,data/processed/thebe_h5/train4.h5,812145386
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:67:    train,100x3174x1537,float64,bool,float32,uint8,-2.6587982177734375,2.834458351135254,-2.925060121001068e-06,0.11106203265206424,3570872,487843800,0.7319703560852879,66027b1f4df037aa0c3dae4a08ff42d11872068d6a9ddc479fd820d62c39ee3e,94d8fe88e7e8ead7d6399cfa2c9bfd256b75f1851a8c242a0180247969d9b7ac,data/thebe/seis/seistrain5.npz,data/thebe/fault/faulttrain5.npz,data/processed/thebe_h5/train5.h5,844142314
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:68:    train,100x3174x1537,float64,bool,float32,uint8,-2.676699638366699,9.433253288269043,5.592769920060861e-06,0.11655410640016116,3909866,487843800,0.8014585816197726,7580b1a3ba71b9abc1f63f54acf1d2b6c407a9b003d0180886446aa01560529f,71b418f08d9ed0d0a346496e07e82cae9967f5e588f2c825e05eb88bd17a8631,data/thebe/seis/seistrain6.npz,data/thebe/fault/faulttrain6.npz,data/processed/thebe_h5/train6.h5,877969475
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:69:    train,100x3174x1537,float64,bool,float32,uint8,-2.7207870483398438,2.8281021118164062,1.1942063768727192e-05,0.12574849960104517,6197892,487843800,1.2704664894788045,a8e2deff21c5a1e2fb45a758b466bfb46f30762153d96fd340055a6c37f816d6,1621e3db04c5ea33dc96a87e3f54cf1d5031341f7080fa85c7353d52eab21cc9,data/thebe/seis/seistrain7.npz,data/thebe/fault/faulttrain7.npz,data/processed/thebe_h5/train7.h5,1032693045
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:70:    train,100x3174x1537,float64,bool,float32,uint8,-2.84981632232666,2.660374641418457,9.623303973857554e-06,0.12655295620612175,5903062,487843800,1.2100311616136148,74205588023112fb56ef47b81908c370cae3b89bb1a10fdc9a6dc416c9ca6be5,8dc688183ad340ee95a42ff321d9f285c2719d7fcb7f5ca623a0da4353a92282,data/thebe/seis/seistrain8.npz,data/thebe/fault/faulttrain8.npz,data/processed/thebe_h5/train8.h5,1046692870
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:71:    train,100x3174x1537,float64,bool,float32,uint8,-3.216402053833008,3.139723777770996,2.7340818943474607e-07,0.12788971853180867,6739751,487843800,1.3815387220253696,2c13da092fdb4ed6cdb7aa947b0318268ead5f644bbfff8e6d75e6f77ffb6b07,a2e0459c72b56ce0bb3c0ccde438eef6f416ad1e63322566932fc98f77e116d0,data/thebe/seis/seistrain9.npz,data/thebe/fault/faulttrain9.npz,data/processed/thebe_h5/train9.h5,1054637087
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:72:    val,100x3174x1537,float64,bool,float32,uint8,-3.718324661254883,3.5749521255493164,-8.142081609447118e-06,0.13305340028663978,7906942,487843800,1.620793786863746,f6cca2e72c86d89e2c05feb92a1604a96d22a3557c25249f1cb2244e95205437,88341218e0d5e63b9092985d6c31612d6d64144d676babf8db194342d59c2bfb,data/thebe/seis/seisval1.npz,data/thebe/fault/faultval1.npz,data/processed/thebe_h5/val1.h5,1116731622
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:73:    val,100x3174x1537,float64,bool,float32,uint8,-3.8605175018310547,3.8904953002929688,-7.648144044332711e-06,0.1357798178216228,9245068,487843800,1.8950877309499474,dd57128664c2fe6e2fe78964e1a057ab23f918fab86fe73f82acbb68d19d0afb,5e1bd1d04cdfc8e875a4036d322cddb27433503e15462d1a56be262a3c47bdbd,data/thebe/seis/seisval2.npz,data/thebe/fault/faultval2.npz,data/processed/thebe_h5/val2.h5,1179747245
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:75:    --- reports/data_audit/thebe_train_val.log ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:87:    RECORDED: data/processed/thebe_h5/train1.h5 and updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:98:    RECORDED: data/processed/thebe_h5/train2.h5 and updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:109:    RECORDED: data/processed/thebe_h5/train3.h5 and updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:120:    RECORDED: data/processed/thebe_h5/train4.h5 and updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:131:    RECORDED: data/processed/thebe_h5/train5.h5 and updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:142:    RECORDED: data/processed/thebe_h5/train6.h5 and updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:153:    RECORDED: data/processed/thebe_h5/train7.h5 and updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:164:    RECORDED: data/processed/thebe_h5/train8.h5 and updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:175:    RECORDED: data/processed/thebe_h5/train9.h5 and updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:186:    RECORDED: data/processed/thebe_h5/val1.h5 and updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:197:    RECORDED: data/processed/thebe_h5/val2.h5 and updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:198:    PASS: converted 11 new Thebe blocks; updated reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:200:    --- reports/data_audit/thebe_preprocessing_candidates.txt ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:201:    ./reports/data_audit/thebe_train_val.log
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:202:    ./reports/data_audit/thebe_h5_statistics.csv
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:203:    ./download_thebe.log
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:209:    Directory: data/processed/thebe_h5
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:212:    Directory: data/thebe/fault
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:215:    Directory: data/thebe/seis
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:218:    --- INSPECTING: data/processed/thebe_h5/test1.h5 ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:225:      source_fault: 'data/thebe/fault/faulttest1.npz'
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:227:      source_seismic: 'data/thebe/seis/seistest1.npz'
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:232:    --- INSPECTING: data/processed/thebe_h5/test2.h5 ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:239:      source_fault: 'data/thebe/fault/faulttest2.npz'
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:241:      source_seismic: 'data/thebe/seis/seistest2.npz'
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:246:    --- INSPECTING: data/processed/thebe_h5/val1.h5 ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:253:      source_fault: 'data/thebe/fault/faultval1.npz'
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:255:      source_seismic: 'data/thebe/seis/seisval1.npz'
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:260:    --- INSPECTING: data/processed/thebe_h5/val2.h5 ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:267:      source_fault: 'data/thebe/fault/faultval2.npz'
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:269:      source_seismic: 'data/thebe/seis/seisval2.npz'
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:274:    --- INSPECTING: data/thebe/fault/faulttest1.npz ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:278:    --- INSPECTING: data/thebe/fault/faulttest2.npz ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:282:    --- INSPECTING: data/thebe/fault/faultval1.npz ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:286:    --- INSPECTING: data/thebe/fault/faultval2.npz ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:290:    --- INSPECTING: data/thebe/seis/seistest1.npz ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:294:    --- INSPECTING: data/thebe/seis/seistest2.npz ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:298:    --- INSPECTING: data/thebe/seis/seisval1.npz ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:302:    --- INSPECTING: data/thebe/seis/seisval2.npz ---
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:306:    === POSSIBLE THEBE MANIFESTS ===
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:393:    === THEBE PREPARATION IMPLEMENTATION ===
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:406:    def thebe_h5(data_root: Path, splits: list[str]) -> None:
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:412:        source_root = data_root / "thebe"
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:413:        output_root = data_root / "processed" / "thebe_h5"
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:415:        report_path = REPORT_DIR / "thebe_h5_statistics.csv"
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:431:                raise RuntimeError(f"No Thebe files found for split {split}")
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:481:                            raise RuntimeError("Fortran-order Thebe arrays are not supported")
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:501:    === THEBE SPLIT/COORDINATE REFERENCES ===
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:503:    2:"""Audit and prepare FaultSeg3D, CRACKS, and Thebe without altering raw data."""
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:677:    247:def thebe_h5(data_root: Path, splits: list[str]) -> None:
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:683:    253:    source_root = data_root / "thebe"
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:684:    254:    output_root = data_root / "processed" / "thebe_h5"
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:686:    256:    report_path = REPORT_DIR / "thebe_h5_statistics.csv"
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:700:    272:            raise RuntimeError(f"No Thebe files found for split {split}")
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:742:    322:                        raise RuntimeError("Fortran-order Thebe arrays are not supported")
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:831:    435:        print(f"PASS: converted {converted} new Thebe blocks; updated {report_path}")
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:833:    437:        print("PASS: no new Thebe files required conversion; existing files were verified.")
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:841:    446:    thebe_parser = commands.add_parser("thebe-h5")
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:842:    447:    thebe_parser.add_argument(
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:852:    457:    elif args.command == "thebe-h5":
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:853:    458:        thebe_h5(args.data_root, args.splits)
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:987:    scripts/faultseg3d_baseline.py-725-    parser.add_argument("--run-dir", default="runs/faultseg3d_b0_seed42")
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:993:    Processed Thebe directory exists: True
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:994:    Processed Thebe array files: 18
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:995:    Existing Thebe-specific evaluator: False
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:1000:    reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.log
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:1005:    [7mSOURCE_LOG="reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.log"[27m
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:1006:    [7mOUTPUT_MD="reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md"[27m
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:1014:    [7m    echo "# Thebe Zero-Shot Compatibility Audit"[27m
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:1036:    SOURCE_LOG="reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.log"
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:1037:    OUTPUT_MD="reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md"
+./reports/data_audit/thebe_zero_shot_compatibility_20261005_090534.md:1045:        echo "# Thebe Zero-Shot Compatibility Audit"
+./reports/evaluation/cracks_error_excerpt.md:7:  "checkpoint": "runs/p1_attention3d_caft_seed42/best.pt",
+./reports/evaluation/cracks_error_excerpt.md:48:  "threshold_source": "runs/p1_attention3d_caft_seed42/final_metrics.json",
+./reports/debug/cracks_evaluation_context.md:26:0019: from attention3d_caft import Attention3D
+./reports/debug/cracks_evaluation_context.md:120:0130:     model = Attention3D().cuda()
+./reports/debug/cracks_evaluation_context.md:430:## Existing result: reports/evaluation/p1_cracks_expert_seed42_20261009_134425/expert_per_section.csv
+./reports/debug/cracks_evaluation_context.md:476:## Existing result: reports/evaluation/p1_cracks_expert_seed42_20261009_134425/final_metrics.json
+./reports/debug/cracks_evaluation_context.md:480:  "checkpoint": "runs/p1_attention3d_caft_seed42/best.pt",
+./reports/debug/cracks_evaluation_context.md:521:  "threshold_source": "runs/p1_attention3d_caft_seed42/final_metrics.json",
+./reports/evaluation/latest_cracks_run.md:62:  "checkpoint": "runs/p1_attention3d_caft_seed42/best.pt",
+./reports/evaluation/latest_cracks_run.md:103:  "threshold_source": "runs/p1_attention3d_caft_seed42/final_metrics.json",
+./reports/p1_thebe_setup.txt:1:usage: evaluate_thebe_zero_shot.py [-h] [--baseline-script BASELINE_SCRIPT]
+./reports/p1_thebe_setup.txt:4:                                   [--thebe-root THEBE_ROOT]
+./reports/p1_thebe_setup.txt:11:Zero-shot evaluation of synthetic Baseline A on official real Thebe test data.
+./reports/p1_thebe_setup.txt:22:  --thebe-root THEBE_ROOT
+./reports/p1_thebe_setup.txt:30:"""Zero-shot evaluation of synthetic Baseline A on official real Thebe test data.
+./reports/p1_thebe_setup.txt:82:class ConcatenatedThebe:
+./reports/p1_thebe_setup.txt:87:            raise RuntimeError("No Thebe test H5 files were supplied")
+./reports/p1_thebe_setup.txt:248:            "runs/baseline_A_synthetic_bce_seed42/best.pt"
+./reports/p1_thebe_setup.txt:255:            "runs/baseline_A_synthetic_bce_seed42/final_metrics.json"
+./reports/p1_thebe_setup.txt:259:        "--thebe-root",
+./reports/p1_thebe_setup.txt:261:        default=Path("data/processed/thebe_h5"),
+./reports/p1_thebe_setup.txt:309:        args.thebe_root.glob("test*.h5"),
+./reports/p1_thebe_setup.txt:314:            f"No official test*.h5 files found in {args.thebe_root}"
+./reports/p1_thebe_setup.txt:370:    reader = ConcatenatedThebe(test_files)
+./reports/p1_thebe_setup.txt:454:        "threshold_selected_using_thebe": False,
+./reports/p1_thebe_setup.txt:455:        "data_split": "official Thebe test only",
+./reports/p1_thebe_setup.txt:841:        "thebe_labels_used_for_threshold": False,
+./reports/p1_thebe_setup.txt:842:        "official_thebe_test": aggregate_metrics,
+./reports/p1_thebe_setup.txt:843:        "official_thebe_test_per_patch_summary": (
+./reports/p1_thebe_setup.txt:889:            "metric_domain": "finite nonzero raw Thebe voxels",
+./reports/p1_thebe_setup.txt:901:                "from synthetic FaultSeg3D to real Thebe."
+./reports/p1_thebe_setup.txt:969:56:class Attention3D(baseline.FaultSeg3D):
+./reports/p1_thebe_setup.txt:994:-rw-rw-r-- 1 khavarj khavarj  17M Oct  9 10:02 runs/p1_attention3d_caft_seed42/best.pt
+./reports/p1_thebe_setup.txt:995:-rw-rw-r-- 1 khavarj khavarj 6.9K Oct  9 10:05 runs/p1_attention3d_caft_seed42/final_metrics.json
+./reports/p1_thebe_setup.txt:996:data/processed/thebe_h5
+./reports/p1_thebe_setup.txt:997:data/thebe
+./reports/p1_thebe_setup.txt:998:runs/baseline_A_zero_shot_thebe_smoke_20261005_094726
+./reports/p1_thebe_setup.txt:999:runs/R100_thebe_seed42_20261005_102737
+./reports/p1_thebe_setup.txt:1000:runs/baseline_A_zero_shot_thebe_smoke_20261005_091638
+./reports/p1_thebe_setup.txt:1001:runs/baseline_A_zero_shot_thebe_full_20261005_095032
+./reports/evaluation/THEBE_ZERO_PATCH_AUDIT.md:1:# Thebe Zero-Patch Audit
+./reports/evaluation/THEBE_ZERO_PATCH_AUDIT.md:12:The first evaluator patch is entirely zero, while other sampled Thebe locations contain varying seismic data. This is consistent with an empty, muted, or padded survey region.
+./reports/evaluation/THEBE_ZERO_PATCH_AUDIT.md:46:Detailed patch statistics: `reports/evaluation/thebe_zero_patch_samples.csv`
+./reports/evaluation/THEBE_EVALUATOR_EDIT_CONTEXT.md:1:# Thebe Evaluator Edit Context
+./reports/evaluation/THEBE_EVALUATOR_EDIT_CONTEXT.md:3:- Source: `scripts/evaluate_thebe_zero_shot.py`
+./reports/evaluation/THEBE_EVALUATOR_EDIT_CONTEXT.md:22:0054: class ConcatenatedThebe:
+./reports/evaluation/THEBE_EVALUATOR_EDIT_CONTEXT.md:36:0227:             "runs/baseline_A_synthetic_bce_seed42/final_metrics.json"
+./reports/evaluation/THEBE_EVALUATOR_EDIT_CONTEXT.md:71:0668:         "official_thebe_test_per_patch_summary": (
+./reports/evaluation/THEBE_EVALUATOR_EDIT_CONTEXT.md:103:0365:         "threshold_selected_using_thebe": False,
+./reports/evaluation/THEBE_EVALUATOR_EDIT_CONTEXT.md:104:0366:         "data_split": "official Thebe test only",
+./reports/evaluation/THEBE_EVALUATOR_EDIT_CONTEXT.md:435:0666:         "thebe_labels_used_for_threshold": False,
+./reports/evaluation/THEBE_EVALUATOR_EDIT_CONTEXT.md:436:0667:         "official_thebe_test": aggregate_metrics,
+./reports/evaluation/THEBE_EVALUATOR_EDIT_CONTEXT.md:437:0668:         "official_thebe_test_per_patch_summary": (
+./reports/evaluation/THEBE_EVALUATOR_EDIT_CONTEXT.md:481:0712:                 "from synthetic FaultSeg3D to real Thebe."
+./external/attention3d_paper/README.md:26:### Validation Results (Thebe Survey)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:14:scripts/evaluate_thebe_zero_shot.py
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:15:scripts/evaluate_thebe_zero_shot.py.before_zero_mask_20261005_094558.bak
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:17:scripts/__pycache__/evaluate_thebe_zero_shot.py.cpython-313.pyc
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:18:scripts/__pycache__/evaluate_thebe_zero_shot.cpython-313.pyc
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:73:data/processed/thebe_h5
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:74:data/thebe
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:75:data/thebe/fault
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:76:data/thebe/seis
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:77:data/thebe/seismic
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:80:runs/baseline_A_synthetic_bce_seed42
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:81:runs/baseline_A_zero_shot_thebe_full_20261005_095032
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:82:runs/baseline_A_zero_shot_thebe_full_20261005_095032/prediction_examples
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:83:runs/baseline_A_zero_shot_thebe_smoke_20261005_091638
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:84:runs/baseline_A_zero_shot_thebe_smoke_20261005_091638/prediction_examples
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:85:runs/baseline_A_zero_shot_thebe_smoke_20261005_094726
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:86:runs/baseline_A_zero_shot_thebe_smoke_20261005_094726/prediction_examples
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:87:runs/loss_ablation_L1_weighted_bce_dice_seed42
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:103:SOURCE: scripts/evaluate_thebe_zero_shot.py SHA256: 834ec8aeb8a726c51f6dd65e4f85fac7652dfcc13f8ab58f0784fe359b9374ec
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:111:  "run_dir": "runs/faultseg3d_b0_seed42",
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:145:FILES PER DIRECTORY: {'data/processed/thebe_h5': 18}
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:147:H5: data/processed/thebe_h5/test1.h5 (1,107,063,922 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:151:H5: data/processed/thebe_h5/test2.h5 (1,157,609,521 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:155:H5: data/processed/thebe_h5/test3.h5 (1,202,815,688 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:159:H5: data/processed/thebe_h5/test4.h5 (1,207,246,023 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:163:H5: data/processed/thebe_h5/test5.h5 (1,105,804,825 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:167:H5: data/processed/thebe_h5/test6.h5 (971,724,277 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:171:H5: data/processed/thebe_h5/test7.h5 (873,254,348 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:175:H5: data/processed/thebe_h5/train1.h5 (717,073,164 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:179:H5: data/processed/thebe_h5/train2.h5 (748,153,745 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:183:H5: data/processed/thebe_h5/train3.h5 (780,327,606 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:187:H5: data/processed/thebe_h5/train4.h5 (812,145,386 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:191:H5: data/processed/thebe_h5/train5.h5 (844,142,314 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:195:H5: data/processed/thebe_h5/train6.h5 (877,969,475 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:199:H5: data/processed/thebe_h5/train7.h5 (1,032,693,045 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:203:H5: data/processed/thebe_h5/train8.h5 (1,046,692,870 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:207:H5: data/processed/thebe_h5/train9.h5 (1,054,637,087 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:211:H5: data/processed/thebe_h5/val1.h5 (1,116,731,622 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:215:H5: data/processed/thebe_h5/val2.h5 (1,179,747,245 bytes)
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:219:RESULT FILE: runs/baseline_A_synthetic_bce_seed42/final_metrics.json
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:222:RESULT FILE: runs/baseline_A_zero_shot_thebe_full_20261005_095032/final_metrics.json
+./reports/evaluation/r100_readiness_20261005_101611/audit.txt:223:top-level keys: ['data', 'efficiency', 'experiment', 'metric_notes', 'official_thebe_test', 'official_thebe_test_per_patch_summary', 'prediction_examples_saved', 'status', 'thebe_labels_used_for_threshold', 'threshold', 'threshold_source', 'training_performed', 'weight_updates']
+./reports/evaluation/THEBE_SMOKE_RESULT_20261005_094726.md:1:# Thebe Zero-Shot Smoke-Test Result
+./reports/evaluation/THEBE_SMOKE_RESULT_20261005_094726.md:5:- Training performed on Thebe: **no**
+./reports/evaluation/THEBE_SMOKE_RESULT_20261005_094726.md:6:- Real Thebe labels used for training: **0%**
+./reports/evaluation/THEBE_SMOKE_RESULT_20261005_094726.md:25:- Complete metrics: `runs/baseline_A_zero_shot_thebe_smoke_20261005_094726/final_metrics.json`
+./reports/evaluation/THEBE_SMOKE_RESULT_20261005_094726.md:26:- Complete command output: `reports/evaluation/baseline_A_zero_shot_thebe_smoke_20261005_094726.log`
+./reports/evaluation/A_TO_T0_FINAL_REPORT_20261005_095032.md:1:# Baseline A → Thebe Zero-Shot Final Report
+./reports/evaluation/A_TO_T0_FINAL_REPORT_20261005_095032.md:7:- Real Thebe data used for training: **0%**
+./reports/evaluation/A_TO_T0_FINAL_REPORT_20261005_095032.md:8:- Training or fine-tuning on Thebe: **none**
+./reports/evaluation/A_TO_T0_FINAL_REPORT_20261005_095032.md:10:- Evaluation data: **official real Thebe test split**
+./reports/evaluation/A_TO_T0_FINAL_REPORT_20261005_095032.md:12:- Threshold selected using Thebe: **no**
+./reports/evaluation/A_TO_T0_FINAL_REPORT_20261005_095032.md:27:## Aggregate metrics on observed Thebe data
+./reports/evaluation/A_TO_T0_FINAL_REPORT_20261005_095032.md:141:These results measure how a model trained only on synthetic FaultSeg3D transfers to real Thebe without training or adaptation. They do not measure a model trained using real data.
+./reports/evaluation/A_TO_T0_FINAL_REPORT_20261005_095032.md:143:Scores apply only to observed Thebe seismic voxels. Exact-zero blank/muted regions were excluded using a seismic-only mask.
+./reports/evaluation/A_TO_T0_FINAL_REPORT_20261005_095032.md:145:Thebe label thickness may differ from FaultSeg3D label thickness, so this must be documented when comparing datasets.
+./reports/evaluation/A_TO_T0_FINAL_REPORT_20261005_095032.md:147:- Complete metrics: `runs/baseline_A_zero_shot_thebe_full_20261005_095032/final_metrics.json`
+./reports/evaluation/A_TO_T0_FINAL_REPORT_20261005_095032.md:148:- Complete execution log: `reports/evaluation/baseline_A_zero_shot_thebe_full_20261005_095032.log`
+./reports/evaluation/thebe_smoke_summary_20261005_094726.txt:5:REPORT: reports/evaluation/THEBE_SMOKE_RESULT_20261005_094726.md
+./reports/evaluation/baseline_A_zero_shot_thebe_smoke_20261005_091638_diagnostic.md:1:# Thebe Zero-Shot Smoke-Test Diagnostic
+./reports/evaluation/baseline_A_zero_shot_thebe_smoke_20261005_091638_diagnostic.md:7:- Source log: `reports/evaluation/baseline_A_zero_shot_thebe_smoke_20261005_091638.log`
+./reports/evaluation/baseline_A_zero_shot_thebe_smoke_20261005_091638_diagnostic.md:22:  File "/shared/home/khavarj/projects/fault_detection/scripts/evaluate_thebe_zero_shot.py", line 765, in <module>
+./reports/evaluation/baseline_A_zero_shot_thebe_smoke_20261005_091638_diagnostic.md:25:  File "/shared/home/khavarj/projects/fault_detection/scripts/evaluate_thebe_zero_shot.py", line 449, in main
+./reports/evaluation/baseline_A_zero_shot_thebe_smoke_20261005_091638_diagnostic.md:36:  File "/shared/home/khavarj/projects/fault_detection/scripts/evaluate_thebe_zero_shot.py", line 765, in <module>
+./reports/evaluation/baseline_A_zero_shot_thebe_smoke_20261005_091638_diagnostic.md:39:  File "/shared/home/khavarj/projects/fault_detection/scripts/evaluate_thebe_zero_shot.py", line 449, in main
+./reports/evaluation/baseline_A_zero_shot_thebe_smoke_20261005_091638_diagnostic.md:49:- `runs/baseline_A_zero_shot_thebe_smoke_20261005_091638`
+
+=== RELEVANT LAUNCH HISTORY ===
+ 1598  spec = importlib.util.spec_from_file_location("paper_attention3d", path)
+ 1655  (   cd ~/projects/fault_detection || exit 1;   set -o pipefail;   mkdir -p reports;    .venv_train/bin/python -u scripts/train_paper_attention3d_thebe.py     --run-dir "runs/paper_attention3d_thebe_smoke_$(date +%Y%m%d_%H%M%S)"     --epochs 1 --train-patches 4 --val-patches 32     2>&1 | tee reports/paper_attention3d_thebe_smoke.log || exit 1;    .venv_train/bin/python -u scripts/train_paper_attention3d_thebe.py     --run-dir runs/paper_attention3d_thebe_supervised_seed42     --epochs 100 --train-patches 64 --val-patches 32     2>&1 | tee -a reports/paper_attention3d_thebe_supervised_seed42.log; )
+ 1658  nl -ba scripts/train_paper_attention3d_thebe.py | sed -n '90,145p'
+ 1660  grep -nE 'torch.save|checkpoint|resume|last.pt|best.pt'   scripts/train_paper_attention3d_thebe.py
+ 1664  cp -a scripts/train_paper_attention3d_thebe.py   scripts/train_paper_attention3d_thebe.py.before_sampler_fix
+ 1665  sed -i 's/attempts = 64 if want_fault is not None else 8/attempts = 256 if want_fault is True else 64/' scripts/train_paper_attention3d_thebe.py
+ 1666  grep -n 'attempts =' scripts/train_paper_attention3d_thebe.py
+ 1669  nohup .venv_train/bin/python -u   scripts/train_paper_attention3d_thebe.py   --run-dir runs/paper_attention3d_thebe_supervised_seed42   > reports/training/paper_attention3d_thebe_supervised_seed42_resume.log   2>&1 &
+ 1671  echo "$pid" | tee reports/training/paper_attention3d_thebe_supervised_seed42_resume.pid
+ 1673  tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+ 1675  tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+ 1677  tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+ 1679  tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+ 1681  tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+ 1683  tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+ 1695  for f in   reports/training/paper_attention3d_thebe_supervised_seed42_resume.log   reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean.log; do     echo;     echo "============================================================";     echo "LOG: $f";     stat -c 'modified=%y  bytes=%s' "$f";      echo "--- START ---";     sed -n '1,12p' "$f";      echo "--- LAST 5 COMPLETED EPOCHS ---";     rg '^EPOCH ' "$f" | tail -5;      echo "--- COMPLETION, FAILURE, OR NaN MARKERS ---";     rg -ni       'training complete|completed|finished|done|traceback|killed|terminated|out of memory|cuda error|exception|nan'       "$f" | tail -30 || true;      echo "--- FINAL 25 RAW LINES ---";     tail -25 "$f"; done
+ 1703      "runs/paper_attention3d_thebe_supervised_seed42/last.pt",
+ 1704      "runs/paper_attention3d_thebe_supervised_seed42/best.pt",
+ 1705      "runs/paper_attention3d_thebe_supervised_seed42_bf16_clean/last.pt",
+ 1706      "runs/paper_attention3d_thebe_supervised_seed42_bf16_clean/best.pt",
+ 1744  history | rg -i 'nohup.*paper_attention3d|paper_attention3d.*(resume|bf16|clean)' | tail -30
+ 1747  old1_run="runs/paper_attention3d_thebe_supervised_seed42"
+ 1748  old1_log="reports/training/paper_attention3d_thebe_supervised_seed42_resume.log"
+ 1749  new1_run="runs/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan"
+ 1750  new1_log="reports/training/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan.log"
+ 1751  old2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean"
+ 1752  old2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean.log"
+ 1753  new2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066"
+ 1754  new2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066.log"
+ 1762  find runs reports/training -maxdepth 1   -name 'paper_attention3d_thebe_supervised_seed42*' -printf '%p\n' |   sort
+ 1765  src1_run="runs/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan"
+ 1766  src1_log="reports/training/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan.log"
+ 1767  dst1_run="runs/paper_attention3d_thebe_supervised_seed42"
+ 1768  dst1_log="reports/training/paper_attention3d_thebe_supervised_seed42_resume.log"
+ 1769  src2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066"
+ 1770  src2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066.log"
+ 1771  dst2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean"
+ 1772  dst2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean.log"
+ 1782  src1_run="runs/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan"
+ 1783  src1_log="reports/training/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan.log"
+ 1784  dst1_run="runs/paper_attention3d_thebe_supervised_seed42"
+ 1785  dst1_log="reports/training/paper_attention3d_thebe_supervised_seed42_resume.log"
+ 1786  src2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066"
+ 1787  src2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066.log"
+ 1788  dst2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean"
+ 1789  dst2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean.log"
+ 1793  {     echo "=== REPOSITORY ===";     date -Is;     pwd;     git status --short;     git log -15 --date=iso --pretty='format:%h %ad %s';      echo;     echo "=== RELEVANT DOCUMENTATION ===";     rg -n -i 'attention3d|bf16|r100|thebe|seed42|roadmap'       --glob '*.md' --glob '*.txt'       --glob '!reports/training/**'       --glob '!runs/**' . || true;      echo;     echo "=== RELEVANT LAUNCH HISTORY ===";     history | rg -i       'paper_attention3d|bf16_clean|train_paper_attention3d_thebe|R100_thebe' || true;     rg -n -i       'paper_attention3d|bf16_clean|train_paper_attention3d_thebe|R100_thebe'       ~/.bash_history 2>/dev/null || true;      echo;     echo "=== TRAINING SCRIPT METADATA ===";     stat scripts/train_paper_attention3d_thebe.py;     sha256sum scripts/train_paper_attention3d_thebe.py;     rg -n -i       'bf16|bfloat|autocast|scaler|resume|sampler|balance|fault.patch|seed|run.dir|learning.rate'       scripts/train_paper_attention3d_thebe.py || true;      echo;     echo "=== UNCOMMITTED SCRIPT CHANGES ===";     git diff -- scripts/train_paper_attention3d_thebe.py;      echo;     echo "=== SCRIPT HISTORY ===";     git log -10 --date=iso --stat -- scripts/train_paper_attention3d_thebe.py;      echo;     echo "=== FILES MODIFIED ON OCTOBER 12 ===";     find scripts configs -type f       -newermt '2026-10-12 00:00:00'       ! -newermt '2026-10-13 00:00:00'       -printf '%TY-%Tm-%Td %TH:%TM:%TS %p\n' 2>/dev/null |       sort;      echo;     echo "=== RUN AND LOG FILES ===";     find runs reports/training -maxdepth 2       -name 'paper_attention3d_thebe_supervised_seed42*'       -printf '%TY-%Tm-%Td %TH:%TM:%TS %s %p\n' |       sort;      echo;     echo "=== TERMINATION EVIDENCE ===";     journalctl --since '2026-10-12 12:10:00'       --until '2026-10-12 12:40:00' --no-pager 2>/dev/null |       rg -i 'oom|killed process|python|nvidia|cuda|segfault' || true;      journalctl --since '2026-10-12 23:30:00'       --until '2026-10-13 00:00:00' --no-pager 2>/dev/null |       rg -i 'oom|killed process|python|nvidia|cuda|segfault' || true; } > "$audit" 2>&1
+600:LOG=$(ls -t reports/training/R100_thebe_seed42_*.log 2>/dev/null | head -n 1)
+662:LOG="reports/training/R100_thebe_seed42_resume_${STAMP}.log"
+677:LOG="$(ls -t reports/training/R100_thebe_seed42_resume_*.log 2>/dev/null | head -n 1)"
+694:    \( -name 'R100_thebe_seed42_*.log' -o -name 'R100_thebe_seed42_resume_*.log' \) \
+698:    -name 'R100_thebe_seed42_*' \
+1792:spec = importlib.util.spec_from_file_location("paper_attention3d", path)
+1856:(   cd ~/projects/fault_detection || exit 1;   set -o pipefail;   mkdir -p reports;    .venv_train/bin/python -u scripts/train_paper_attention3d_thebe.py     --run-dir "runs/paper_attention3d_thebe_smoke_$(date +%Y%m%d_%H%M%S)"     --epochs 1 --train-patches 4 --val-patches 32     2>&1 | tee reports/paper_attention3d_thebe_smoke.log || exit 1;    .venv_train/bin/python -u scripts/train_paper_attention3d_thebe.py     --run-dir runs/paper_attention3d_thebe_supervised_seed42     --epochs 100 --train-patches 64 --val-patches 32     2>&1 | tee -a reports/paper_attention3d_thebe_supervised_seed42.log; )
+1859:nl -ba scripts/train_paper_attention3d_thebe.py | sed -n '90,145p'
+1861:grep -nE 'torch.save|checkpoint|resume|last.pt|best.pt'   scripts/train_paper_attention3d_thebe.py
+1865:cp -a scripts/train_paper_attention3d_thebe.py   scripts/train_paper_attention3d_thebe.py.before_sampler_fix
+1866:sed -i 's/attempts = 64 if want_fault is not None else 8/attempts = 256 if want_fault is True else 64/' scripts/train_paper_attention3d_thebe.py
+1867:grep -n 'attempts =' scripts/train_paper_attention3d_thebe.py
+1870:nohup .venv_train/bin/python -u   scripts/train_paper_attention3d_thebe.py   --run-dir runs/paper_attention3d_thebe_supervised_seed42   > reports/training/paper_attention3d_thebe_supervised_seed42_resume.log   2>&1 &
+1872:echo "$pid" | tee reports/training/paper_attention3d_thebe_supervised_seed42_resume.pid
+1874:tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+1876:tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+1878:tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+1880:tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+1882:tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+1884:tail -n 30 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+1896:for f in   reports/training/paper_attention3d_thebe_supervised_seed42_resume.log   reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean.log; do     echo;     echo "============================================================";     echo "LOG: $f";     stat -c 'modified=%y  bytes=%s' "$f";      echo "--- START ---";     sed -n '1,12p' "$f";      echo "--- LAST 5 COMPLETED EPOCHS ---";     rg '^EPOCH ' "$f" | tail -5;      echo "--- COMPLETION, FAILURE, OR NaN MARKERS ---";     rg -ni       'training complete|completed|finished|done|traceback|killed|terminated|out of memory|cuda error|exception|nan'       "$f" | tail -30 || true;      echo "--- FINAL 25 RAW LINES ---";     tail -25 "$f"; done
+1905:    "runs/paper_attention3d_thebe_supervised_seed42/last.pt",
+1906:    "runs/paper_attention3d_thebe_supervised_seed42/best.pt",
+1907:    "runs/paper_attention3d_thebe_supervised_seed42_bf16_clean/last.pt",
+1908:    "runs/paper_attention3d_thebe_supervised_seed42_bf16_clean/best.pt",
+1954:history | rg -i 'nohup.*paper_attention3d|paper_attention3d.*(resume|bf16|clean)' | tail -30
+1957:old1_run="runs/paper_attention3d_thebe_supervised_seed42"
+1958:old1_log="reports/training/paper_attention3d_thebe_supervised_seed42_resume.log"
+1959:new1_run="runs/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan"
+1960:new1_log="reports/training/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan.log"
+1961:old2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean"
+1962:old2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean.log"
+1963:new2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066"
+1964:new2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066.log"
+1972:find runs reports/training -maxdepth 1   -name 'paper_attention3d_thebe_supervised_seed42*' -printf '%p\n' |   sort
+1975:src1_run="runs/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan"
+1976:src1_log="reports/training/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan.log"
+1977:dst1_run="runs/paper_attention3d_thebe_supervised_seed42"
+1978:dst1_log="reports/training/paper_attention3d_thebe_supervised_seed42_resume.log"
+1979:src2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066"
+1980:src2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066.log"
+1981:dst2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean"
+1982:dst2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean.log"
+1992:src1_run="runs/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan"
+1993:src1_log="reports/training/paper_attention3d_thebe_supervised_seed42_stopped_during_ep078_nan.log"
+1994:dst1_run="runs/paper_attention3d_thebe_supervised_seed42"
+1995:dst1_log="reports/training/paper_attention3d_thebe_supervised_seed42_resume.log"
+1996:src2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066"
+1997:src2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean_stopped_during_ep066.log"
+1998:dst2_run="runs/paper_attention3d_thebe_supervised_seed42_bf16_clean"
+1999:dst2_log="reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean.log"
+
+=== TRAINING SCRIPT METADATA ===
+  File: scripts/train_paper_attention3d_thebe.py
+  Size: 17018     	Blocks: 40         IO Block: 4096   regular file
+Device: fc01h/64513d	Inode: 45760787    Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1040/ khavarj)   Gid: ( 1040/ khavarj)
+Access: 2026-10-12 08:32:22.323213133 +0400
+Modify: 2026-10-12 08:32:22.321622417 +0400
+Change: 2026-10-12 08:32:22.322010251 +0400
+ Birth: 2026-10-12 08:32:22.319213134 +0400
+f6040b004ed042275d7614db59352edc7283f4e767e7868b5b8089f7dd44a9db  scripts/train_paper_attention3d_thebe.py
+62:        seed: int,
+63:        balance_fault_patches: bool,
+71:        self.seed = seed
+73:        self.balance_fault_patches = balance_fault_patches
+90:        rng = np.random.default_rng(self.seed + self.epoch * 1_000_003 + index * 1009)
+93:        want_fault = True if self.balance_fault_patches and index % 2 == 0 else None
+157:    parser.add_argument("--run-dir", type=Path, required=True)
+163:    parser.add_argument("--seed", type=int, default=42)
+176:    random.seed(args.seed)
+177:    np.random.seed(args.seed)
+178:    torch.manual_seed(args.seed)
+179:    torch.cuda.manual_seed_all(args.seed)
+194:    scaler = torch.amp.GradScaler("cuda")
+206:    train_set = ThebePatches(train_paths, args.train_patches, args.seed, True)
+207:    val_set = ThebePatches(val_paths, args.val_patches, args.seed + 97_531, False)
+211:    run_dir = args.run_dir
+212:    run_dir.mkdir(parents=True, exist_ok=True)
+213:    last_path = run_dir / "last.pt"
+214:    history_path = run_dir / "history.csv"
+215:    if not last_path.exists() and any(run_dir.iterdir()):
+216:        raise RuntimeError(f"Nonempty run directory without resumable checkpoint: {run_dir}")
+234:        "seed": args.seed,
+238:        (run_dir / "run_configuration.json").write_text(json.dumps(config, indent=2) + "\n")
+247:        scaler.load_state_dict(previous["scaler"])
+254:        print(f"RESUME epoch={start_epoch + 1} best_val_dice={best_dice:.6f}", flush=True)
+271:                    with torch.autocast("cuda", dtype=torch.float16):
+278:                scaler.scale(loss / group_size).backward()
+280:                    scaler.unscale_(optimizer)
+282:                    scaler.step(optimizer)
+283:                    scaler.update()
+299:                        with torch.autocast("cuda", dtype=torch.float16):
+327:                save_atomic(run_dir / "best.pt", {
+335:                "scheduler": scheduler.state_dict(), "scaler": scaler.state_dict(),
+349:    (run_dir / "status.json").write_text(json.dumps({
+351:        "epochs_completed": len(history), "best_checkpoint": str(run_dir / "best.pt"),
+355:          f"checkpoint={run_dir / 'best.pt'}", flush=True)
+
+=== UNCOMMITTED SCRIPT CHANGES ===
+warning: Not a git repository. Use --no-index to compare two paths outside a working tree
+usage: git diff --no-index [<options>] <path> <path>
+
+Diff output format options
+    -p, --patch           generate patch
+    -s, --no-patch        suppress diff output
+    -u                    generate patch
+    -U, --unified[=<n>]   generate diffs with <n> lines context
+    -W, --[no-]function-context
+                          generate diffs with <n> lines context
+    --raw                 generate the diff in raw format
+    --patch-with-raw      synonym for '-p --raw'
+    --patch-with-stat     synonym for '-p --stat'
+    --numstat             machine friendly --stat
+    --shortstat           output only the last line of --stat
+    -X, --dirstat[=<param1>,<param2>...]
+                          output the distribution of relative amount of changes for each sub-directory
+    --cumulative          synonym for --dirstat=cumulative
+    --dirstat-by-file[=<param1>,<param2>...]
+                          synonym for --dirstat=files,<param1>,<param2>...
+    --check               warn if changes introduce conflict markers or whitespace errors
+    --summary             condensed summary such as creations, renames and mode changes
+    --name-only           show only names of changed files
+    --name-status         show only names and status of changed files
+    --stat[=<width>[,<name-width>[,<count>]]]
+                          generate diffstat
+    --stat-width <width>  generate diffstat with a given width
+    --stat-name-width <width>
+                          generate diffstat with a given name width
+    --stat-graph-width <width>
+                          generate diffstat with a given graph width
+    --stat-count <count>  generate diffstat with limited lines
+    --[no-]compact-summary
+                          generate compact summary in diffstat
+    --binary              output a binary diff that can be applied
+    --[no-]full-index     show full pre- and post-image object names on the "index" lines
+    --[no-]color[=<when>] show colored diff
+    --ws-error-highlight <kind>
+                          highlight whitespace errors in the 'context', 'old' or 'new' lines in the diff
+    -z                    do not munge pathnames and use NULs as output field terminators in --raw or --numstat
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+    --src-prefix <prefix> show the given source prefix instead of "a/"
+    --dst-prefix <prefix> show the given destination prefix instead of "b/"
+    --line-prefix <prefix>
+                          prepend an additional prefix to every line of output
+    --no-prefix           do not show any source or destination prefix
+    --default-prefix      use default prefixes a/ and b/
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    --output-indicator-new <char>
+                          specify the character to indicate a new line instead of '+'
+    --output-indicator-old <char>
+                          specify the character to indicate an old line instead of '-'
+    --output-indicator-context <char>
+                          specify the character to indicate a context instead of ' '
+
+Diff rename options
+    -B, --break-rewrites[=<n>[/<m>]]
+                          break complete rewrite changes into pairs of delete and create
+    -M, --find-renames[=<n>]
+                          detect renames
+    -D, --irreversible-delete
+                          omit the preimage for deletes
+    -C, --find-copies[=<n>]
+                          detect copies
+    --[no-]find-copies-harder
+                          use unmodified files as source to find copies
+    --no-renames          disable rename detection
+    --[no-]rename-empty   use empty blobs as rename source
+    --[no-]follow         continue listing the history of a file beyond renames
+    -l <n>                prevent rename/copy detection if the number of rename/copy targets exceeds given limit
+
+Diff algorithm options
+    --minimal             produce the smallest possible diff
+    -w, --ignore-all-space
+                          ignore whitespace when comparing lines
+    -b, --ignore-space-change
+                          ignore changes in amount of whitespace
+    --ignore-space-at-eol ignore changes in whitespace at EOL
+    --ignore-cr-at-eol    ignore carrier-return at the end of line
+    --ignore-blank-lines  ignore changes whose lines are all blank
+    -I, --[no-]ignore-matching-lines <regex>
+                          ignore changes whose all lines match <regex>
+    --[no-]indent-heuristic
+                          heuristic to shift diff hunk boundaries for easy reading
+    --patience            generate diff using the "patience diff" algorithm
+    --histogram           generate diff using the "histogram diff" algorithm
+    --diff-algorithm <algorithm>
+                          choose a diff algorithm
+    --anchored <text>     generate diff using the "anchored diff" algorithm
+    --word-diff[=<mode>]  show word diff, using <mode> to delimit changed words
+    --word-diff-regex <regex>
+                          use <regex> to decide what a word is
+    --color-words[=<regex>]
+                          equivalent to --word-diff=color --word-diff-regex=<regex>
+    --[no-]color-moved[=<mode>]
+                          moved lines of code are colored differently
+    --[no-]color-moved-ws <mode>
+                          how white spaces are ignored in --color-moved
+
+Other diff options
+    --[no-]relative[=<prefix>]
+                          when run from subdir, exclude changes outside and show relative paths
+    -a, --[no-]text       treat all files as text
+    -R                    swap two inputs, reverse the diff
+    --[no-]exit-code      exit with 1 if there were differences, 0 otherwise
+    --[no-]quiet          disable all output of the program
+    --[no-]ext-diff       allow an external diff helper to be executed
+    --[no-]textconv       run external text conversion filters when comparing binary files
+    --ignore-submodules[=<when>]
+                          ignore changes to submodules in the diff generation
+    --submodule[=<format>]
+                          specify how differences in submodules are shown
+    --ita-invisible-in-index
+                          hide 'git add -N' entries from the index
+    --ita-visible-in-index
+                          treat 'git add -N' entries as real in the index
+    -S <string>           look for differences that change the number of occurrences of the specified string
+    -G <regex>            look for differences that change the number of occurrences of the specified regex
+    --pickaxe-all         show all changes in the changeset with -S or -G
+    --pickaxe-regex       treat <string> in -S as extended POSIX regular expression
+    -O <file>             control the order in which files appear in the output
+    --rotate-to <path>    show the change in the specified path first
+    --skip-to <path>      skip the output to the specified path
+    --find-object <object-id>
+                          look for differences that change the number of occurrences of the specified object
+    --diff-filter [(A|C|D|M|R|T|U|X|B)...[*]]
+                          select files by diff type
+    --output <file>       output to a specific file
+
+
+=== SCRIPT HISTORY ===
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+=== FILES MODIFIED ON OCTOBER 12 ===
+2026-10-12 08:32:22.3216224170 scripts/train_paper_attention3d_thebe.py
+2026-10-12 14:23:56.8256477150 scripts/train_paper_attention3d_thebe_bf16.py
+2026-10-12 14:23:56.8586751510 scripts/__pycache__/train_paper_attention3d_thebe_bf16.cpython-313.pyc
+
+=== RUN AND LOG FILES ===
+2026-10-12 08:33:16.3781960510 8 reports/training/paper_attention3d_thebe_supervised_seed42_resume.pid
+2026-10-12 12:22:23.9419979230 4096 runs/paper_attention3d_thebe_supervised_seed42
+2026-10-12 12:27:31.5959128870 9096 reports/training/paper_attention3d_thebe_supervised_seed42_resume.log
+2026-10-12 14:24:27.2352222680 8 reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean.pid
+2026-10-12 23:44:31.1072060830 4096 runs/paper_attention3d_thebe_supervised_seed42_bf16_clean
+2026-10-12 23:46:22.3081748470 20708 reports/training/paper_attention3d_thebe_supervised_seed42_bf16_clean.log
+
+=== TERMINATION EVIDENCE ===
+
+=== CHECKPOINT CONFIGURATION ===
+
+RUN: runs/paper_attention3d_thebe_supervised_seed42
+
+CHECKPOINT: runs/paper_attention3d_thebe_supervised_seed42/best.pt
+epoch:
+70
+validation_metrics:
+{'epoch': 70,
+ 'train_loss': 0.40809879172593355,
+ 'val_loss': 0.4318309361115098,
+ 'val_dice': 0.5390039878151507,
+ 'val_precision': 0.548684762728813,
+ 'val_recall': 0.5296588976693007,
+ 'val_fault_prevalence': 0.02601744759131709,
+ 'lr': 0.00017708333333333332,
+ 'seconds_elapsed': 10345.262432098389}
+config:
+{'experiment': 'paper_global_attention_real_Thebe_supervised_without_denoising_pretraining',
+ 'paper_source': 'external/attention3d_paper/fault-detection-global-attention.py',
+ 'parameter_count': 45001057,
+ 'train_files': ['data/processed/thebe_h5/train1.h5',
+                 'data/processed/thebe_h5/train2.h5',
+                 'data/processed/thebe_h5/train3.h5',
+                 'data/processed/thebe_h5/train4.h5',
+                 'data/processed/thebe_h5/train5.h5',
+                 'data/processed/thebe_h5/train6.h5',
+                 'data/processed/thebe_h5/train7.h5',
+                 'data/processed/thebe_h5/train8.h5',
+                 'data/processed/thebe_h5/train9.h5'],
+ 'validation_files': ['data/processed/thebe_h5/val1.h5', 'data/processed/thebe_h5/val2.h5'],
+ 'test_files_read': False,
+ 'pretraining_performed': False,
+ 'threshold': 0.5,
+ 'patch_size': 64,
+ 'train_patches_per_epoch': 64,
+ 'validation_patches_fixed': 32,
+ 'train_sampling': 'half of patches contain at least one labeled fault voxel',
+ 'validation_sampling': 'fixed uniform random positions from validation H5 files',
+ 'optimizer': 'AdamW 5e-4, weight_decay 1e-4',
+ 'loss': "authors' UnifiedFocalLoss; lambda=0.5, alpha=0.3, beta=0.7",
+ 'accumulation_steps': 4,
+ 'seed': 42,
+ 'paper_results_comparable': False}
+scaler_state: None
+
+CHECKPOINT: runs/paper_attention3d_thebe_supervised_seed42/last.pt
+epoch:
+76
+best_dice:
+0.5390039878151507
+stale_epochs:
+7
+optimizer_group:
+{'lr': 0.0001394097222222222,
+ 'betas': (0.9, 0.999),
+ 'eps': 1e-08,
+ 'weight_decay': 0.0001,
+ 'amsgrad': False,
+ 'maximize': False,
+ 'foreach': None,
+ 'capturable': False,
+ 'differentiable': False,
+ 'fused': None,
+ 'decoupled_weight_decay': True,
+ 'initial_lr': 0.0005}
+scaler_state: {'scale': 1.862645149230957e-09, 'growth_factor': 2.0, 'backoff_factor': 0.5, 'growth_interval': 2000, '_growth_tracker': 0}
+
+RUN: runs/paper_attention3d_thebe_supervised_seed42_bf16_clean
+
+CHECKPOINT: runs/paper_attention3d_thebe_supervised_seed42_bf16_clean/best.pt
+epoch:
+61
+validation_metrics:
+{'epoch': 61,
+ 'train_loss': 0.41986336657373613,
+ 'val_loss': 0.420611662833835,
+ 'val_dice': 0.3097469020482445,
+ 'val_precision': 0.2993245197466016,
+ 'val_recall': 0.3209212763829149,
+ 'val_fault_prevalence': 0.02601744759131709,
+ 'lr': 0.00022552083333333335,
+ 'seconds_elapsed': 31562.110943555832}
+config:
+{'experiment': 'paper_global_attention_real_Thebe_supervised_without_denoising_pretraining_bf16_stability_fixed',
+ 'paper_source': 'external/attention3d_paper/fault-detection-global-attention.py',
+ 'parameter_count': 45001057,
+ 'train_files': ['data/processed/thebe_h5/train1.h5',
+                 'data/processed/thebe_h5/train2.h5',
+                 'data/processed/thebe_h5/train3.h5',
+                 'data/processed/thebe_h5/train4.h5',
+                 'data/processed/thebe_h5/train5.h5',
+                 'data/processed/thebe_h5/train6.h5',
+                 'data/processed/thebe_h5/train7.h5',
+                 'data/processed/thebe_h5/train8.h5',
+                 'data/processed/thebe_h5/train9.h5'],
+ 'validation_files': ['data/processed/thebe_h5/val1.h5', 'data/processed/thebe_h5/val2.h5'],
+ 'test_files_read': False,
+ 'pretraining_performed': False,
+ 'threshold': 0.5,
+ 'patch_size': 64,
+ 'train_patches_per_epoch': 64,
+ 'validation_patches_fixed': 32,
+ 'train_sampling': 'half of patches contain at least one labeled fault voxel',
+ 'validation_sampling': 'fixed uniform random positions from validation H5 files',
+ 'optimizer': 'AdamW 5e-4, weight_decay 1e-4',
+ 'precision': 'BF16 autocast; gradient scaling disabled',
+ 'nonfinite_policy': 'abort on nonfinite normalized input, logits, loss, or gradient norm',
+ 'loss': "authors' UnifiedFocalLoss; lambda=0.5, alpha=0.3, beta=0.7",
+ 'accumulation_steps': 4,
+ 'seed': 42,
+ 'paper_results_comparable': False}
+scaler_state: None
+
+CHECKPOINT: runs/paper_attention3d_thebe_supervised_seed42_bf16_clean/last.pt
+epoch:
+64
+best_dice:
+0.3097469020482445
+stale_epochs:
+4
+optimizer_group:
+{'lr': 0.0002039930555555556,
+ 'betas': (0.9, 0.999),
+ 'eps': 1e-08,
+ 'weight_decay': 0.0001,
+ 'amsgrad': False,
+ 'maximize': False,
+ 'foreach': None,
+ 'capturable': False,
+ 'differentiable': False,
+ 'fused': None,
+ 'decoupled_weight_decay': True,
+ 'initial_lr': 0.0005}
+scaler_state: {}

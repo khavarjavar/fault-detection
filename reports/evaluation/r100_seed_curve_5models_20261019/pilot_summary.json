@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "test_files_opened": false,
+  "original_three_dice": 0.5889510763632425,
+  "five_model_dice": 0.5973111244077022,
+  "gain_over_original_three": 0.008360048044459667,
+  "mean_three_model_dice_within_five_seed_pool": 0.5917963426860225,
+  "gain_over_mean_three_within_same_pool": 0.005514781721679629,
+  "decision_reference_gain": 0.002,
+  "above_practical_gain_reference": true,
+  "note": "Exploratory validation comparison, not a statistical significance test or proof of saturation."
+}

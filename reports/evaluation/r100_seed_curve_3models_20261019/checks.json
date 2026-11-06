@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "synthetic_tests_passed": 6,
+  "original_histograms_exact": 8,
+  "subsets_measured": 7,
+  "original_three_seed_cached_ensemble_exact": true,
+  "test_files_opened": false,
+  "new_training_started": false,
+  "cache_bytes": 7978601662
+}

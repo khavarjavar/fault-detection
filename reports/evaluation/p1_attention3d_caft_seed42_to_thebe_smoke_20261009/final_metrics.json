@@ -1,0 +1,75 @@
+{
+  "data": {
+    "complete_coverage": false,
+    "excluded_no_data_voxels": 4194304,
+    "expected_full_test_voxels": 3429541914,
+    "full_patch_count": 1950,
+    "overlap": false,
+    "padding_counted_in_metrics": false,
+    "patch_shape": [
+      128,
+      128,
+      128
+    ],
+    "patches_inferred": 2,
+    "patches_scored": 0,
+    "positive_labels_outside_valid_mask": 0,
+    "raw_voxels_covered": 4194304,
+    "test_files": [
+      "data/processed/thebe_h5/test1.h5",
+      "data/processed/thebe_h5/test2.h5",
+      "data/processed/thebe_h5/test3.h5",
+      "data/processed/thebe_h5/test4.h5",
+      "data/processed/thebe_h5/test5.h5",
+      "data/processed/thebe_h5/test6.h5",
+      "data/processed/thebe_h5/test7.h5"
+    ],
+    "test_shape": [
+      703,
+      3174,
+      1537
+    ],
+    "valid_data_fraction": 0.0,
+    "valid_data_voxels_evaluated": 0
+  },
+  "efficiency": {
+    "mean_model_inference_seconds_per_patch": 0.12364676804281771,
+    "peak_cuda_gib": 1.0422353744506836,
+    "total_model_inference_seconds": 0.24729353608563542,
+    "wall_seconds": 0.4586038589477539
+  },
+  "experiment": "A_to_T0_zero_shot",
+  "metric_notes": {
+    "bidirectional_chamfer": "sum of directed mean nearest-point distances",
+    "distance_units": "voxels",
+    "important": "These results measure zero-shot transfer from synthetic FaultSeg3D to real Thebe.",
+    "metric_domain": "finite nonzero raw Thebe voxels",
+    "modified_hausdorff": "max of directed mean nearest-point distances",
+    "one_empty_mask_policy": "valid-patch diagonal penalty"
+  },
+  "official_thebe_test": {
+    "accuracy": 0.0,
+    "balanced_accuracy": 0.0,
+    "dice": 0.0,
+    "fn": 0,
+    "fp": 0,
+    "iou": 0.0,
+    "mcc": 0.0,
+    "pr_auc_approx": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "roc_auc_approx": 0.0,
+    "specificity": 0.0,
+    "threshold": 0.98095703125,
+    "tn": 0,
+    "tp": 0
+  },
+  "official_thebe_test_per_patch_summary": {},
+  "prediction_examples_saved": 0,
+  "status": "smoke_test_only",
+  "thebe_labels_used_for_threshold": false,
+  "threshold": 0.98095703125,
+  "threshold_source": "Baseline A synthetic validation",
+  "training_performed": false,
+  "weight_updates": 0
+}

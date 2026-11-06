@@ -1,0 +1,20 @@
+[
+  {
+    "source": "catalogue_resource",
+    "http_status": 403
+  },
+  {
+    "source": "historical_seg_object",
+    "http_status": 403
+  },
+  {
+    "source": "saved_download_target",
+    "http_status": 405
+  },
+  {
+    "source": "saved_download_target",
+    "method": "GET",
+    "range": "last_4096_local_bytes",
+    "http_status": 404
+  }
+]

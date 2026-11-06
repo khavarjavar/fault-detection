@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-11-02T05:06:38.771777+00:00",
+  "source_evaluation": "reports/evaluation/r100_clean_frozen_test_20261019/test_per_patch.csv",
+  "checkpoint_hashes": {
+    "42": "d92b8d3130909a062968c6dd678543db29ea700fc12bb5a8ca070f78d6e1c40c",
+    "43": "08bfae40b6108a58dfa5f32bccde6bcd45dc01c9754727202a38cd275c28572e",
+    "44": "9edd1fc64e6a7182a2c06a214d6c69808e5ac1e35204c4bfb93e6e2738bd2e8d"
+  },
+  "threshold": 0.27490234375,
+  "selection": "Fixed x slabs 0,256,512; median-positive fault tile among tiles with >1.5 million valid voxels in each slab. Within tile, display x section with maximum reference fault pixels.",
+  "purpose": "Qualitative test visualization; no model or threshold selection",
+  "cases": [
+    {
+      "patch_id": "x0000_y0512_z0896",
+      "origin": [
+        0,
+        512,
+        896
+      ],
+      "displayed_x": 120,
+      "patch_positive_voxels": 62934,
+      "patch_dice_from_frozen_test": 0.29041226023665495,
+      "displayed_section_positive_pixels": 1390,
+      "displayed_section_tp": 1305,
+      "displayed_section_fp": 322,
+      "displayed_section_fn": 85
+    },
+    {
+      "patch_id": "x0256_y1792_z1024",
+      "origin": [
+        256,
+        1792,
+        1024
+      ],
+      "displayed_x": 320,
+      "patch_positive_voxels": 80310,
+      "patch_dice_from_frozen_test": 0.5317811022969944,
+      "displayed_section_positive_pixels": 1625,
+      "displayed_section_tp": 1081,
+      "displayed_section_fp": 800,
+      "displayed_section_fn": 544
+    },
+    {
+      "patch_id": "x0512_y1536_z0768",
+      "origin": [
+        512,
+        1536,
+        768
+      ],
+      "displayed_x": 530,
+      "patch_positive_voxels": 79375,
+      "patch_dice_from_frozen_test": 0.6450501483606759,
+      "displayed_section_positive_pixels": 1474,
+      "displayed_section_tp": 1406,
+      "displayed_section_fp": 405,
+      "displayed_section_fn": 68
+    }
+  ],
+  "summary": {
+    "fault_present_patches": 591,
+    "all_observed_patches": 1382,
+    "fault_prevalence_scored_voxels": 0.025042094137047853,
+    "best_epoch_by_seed": {
+      "42": 95,
+      "43": 93,
+      "44": 95,
+      "45": 94,
+      "46": 89
+    }
+  }
+}

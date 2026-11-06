@@ -1,0 +1,39 @@
+{
+  "status": "complete_validation",
+  "checkpoint": "external/FaultSegV3/framework/faultsegv3.ckpt",
+  "checkpoint_sha256": "db135770d18623036faf3039c41743d4f0716c6abee634cb5aa4609131c356c9",
+  "upstream_model_sha256": "b00954383afdf18336e0c3c4fec096d71693cad8cc6291ff137160b2430fb6ed",
+  "script_sha256": "8d127fec22223c76e6df84a87dcdd029379e09d72897374bef7e0a7cc49a1278",
+  "input": "raw Thebe amplitude, axis-reversed, zero-padded to 128^3",
+  "preprocessing": "released FaultSegV3 zscore clip=3 minmax to [-1,1] per tile",
+  "mask": "nonzero raw seismic, matching R100 full-grid scoring",
+  "threshold_source": "complete validation Dice",
+  "threshold": 0.99951171875,
+  "metrics": {
+    "threshold": 0.99951171875,
+    "dice": 0.12028594725726643,
+    "iou": 0.063991619939083,
+    "precision": 0.07679843515808546,
+    "recall": 0.2773196198895688,
+    "specificity": 0.9042908586317588,
+    "balanced_accuracy": 0.5908052392606639,
+    "accuracy": 0.8867930587055352,
+    "mcc": 0.09936806123607037,
+    "pr_auc_approx": 0.04496341659469384,
+    "roc_auc_approx": 0.60822959741009,
+    "tp": 4750068,
+    "fp": 57101036,
+    "fn": 12378428,
+    "tn": 539509018
+  },
+  "coverage": {
+    "patches": 650,
+    "observed_patches": 450,
+    "valid_voxels": 613738550,
+    "positive_voxels": 17128496,
+    "raw_voxels": 975687600,
+    "positive_labels_excluded": 23514
+  },
+  "elapsed_seconds": 175.4970382830361,
+  "test_files_read": false
+}

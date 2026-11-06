@@ -1,0 +1,16 @@
+{
+  "status": "validation_only_complete",
+  "seed": 43,
+  "epochs_completed": 100,
+  "epochs_requested": 100,
+  "protocol_hash": "1febc1e47ba203ff08db82816ceadf616a5e7db345054cfbe45274b84c5f5437",
+  "precision": "float16_autocast",
+  "gradient_scaling": true,
+  "test_files_read": false,
+  "best_epoch": 93,
+  "threshold": 0.279296875,
+  "best_checkpoint": "runs/R100_fp16_clean_3seeds_20261014_150435/seed43/best.pt",
+  "last_checkpoint": "runs/R100_fp16_clean_3seeds_20261014_150435/seed43/last.pt",
+  "peak_gpu_allocated_gib": 1.249711036682129,
+  "peak_gpu_reserved_gib": 1.4375
+}

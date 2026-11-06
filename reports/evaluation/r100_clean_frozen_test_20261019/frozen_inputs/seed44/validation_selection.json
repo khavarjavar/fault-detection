@@ -1,0 +1,31 @@
+{
+  "best_epoch": 95,
+  "threshold": 0.244140625,
+  "threshold_source": "complete val1.h5 + val2.h5 only",
+  "full_validation": {
+    "threshold": 0.244140625,
+    "dice": 0.5729798256899185,
+    "iou": 0.40152188175400944,
+    "precision": 0.5655692044103381,
+    "recall": 0.5805872272731943,
+    "specificity": 0.9871964326635367,
+    "balanced_accuracy": 0.7838918299683655,
+    "accuracy": 0.9758485970939906,
+    "mcc": 0.5606058611978993,
+    "pr_auc_approx": 0.5934049314273396,
+    "roc_auc_approx": 0.9589852925995812,
+    "tp": 9944586,
+    "fp": 7638737,
+    "fn": 7183910,
+    "tn": 588971317
+  },
+  "full_validation_coverage": {
+    "patches_planned": 650,
+    "patches_scored": null,
+    "raw_voxels": 975687600,
+    "valid_voxels": 613738550,
+    "excluded_no_data_voxels": 361949050,
+    "positive_labels_excluded": 23514,
+    "inference_seconds": 6.806619164097356
+  }
+}

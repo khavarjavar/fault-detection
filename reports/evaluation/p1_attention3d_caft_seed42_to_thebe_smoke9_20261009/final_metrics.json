@@ -1,0 +1,167 @@
+{
+  "data": {
+    "complete_coverage": false,
+    "excluded_no_data_voxels": 13723811,
+    "expected_full_test_voxels": 3429541914,
+    "full_patch_count": 1950,
+    "overlap": false,
+    "padding_counted_in_metrics": false,
+    "patch_shape": [
+      128,
+      128,
+      128
+    ],
+    "patches_inferred": 9,
+    "patches_scored": 7,
+    "positive_labels_outside_valid_mask": 2186,
+    "raw_voxels_covered": 18874368,
+    "test_files": [
+      "data/processed/thebe_h5/test1.h5",
+      "data/processed/thebe_h5/test2.h5",
+      "data/processed/thebe_h5/test3.h5",
+      "data/processed/thebe_h5/test4.h5",
+      "data/processed/thebe_h5/test5.h5",
+      "data/processed/thebe_h5/test6.h5",
+      "data/processed/thebe_h5/test7.h5"
+    ],
+    "test_shape": [
+      703,
+      3174,
+      1537
+    ],
+    "valid_data_fraction": 0.27288632922702366,
+    "valid_data_voxels_evaluated": 5150557
+  },
+  "efficiency": {
+    "mean_model_inference_seconds_per_patch": 0.038953936089658074,
+    "peak_cuda_gib": 1.0516972541809082,
+    "total_model_inference_seconds": 0.3505854248069227,
+    "wall_seconds": 4.4306604862213135
+  },
+  "experiment": "A_to_T0_zero_shot",
+  "metric_notes": {
+    "bidirectional_chamfer": "sum of directed mean nearest-point distances",
+    "distance_units": "voxels",
+    "important": "These results measure zero-shot transfer from synthetic FaultSeg3D to real Thebe.",
+    "metric_domain": "finite nonzero raw Thebe voxels",
+    "modified_hausdorff": "max of directed mean nearest-point distances",
+    "one_empty_mask_policy": "valid-patch diagonal penalty"
+  },
+  "official_thebe_test": {
+    "accuracy": 0.802528542058655,
+    "balanced_accuracy": 0.5058948556737743,
+    "dice": 0.10981343584034393,
+    "fn": 346871,
+    "fp": 670217,
+    "iou": 0.05809661221942135,
+    "mcc": 0.009130353987316476,
+    "pr_auc_approx": 0.08059782645982311,
+    "precision": 0.08559098766493257,
+    "recall": 0.15315731009142955,
+    "roc_auc_approx": 0.5071055503375324,
+    "specificity": 0.8586324012561191,
+    "threshold": 0.98095703125,
+    "tn": 4070735,
+    "tp": 62734
+  },
+  "official_thebe_test_per_patch_summary": {
+    "accuracy": {
+      "max": 0.8775695112973555,
+      "mean": 0.8113815030084073,
+      "median": 0.8162875192474003,
+      "min": 0.733827969783026,
+      "std": 0.05671902007001355
+    },
+    "balanced_accuracy": {
+      "max": 0.563711513290959,
+      "mean": 0.4757459292108001,
+      "median": 0.48776368040157425,
+      "min": 0.39376040830507864,
+      "std": 0.05917768185112313
+    },
+    "bidirectional_chamfer_voxels": {
+      "max": 439.9409051224948,
+      "mean": 216.98842049567216,
+      "median": 84.15777014721081,
+      "min": 14.85000635968007,
+      "std": 194.68853025755615
+    },
+    "dice": {
+      "max": 0.22142299697680703,
+      "mean": 0.05085035611207952,
+      "median": 0.005408573020539128,
+      "min": 0.0,
+      "std": 0.08117934854451599
+    },
+    "inference_seconds": {
+      "max": 0.01690329099074006,
+      "mean": 0.016754693700931966,
+      "median": 0.016732426011003554,
+      "min": 0.016687713912688196,
+      "std": 6.75874817740254e-05
+    },
+    "iou": {
+      "max": 0.12449446754368028,
+      "mean": 0.027972570676818142,
+      "median": 0.002711619506321493,
+      "min": 0.0,
+      "std": 0.045252849824777376
+    },
+    "mcc": {
+      "max": 0.068384701301189,
+      "mean": 0.008204442820763208,
+      "median": 0.0,
+      "min": -0.028235483675334568,
+      "std": 0.02733109167449889
+    },
+    "modified_hausdorff_voxels": {
+      "max": 219.9704525612474,
+      "mean": 120.53596175042425,
+      "median": 81.98079043554333,
+      "min": 10.849586122457852,
+      "std": 89.86245983883674
+    },
+    "pr_auc_approx": {
+      "max": 0.21739434801498225,
+      "mean": 0.056465801283645686,
+      "median": 0.0021957336630572216,
+      "min": 0.0,
+      "std": 0.08859608579958274
+    },
+    "precision": {
+      "max": 0.2686741892579358,
+      "mean": 0.06043996597762461,
+      "median": 0.0027538642144394445,
+      "min": 0.0,
+      "std": 0.09907079809026777
+    },
+    "recall": {
+      "max": 0.26177024482109207,
+      "mean": 0.1007532240827346,
+      "median": 0.10498287880285334,
+      "min": 0.0,
+      "std": 0.09747513183694073
+    },
+    "roc_auc_approx": {
+      "max": 0.620257668532218,
+      "mean": 0.3092020798477767,
+      "median": 0.4861996218841374,
+      "min": 0.0,
+      "std": 0.2703335349975022
+    },
+    "specificity": {
+      "max": 0.8775695112973555,
+      "mean": 0.8507386343388657,
+      "median": 0.8665360462063878,
+      "min": 0.7875208166101573,
+      "std": 0.032027796312769814
+    }
+  },
+  "prediction_examples_saved": 4,
+  "status": "smoke_test_only",
+  "thebe_labels_used_for_threshold": false,
+  "threshold": 0.98095703125,
+  "threshold_source": "Baseline A synthetic validation",
+  "training_performed": false,
+  "weight_updates": 0
+}

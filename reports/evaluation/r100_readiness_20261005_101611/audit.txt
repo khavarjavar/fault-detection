@@ -1,0 +1,223 @@
+PROJECT AND TIME
+/home/khavarj/projects/fault_detection
+2026-10-05T10:16:11+04:00
+
+SOURCE AND CONFIG FILE LIST
+data/manifests/faultseg3d_test.txt
+data/manifests/cracks_masks_without_images.txt
+data/manifests/faultseg3d_val.txt
+data/manifests/cracks_available_images.txt
+data/manifests/faultseg3d_train.txt
+data/manifests/cracks_expert_sections.txt
+scripts/faultseg3d_baseline.py
+scripts/prepare_seismic_datasets.py
+scripts/evaluate_thebe_zero_shot.py
+scripts/evaluate_thebe_zero_shot.py.before_zero_mask_20261005_094558.bak
+scripts/__pycache__/faultseg3d_baseline.cpython-313.pyc
+scripts/__pycache__/evaluate_thebe_zero_shot.py.cpython-313.pyc
+scripts/__pycache__/evaluate_thebe_zero_shot.cpython-313.pyc
+
+DATA AND RUN DIRECTORY LAYOUT
+data
+data/cracks
+data/cracks/Fault segmentations
+data/cracks/Fault segmentations/expert
+data/cracks/Fault segmentations/novice01
+data/cracks/Fault segmentations/novice02
+data/cracks/Fault segmentations/novice03
+data/cracks/Fault segmentations/novice04
+data/cracks/Fault segmentations/novice05
+data/cracks/Fault segmentations/novice06
+data/cracks/Fault segmentations/novice07
+data/cracks/Fault segmentations/novice08
+data/cracks/Fault segmentations/novice09
+data/cracks/Fault segmentations/novice10
+data/cracks/Fault segmentations/novice11
+data/cracks/Fault segmentations/novice12
+data/cracks/Fault segmentations/novice13
+data/cracks/Fault segmentations/novice14
+data/cracks/Fault segmentations/novice15
+data/cracks/Fault segmentations/novice16
+data/cracks/Fault segmentations/novice17
+data/cracks/Fault segmentations/novice18
+data/cracks/Fault segmentations/novice19
+data/cracks/Fault segmentations/novice20
+data/cracks/Fault segmentations/novice21
+data/cracks/Fault segmentations/novice22
+data/cracks/Fault segmentations/novice23
+data/cracks/Fault segmentations/novice24
+data/cracks/Fault segmentations/novice25
+data/cracks/Fault segmentations/novice26
+data/cracks/Fault segmentations/practitioner1
+data/cracks/Fault segmentations/practitioner2
+data/cracks/Fault segmentations/practitioner3
+data/cracks/Fault segmentations/practitioner4
+data/cracks/Fault segmentations/practitioner5
+data/cracks/Fault segmentations/practitioner6
+data/cracks/Fault segmentations/practitioner7
+data/cracks/Fault segmentations/practitioner8
+data/cracks/images
+data/_direct_downloads
+data/faultseg3d
+data/faultseg3d/train
+data/faultseg3d/train/fault
+data/faultseg3d/train/seis
+data/faultseg3d/validation
+data/faultseg3d/validation/fault
+data/faultseg3d/validation/seis
+data/manifests
+data/processed
+data/processed/cracks_INCOMPLETE_do_not_use
+data/processed/cracks_INCOMPLETE_do_not_use/target
+data/processed/cracks_INCOMPLETE_do_not_use/valid
+data/processed/thebe_h5
+data/thebe
+data/thebe/fault
+data/thebe/seis
+data/thebe/seismic
+runs
+runs/baseline_A_smoke
+runs/baseline_A_synthetic_bce_seed42
+runs/baseline_A_zero_shot_thebe_full_20261005_095032
+runs/baseline_A_zero_shot_thebe_full_20261005_095032/prediction_examples
+runs/baseline_A_zero_shot_thebe_smoke_20261005_091638
+runs/baseline_A_zero_shot_thebe_smoke_20261005_091638/prediction_examples
+runs/baseline_A_zero_shot_thebe_smoke_20261005_094726
+runs/baseline_A_zero_shot_thebe_smoke_20261005_094726/prediction_examples
+runs/loss_ablation_L1_weighted_bce_dice_seed42
+
+FREE DISK AND MEMORY
+Filesystem                            Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg--1-shared--lv  2.9T  2.6T  157G  95% /shared
+               total        used        free      shared  buff/cache   available
+Mem:           251Gi        63Gi       8.0Gi       2.7Gi       184Gi       187Gi
+Swap:          8.0Gi       7.2Gi       768Mi
+
+GPU
+NVIDIA RTX A5500, 24564 MiB, 24243 MiB
+
+PYTHON, BASELINE A CHECKPOINT, AND H5 METADATA
+Python/PyTorch/H5py: 2.7.1+cu118 3.16.0
+CUDA available: True
+SOURCE: scripts/faultseg3d_baseline.py SHA256: 0089293db07637f7042ed340f47d6ed33957d1f34414b96a5698b1b1ce3e3131
+SOURCE: scripts/evaluate_thebe_zero_shot.py SHA256: 834ec8aeb8a726c51f6dd65e4f85fac7652dfcc13f8ab58f0784fe359b9374ec
+
+BASELINE A CHECKPOINT
+epoch: 100
+saved args: {
+  "loss": "b0_bce",
+  "data_root": "data/faultseg3d",
+  "manifest_root": "data/manifests",
+  "run_dir": "runs/faultseg3d_b0_seed42",
+  "epochs": 100,
+  "batch_size": 1,
+  "gradient_accumulation": 2,
+  "workers": 2,
+  "learning_rate": 0.0001,
+  "pos_weight": 13.211662,
+  "seed": 42,
+  "histogram_bins": 2048,
+  "disable_amp": false,
+  "allow_cpu": false,
+  "smoke_test": false
+}
+model tensors: 30
+model parameters: 1459585
+validation metrics: {
+  "threshold": 0.5,
+  "dice": 0.8158076446363249,
+  "iou": 0.6889148042049164,
+  "precision": 0.8161029287143701,
+  "recall": 0.8155125741616057,
+  "specificity": 0.9865935674459392,
+  "balanced_accuracy": 0.9010530708037725,
+  "accuracy": 0.9749610662460327,
+  "mcc": 0.8023752418333822,
+  "pr_auc_approx": 0.884834249688252,
+  "roc_auc_approx": 0.9824618783754979,
+  "tp": 2325744,
+  "fp": 524073,
+  "fn": 526136,
+  "tn": 38567087
+}
+
+H5 FILE COUNT: 18
+FILES PER DIRECTORY: {'data/processed/thebe_h5': 18}
+
+H5: data/processed/thebe_h5/test1.h5 (1,107,063,922 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=gzip
+
+H5: data/processed/thebe_h5/test2.h5 (1,157,609,521 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=gzip
+
+H5: data/processed/thebe_h5/test3.h5 (1,202,815,688 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=gzip
+
+H5: data/processed/thebe_h5/test4.h5 (1,207,246,023 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=gzip
+
+H5: data/processed/thebe_h5/test5.h5 (1,105,804,825 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=gzip
+
+H5: data/processed/thebe_h5/test6.h5 (971,724,277 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=gzip
+
+H5: data/processed/thebe_h5/test7.h5 (873,254,348 bytes)
+  dataset=fault shape=(103, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(103, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=gzip
+
+H5: data/processed/thebe_h5/train1.h5 (717,073,164 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=lzf
+
+H5: data/processed/thebe_h5/train2.h5 (748,153,745 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=lzf
+
+H5: data/processed/thebe_h5/train3.h5 (780,327,606 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=lzf
+
+H5: data/processed/thebe_h5/train4.h5 (812,145,386 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=lzf
+
+H5: data/processed/thebe_h5/train5.h5 (844,142,314 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=lzf
+
+H5: data/processed/thebe_h5/train6.h5 (877,969,475 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=lzf
+
+H5: data/processed/thebe_h5/train7.h5 (1,032,693,045 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=lzf
+
+H5: data/processed/thebe_h5/train8.h5 (1,046,692,870 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=lzf
+
+H5: data/processed/thebe_h5/train9.h5 (1,054,637,087 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=lzf
+
+H5: data/processed/thebe_h5/val1.h5 (1,116,731,622 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=lzf
+
+H5: data/processed/thebe_h5/val2.h5 (1,179,747,245 bytes)
+  dataset=fault shape=(100, 3174, 1537) dtype=uint8 chunks=(1, 256, 256) compression=gzip
+  dataset=seismic shape=(100, 3174, 1537) dtype=float32 chunks=(1, 256, 256) compression=lzf
+
+RESULT FILE: runs/baseline_A_synthetic_bce_seed42/final_metrics.json
+top-level keys: ['best_epoch', 'efficiency', 'metric_notes', 'official_test', 'official_test_per_volume_summary', 'threshold_selected_on_internal_validation', 'validation', 'validation_per_volume_summary']
+
+RESULT FILE: runs/baseline_A_zero_shot_thebe_full_20261005_095032/final_metrics.json
+top-level keys: ['data', 'efficiency', 'experiment', 'metric_notes', 'official_thebe_test', 'official_thebe_test_per_patch_summary', 'prediction_examples_saved', 'status', 'thebe_labels_used_for_threshold', 'threshold', 'threshold_source', 'training_performed', 'weight_updates']

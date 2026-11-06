@@ -1,0 +1,47 @@
+{
+  "checkpoint": "runs/p1_attention3d_caft_seed42/best.pt",
+  "checkpoint_epoch": 93,
+  "cracks_expert": {
+    "accuracy": 0.8954660427469331,
+    "balanced_accuracy": 0.5169923072917657,
+    "dice": 0.05755252130783045,
+    "fn": 30594,
+    "fp": 101654,
+    "iou": 0.029628868702581336,
+    "mcc": 0.020040884105310363,
+    "pr_auc_approx": 0.030105754298819044,
+    "precision": 0.038205351398402906,
+    "recall": 0.1165973665973666,
+    "roc_auc_approx": 0.5417569783713032,
+    "specificity": 0.9173872479861649,
+    "threshold": 0.98095703125,
+    "tn": 1128834,
+    "tp": 4038
+  },
+  "cracks_labels_used_for_threshold": false,
+  "efficiency": {
+    "peak_cuda_gib": 1.0148916244506836,
+    "wall_seconds": 49.97105884552002
+  },
+  "experiment": "p1_cracks_expert_zero_shot",
+  "expert_sections_scored": 40,
+  "image_shape": [
+    255,
+    701
+  ],
+  "input_sections": 396,
+  "label_policy": "score raw 1 as certain non-fault and raw 3 as certain fault; ignore raw 0 and raw 2",
+  "metrics_scope": "expert-labelled 2D planes only; not dense 3D ground truth",
+  "missing_nominal_section_numbers": [
+    9,
+    185,
+    249,
+    336
+  ],
+  "status": "complete_40_expert_sections",
+  "threshold": 0.98095703125,
+  "threshold_source": "runs/p1_attention3d_caft_seed42/final_metrics.json",
+  "tiles_inferred": 1200,
+  "training_performed": false,
+  "weight_updates": 0
+}

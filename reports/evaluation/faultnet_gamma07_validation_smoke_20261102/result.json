@@ -1,0 +1,38 @@
+{
+  "status": "bounded_smoke_only",
+  "checkpoint": "external/FaultNet/network/FaultNet_Gamma0.7.pt",
+  "checkpoint_sha256": "c1742973a39bc46a96775f1045062038d8120d42cfb4b197bf2ca8ebd657c6ee",
+  "script_sha256": "1d8a3b9c192d7547927f73870a248303cdfecdd51e965d60e232a3969da61a22",
+  "gamma": "0.7",
+  "input": "raw Thebe amplitude, axis-reversed, zero-padded to 128^3",
+  "preprocessing": "released FaultNet cubing_prediction per-block minmax",
+  "threshold_source": "fixed 0.5 smoke threshold",
+  "threshold": 0.5,
+  "metrics": {
+    "threshold": 0.5,
+    "dice": 0.0,
+    "iou": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "specificity": 0.7213008465522703,
+    "balanced_accuracy": 0.36065042327613517,
+    "accuracy": 0.7213008465522703,
+    "mcc": 0.0,
+    "pr_auc_approx": 0.0,
+    "roc_auc_approx": 0.0,
+    "tp": 0,
+    "fp": 37827,
+    "fn": 0,
+    "tn": 97900
+  },
+  "coverage": {
+    "patches": 3,
+    "observed_patches": 1,
+    "valid_voxels": 135727,
+    "positive_voxels": 0,
+    "raw_voxels": 6291456,
+    "positive_labels_excluded": 0
+  },
+  "elapsed_seconds": 0.927452797011938,
+  "test_files_read": false
+}

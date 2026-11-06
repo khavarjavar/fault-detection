@@ -1,0 +1,26 @@
+{
+  "status": "single_training_step_pass",
+  "architecture": "MONAI SwinUNETR",
+  "feature_size": 24,
+  "use_checkpoint": true,
+  "patch_size": [
+    128,
+    128,
+    128
+  ],
+  "parameters": 15702979,
+  "origin": [
+    27,
+    952,
+    1034
+  ],
+  "valid_voxels": 2097152,
+  "positive_voxels": 69213,
+  "loss": 0.9859840869903564,
+  "max_parameter_delta": 0.00010034441947937012,
+  "peak_gpu_allocated_gib": 6.09433650970459,
+  "peak_gpu_reserved_gib": 7.576171875,
+  "precision": "bfloat16_autocast, float32 masked BCE and weights",
+  "purpose": "memory/gradient feasibility only; random initialization; no checkpoint saved",
+  "test_files_read": false
+}

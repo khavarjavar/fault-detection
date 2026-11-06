@@ -1,0 +1,15 @@
+{
+  "source": "val1.h5 + val2.h5 only",
+  "test_files_opened": false,
+  "ranking_scope": "oracle-assisted GT-positive interactive samples",
+  "best_five_click_at_0_5": {
+    "key": "label_centered/sam_positive_zscore/5_clicks",
+    "dice": 0.07506104727065215
+  },
+  "best_five_click_calibrated": {
+    "key": "label_centered/r100_observed_zscore/5_clicks",
+    "threshold": 0.021484375,
+    "dice": 0.17490771567729727
+  },
+  "warning": "This ranking may define a later frozen interactive test protocol; it is not an automatic detector selection."
+}

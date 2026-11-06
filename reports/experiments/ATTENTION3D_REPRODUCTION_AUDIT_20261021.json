@@ -1,0 +1,50 @@
+{
+  "checked_date": "2026-10-21",
+  "status": "awaiting_original_inputs_and_protocol_clarifications",
+  "training_started": false,
+  "test_inference_started": false,
+  "objective": "Reproduce the full published method, including original multi-survey pretraining",
+  "sources": {
+    "segmentation_paper": "https://www.nature.com/articles/s41598-026-54829-x",
+    "denoising_paper": "https://link.springer.com/article/10.1007/s13369-025-10974-5",
+    "segmentation_repository": "https://github.com/Matin-Mahzad/fault-detection-global-attention",
+    "denoising_repository": "https://github.com/Matin-Mahzad/3D_Global_Attention"
+  },
+  "local_source": {
+    "path": "external/attention3d_paper/fault-detection-global-attention.py",
+    "commit": "2a3d69a5d99dfc191508cbceea3db3b95242f216",
+    "sha256": "dc332c431b035c590141f0e542573d9445dfdae65a232cbe799516be8df18b37",
+    "hash_verified": true,
+    "publication_checkpoint_compatibility_verified": false
+  },
+  "unresolved_inputs": {
+    "original_survey_files_and_bounds": null,
+    "complete_pretraining_recipe": null,
+    "publication_model_and_checkpoint_mapping": null,
+    "original_thebe_split_coordinates": null,
+    "global_batch_and_scheduler_step_definition": null,
+    "gaussian_blending_and_no_data_details": null
+  },
+  "checks_completed": [
+    "Published method and both public model repositories reviewed",
+    "Imported source hash verified",
+    "No survey-named candidates found by filename under local data/",
+    "Missing pretraining entry point and checkpoint noted in checked repository tree",
+    "Repository example split differs from published split",
+    "Batch-size arithmetic and missing accumulation in supplied loop identified",
+    "Separate model releases require checkpoint-compatibility verification",
+    "Author email drafted locally; not sent",
+    "Frozen R100 confusion counts independently recomputed"
+  ],
+  "accuracy_example": {
+    "source": "reports/evaluation/r100_clean_frozen_test_20261019/final_metrics.json",
+    "tp": 38256762,
+    "fp": 35697272,
+    "fn": 19423734,
+    "tn": 2209963785,
+    "fault_voxel_fraction": 0.025042094137047853,
+    "all_background_accuracy": 0.9749579058629522,
+    "ensemble_accuracy": 0.9760691131854903,
+    "ensemble_dice_and_f1": 0.5812572430653264
+  }
+}

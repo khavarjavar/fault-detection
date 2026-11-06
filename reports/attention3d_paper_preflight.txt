@@ -1,0 +1,29 @@
+AUTHOR CODE
+2a3d69a5d99dfc191508cbceea3db3b95242f216
+external/attention3d_paper/fault-detection-global-attention.py
+external/attention3d_paper/LICENSE
+external/attention3d_paper/README.md
+external/attention3d_paper/configs/finetune_config.yaml
+
+GPU AND FREE SPACE
+0, NVIDIA RTX A5500, 24564 MiB
+Filesystem                            Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg--1-shared--lv  2.9T  2.7T   48G  99% /shared
+
+PYTORCH AND THEBE FILES
+torch: 2.7.1+cu118
+CUDA available: True
+Thebe H5 directory: data/processed/thebe_h5 files: 18
+train: 9 files
+  train1.h5 {'fault': ((100, 3174, 1537), 'uint8'), 'seismic': ((100, 3174, 1537), 'float32')}
+  train2.h5 {'fault': ((100, 3174, 1537), 'uint8'), 'seismic': ((100, 3174, 1537), 'float32')}
+val: 2 files
+  val1.h5 {'fault': ((100, 3174, 1537), 'uint8'), 'seismic': ((100, 3174, 1537), 'float32')}
+  val2.h5 {'fault': ((100, 3174, 1537), 'uint8'), 'seismic': ((100, 3174, 1537), 'float32')}
+validation: 0 files
+test: 7 files
+  test1.h5 {'fault': ((100, 3174, 1537), 'uint8'), 'seismic': ((100, 3174, 1537), 'float32')}
+  test2.h5 {'fault': ((100, 3174, 1537), 'uint8'), 'seismic': ((100, 3174, 1537), 'float32')}
+Fused 3D attention prerequisite: available
+
+EXISTING SURVEYS OR PRETRAINED WEIGHTS

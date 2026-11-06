@@ -1,0 +1,131 @@
+{
+  "status": "validation_analysis_frozen",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "subsets": [
+    [
+      42
+    ],
+    [
+      43
+    ],
+    [
+      44
+    ],
+    [
+      45
+    ],
+    [
+      46
+    ],
+    [
+      42,
+      43
+    ],
+    [
+      42,
+      44
+    ],
+    [
+      42,
+      45
+    ],
+    [
+      42,
+      46
+    ],
+    [
+      43,
+      44
+    ],
+    [
+      43,
+      45
+    ],
+    [
+      43,
+      46
+    ],
+    [
+      44,
+      45
+    ],
+    [
+      44,
+      46
+    ],
+    [
+      45,
+      46
+    ],
+    [
+      42,
+      43,
+      44
+    ],
+    [
+      42,
+      43,
+      45
+    ],
+    [
+      42,
+      43,
+      46
+    ],
+    [
+      42,
+      44,
+      45
+    ],
+    [
+      42,
+      44,
+      46
+    ],
+    [
+      42,
+      45,
+      46
+    ],
+    [
+      43,
+      44,
+      45
+    ],
+    [
+      43,
+      44,
+      46
+    ],
+    [
+      43,
+      45,
+      46
+    ],
+    [
+      44,
+      45,
+      46
+    ],
+    [
+      42,
+      43,
+      44,
+      45,
+      46
+    ]
+  ],
+  "cache_manifest_sha256": "26580bf0d45b64dfaf777934dba0a077843b1486234dd058b342f9f3f305c09b",
+  "subset_seed": 1042,
+  "max_subsets_per_size": 32,
+  "threshold_policy": "best Dice on full validation separately for each subset",
+  "test_files_opened": false,
+  "inference_performed": false,
+  "analysis_source_sha256": "ec56c608c42f6083f9dac6167fc2916ed14437ce35a80b6127d7ae7eac044f33"
+}

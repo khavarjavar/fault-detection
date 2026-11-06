@@ -1,0 +1,4 @@
+./reports/data_audit/thebe_train_val.log
+./reports/data_audit/thebe_h5_statistics.csv
+./download_thebe.log
+./scripts/prepare_seismic_datasets.py

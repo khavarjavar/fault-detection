@@ -1,0 +1,35 @@
+{
+  "cause": "shared filesystem full during checkpoint writes",
+  "runs": {
+    "r100_150_seed43_20261102": {
+      "last_valid_checkpoint_epoch": 54,
+      "discarded_history_epochs": [
+        55
+      ],
+      "history_backup": "runs/r100_150_seed43_20261102/history.disk_full_interrupted.csv",
+      "moved_corrupt_parts": [
+        "/tmp/fault_detection_disk_full_parts_20261102/r100_150_seed43_20261102__last.pt.part"
+      ]
+    },
+    "faultsegv3_matched_150_seed43_20261102": {
+      "last_valid_checkpoint_epoch": 32,
+      "discarded_history_epochs": [
+        33
+      ],
+      "history_backup": "runs/faultsegv3_matched_150_seed43_20261102/history.disk_full_interrupted.csv",
+      "moved_corrupt_parts": [
+        "/tmp/fault_detection_disk_full_parts_20261102/faultsegv3_matched_150_seed43_20261102__last.pt.part"
+      ]
+    },
+    "swinunetr_matched_150_seed43_20261102": {
+      "last_valid_checkpoint_epoch": 25,
+      "discarded_history_epochs": [
+        26
+      ],
+      "history_backup": "runs/swinunetr_matched_150_seed43_20261102/history.disk_full_interrupted.csv",
+      "moved_corrupt_parts": [
+        "/tmp/fault_detection_disk_full_parts_20261102/swinunetr_matched_150_seed43_20261102__last.pt.part"
+      ]
+    }
+  }
+}

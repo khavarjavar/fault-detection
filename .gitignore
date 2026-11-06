@@ -1,0 +1,36 @@
+# Local environments and caches
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Raw and prepared data
+data/
+*.h5
+*.hdf5
+*.sgy
+*.segy
+*.zgy
+*.npy
+
+# Training state and model weights
+runs/
+*.pt
+*.pth
+*.ckpt
+
+# Downloaded third-party repositories and handoff binaries
+external/
+deliverables/
+*.zip
+*.tar.gz
+
+# Runtime output
+*.log
+*.pid
+*.part
+
+# Editor and operating-system files
+.DS_Store
+.vscode/
+.idea/
